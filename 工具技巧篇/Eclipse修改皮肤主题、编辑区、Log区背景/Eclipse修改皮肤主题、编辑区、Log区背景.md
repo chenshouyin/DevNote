@@ -1,54 +1,74 @@
 ﻿
-##一、什么是SourceTree?
 
-SourceTree 是 Windows 和Mac OS X 下免费的 Git 和 Hg 客户端，拥有可视化界面，容易上手操作。同时它也是Mercurial和Subversion版本控制系统工具。支持创建、提交、clone、push、pull 和merge等操作。简单点说SourceTree是跨Windows和Mac平台的一款版本控制工具。
-
-
-##二、如何使用SourceTree,本篇主要将在Mac的使用
-
-首先去官网下载客户端 https://www.sourcetreeapp.com/ 下载Mac版的客户端，如果是Windows系统下载Widows版本的客户端，下载之后安装即可。
+修改前
 
 
-##三、如何进行版本控制?
- 
-远程仓库以Github为例（当然实际项目中可能是公司服务器中的一个仓库）,首先需要注册一个Github账号,如果还没注册，可以去官网注册 https://github.com/ （实际项目中公司都会给我们仓库对应的用户名密码）,注册完之后登陆创建一个仓库。
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-cf53508d5af987d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-可通过如下方式创建仓库
 
-方法1：
-在欢迎页点击“+ New repository“创建我们的仓库
-![](http://upload-images.jianshu.io/upload_images/2704327-93f1380f6e4648d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+修改后
 
-方法2
-或点击右上角的“+”，然后再New repository亦可
-![](http://upload-images.jianshu.io/upload_images/2704327-5159c0b4d866b03d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-按照个人需要填写仓库名、仓库描述等，建议勾选“Initialize this repository with a README”（注意此处免费账户只能选择建立public（开源）仓库），填写完成后点击Create repository
-![](http://upload-images.jianshu.io/upload_images/2704327-0d483d9c2f54eabc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)Create Repository 3
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-2f42b0d00baa1977.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-至此，我们的仓库已经创建成功。创建成功后，我们在页面的右下角找到链接，点击复制
-![](http://upload-images.jianshu.io/upload_images/2704327-2d0210a05418e60d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-打开我们的SourceTree，点击：“+新仓库”，选择：“从URL克隆”
-![](http://upload-images.jianshu.io/upload_images/674642-c66863c9567a926a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+怎样改变eclipse的皮肤呢？其实很简单，国外程序员自己打造的Eclipse黑色主题皮肤，配合eclipse color theme插件使用黑色代码主题就可以了。
 
-粘贴我们的仓库链接至源URL，SourceTree会自动帮我们生成目标路径（本地仓库路径）以及名称，点击克隆
-![](http://upload-images.jianshu.io/upload_images/674642-0e1e5ddeceb27970.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)Clone 2
 
-等待数秒后，SourceTree会为我们自动打开我们刚才克隆的仓库，选择master选项，这里我们可以看到我们仓库里的所有文件
-![](http://upload-images.jianshu.io/upload_images/2704327-f271ef701f4baf93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+首先从 [Eclipse修改皮肤主题插件](https://github.com/chenshouyin/DevNote/tree/master/%E5%B7%A5%E5%85%B7%E6%8A%80%E5%B7%A7%E7%AF%87/Eclipse%E4%BF%AE%E6%94%B9%E7%9A%AE%E8%82%A4%E4%B8%BB%E9%A2%98%E3%80%81%E7%BC%96%E8%BE%91%E5%8C%BA%E3%80%81Log%E5%8C%BA%E8%83%8C%E6%99%AF) 下载主题，解压下载的压缩文件，将plugins文件夹放入eclipse目录的dropins文件夹下，重启eclipse后，选择Preferences->General->Appearance，选择dark主题即可。
 
-接下来我们想要上传一个项目至我们的远程Github仓库内。我们点击右上角“在Finder”中显示。然后SourceTree会帮我们打开我们的本地仓库，我们将需要上传的项目复制到本地的Finder文件夹内，然后关闭文件夹，回到主页面。我们会发现工作副本出现了更改提示
-![](http://upload-images.jianshu.io/upload_images/2704327-b65673be19a6aa7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-我们点击工作副本，然后我们发现我们刚才上传的文件都在未暂存文件当中，此时，我们勾选“未暂存文件”
-![](http://upload-images.jianshu.io/upload_images/2704327-1003c05022407fbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+选择之后设这样的
 
-发现我们的文件变成了已暂存文件。此时，我们可以输入更新信息，然后，点击提交按钮
-![](http://upload-images.jianshu.io/upload_images/2704327-3067c461d9a71459.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![%@8YI_P(6AMO(TCMGH{YY7L.jpg](http://upload-images.jianshu.io/upload_images/2704327-04107efb075fa66d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- 我们切换回master分支，会发现master分支以及推送（Push）按钮，都出现了更改提示。这表示SourceTree已经将我们刚才添加的文件成功提交到本地仓库，而本地仓库的内容则比远程仓库超前了一个版本。我们这个时候点击推送（Push）即可将本地仓库的内容同步至远程仓库。
-![](http://upload-images.jianshu.io/upload_images/2704327-01bc35f806c04933.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+接下来还要修改编辑区域背景，修改文本编辑的背景啥的就需要安装Eclipse Color Theme了，这个也很简单：
+ Help->Install New Software ->add->name(输入Color Theme) Location:http://eclipse-color-theme.github.com/update点击ok之后，出现这样的画面：
+![](http://upload-images.jianshu.io/upload_images/2704327-f515fb9b124a948c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+选中之后一直下一步下一步，最后Eclipse会重启一次。重启之后，Windows->Perferences->General->Appearence->Color Theme这么多皮肤，可以随便挑。
 
-点击推送（push），等待片刻即可，我们重新登录github网站，会发现我们刚才本地仓库的文件已经成功推送到远程仓库
-![](http://upload-images.jianshu.io/upload_images/2704327-be399a0dded63c91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+选择Cokor Theme之后是这样的:
+
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-c52c793fb7989ec8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+可以看到输入区的背景颜色更改了，但是，控制台，Logcat等背景颜色并没有更改。还是亮闪闪的白色。
+
+
+因为更改这些区域颜色的方法并不在Eclipse里！
+
+1.右键点击桌面→个性化
+
+2.点击下方 "窗口颜色"
+
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-156f84f5eb1eaad4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+3.下方高级外观设置
+
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-8891f8f34e6b410e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+4.中间项目 的下拉列表里选"窗口"
+
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-8b4c6daf207522c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+在此可以更改窗口的背景颜色和文字颜色。自己根据字体颜色搭配背景。
+
+点右边窗口颜色设置，颜色里选"其他"配置自定义颜色按84,122,203即可。或者更改成其它颜色。
+
+但是注意下哦,更改了窗口颜色和文字颜色之后也会影响电脑里面的文件夹名字显示。
+
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2704327-904d3007703310fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+
+
+
