@@ -31,14 +31,14 @@
 	<table border="1" align="center">
 		<% for(int i = 1;i<10;i++){//行
 		%>
-	
+
 		<%--html标签不应该在代码块内 --%>
-		<tr bordercolor="#ff00fa" >
-			
+		<tr bordercolor="#ff00fa">
+
 			<%
 		for(int j=1;j<=i;j++){//列
 		   %>
-		   <td><%=i %>*<%=j %> = <%= (i*j) %>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><%=i %>*<%=j %> = <%= (i*j) %>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<% }%>
 
 		</tr>
