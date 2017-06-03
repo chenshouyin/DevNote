@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JspInnerObjectDemo"
+  id="myeclipse.1406908257961"
+  context-root="/JspInnerObjectDemo"
+  j2ee-spec="5.0"
+  archive="JspInnerObjectDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

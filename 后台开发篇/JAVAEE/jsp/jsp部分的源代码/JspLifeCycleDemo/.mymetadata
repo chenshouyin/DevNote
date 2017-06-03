@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JspLifeCycleDemo"
+  id="myeclipse.1406003603069"
+  context-root="/JspLifeCycleDemo"
+  j2ee-spec="5.0"
+  archive="JspLifeCycleDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

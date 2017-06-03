@@ -1,0 +1,87 @@
+@import 'css3.css';
+
+* {
+	margin:0; padding:0;
+}
+
+body {
+ position:relative;
+ height:100%;
+ background:#fff url('../assets/loginbg.png') left top repeat-x;
+ font-family:Tahoma, Arial, sans-serif;
+}
+
+img {
+	border:0;
+}
+
+#container {
+	width:960px;
+	margin:0 auto;
+}
+
+#container .logo {
+	width:230px;
+	margin:240px auto 0;
+}
+
+#container #box {
+ clear:both;
+ float:none;
+ width:70%;
+ margin:50px auto 0;
+}
+
+p.main label {
+ float:left;
+ padding:5px;
+ display:inline;
+ margin-left:40px;
+ font-size:13px;
+ color:#000;
+ margin-right:10px;
+}
+
+#box p {
+ clear:both;
+ float:none;
+ width:100%;
+}
+
+p.main INPUT {
+ background:url('../assets/input.png') 0 0 repeat-x;
+ border:1px solid #d3d3d3;
+ color:#555;
+ padding:5px;
+ float:left;
+ width:200px;
+}
+
+input.login {
+ float:right;
+ padding:3px 10px 3px 10px;
+ color:#fff;
+ font-size:12px;
+ text-decoration:none;
+ border:1px solid #555;
+ background:url('../assets/rep1.png') 50% 50% repeat-x;
+ display:inline;
+ margin-right:5px;
+}
+
+span {
+ font-size:13px;
+ color:#666;
+}
+
+.space {
+ padding-top:15px;
+}
+
+span input {
+ margin-left:125px;
+ margin-right:5px;
+ border:1px solid #111;
+ background:#444;
+ color:#fff;
+}

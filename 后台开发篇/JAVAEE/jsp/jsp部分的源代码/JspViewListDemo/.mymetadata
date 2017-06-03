@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JspViewListDemo"
+  id="myeclipse.1409112855820"
+  context-root="/JspViewListDemo"
+  j2ee-spec="5.0"
+  archive="JspViewListDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JspCommand&amp;Action"
+  id="myeclipse.1414047809091"
+  context-root="/JspCommand&amp;Action"
+  j2ee-spec="5.0"
+  archive="JspCommand&amp;Action.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
