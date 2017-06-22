@@ -11,7 +11,7 @@
 <head>
 <base href="<%=basePath%>">
 
-<title>登陆get方式提交</title>
+<title>request接收参数</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -26,20 +26,26 @@
 </head>
 
 <body>
-	
+	姓名:
 
-	<form action="login_get_success4.jsp" method="get">
-	<table>
-	<tr>
-	<td>用户名:<input type="text" name="inputName"></td>
-	</tr>
-		<td>密码:<input type="password" name="inputPassWord"></td>
-	
-	</tr>
-	
-	<tr><td><input type="submit" name="submitLogin"></td></tr>
-	</table>
-	
-	</form>
+	<%--解决post提交中文乱码 --%>
+	<%
+		request.setCharacterEncoding("UTF-8");
+	%>
+	<%
+		String userName = request.getParameter("userName");
+		out.println(userName);
+	%>
+	<%--获取chekbox的值 --%>
+	</br>爱好:
+	<%
+		String[] values = request.getParameterValues("cheakboxUserFvorite");
+		if (values != null) {
+			for (int i = 0; i < values.length; i++) {
+				out.print(values[i] + "&nbsp;&nbsp;");
+			}
+		}
+	%>
+
 </body>
 </html>

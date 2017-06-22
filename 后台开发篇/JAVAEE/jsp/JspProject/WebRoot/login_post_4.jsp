@@ -28,16 +28,16 @@
 <body>
 	
 
-	<form action="login_get_success4.jsp" method="get">
+	<form action="login_get_success4.jsp" method="post">
 	<table>
 	<tr>
-	<td>用户名:<input type="text" name="inputName"></td>
+	<td>用户名:</td><td><input type="text" name="inputName"></td>
 	</tr>
 		<td>密码:<input type="password" name="inputPassWord"></td>
 	
 	</tr>
 	
-	<tr><td><input type="submit" name="submitLogin"></td></tr>
+	<tr>提交:<input type="submit" name="submitLogin"></tr>
 	</table>
 	
 	</form>
