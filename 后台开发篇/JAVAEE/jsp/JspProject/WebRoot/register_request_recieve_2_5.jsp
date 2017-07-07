@@ -34,8 +34,16 @@
 	%>
 	<%
 		String userName = request.getParameter("userName");
-		out.println(userName);
+		out.print(userName+"</br>");
 	%>
+	
+	
+	<%		
+		String passWord = request.getParameter("passWord");
+		out.print("</br>密码:"+passWord);
+		request.setAttribute("passWord",passWord);
+	%>
+	
 	<%--获取chekbox的值 --%>
 	</br>爱好:
 	<%
@@ -46,6 +54,24 @@
 			}
 		}
 	%>
+	
+	</br>request.setAttribute存储参数  request.getAttribute  密码:
+	<%
+		out.print(request.getAttribute("passWord"));
+	 %>
+	 
+	 <%--request的其它属性 --%>
 
+<%
+out.print("</br>请求体的MIME:"+request.getContentType());
+out.print("</br>协议类型和版本号:"+request.getProtocol());
+out.print("</br>服务器主机名:"+request.getServerName());
+out.print("</br>服务器主机端口:"+request.getServerPort());
+out.print("</br>请求文件的长度"+request.getContentLength());
+out.print("</br>请求客户端的Ip地址:"+request.getRemoteAddr());
+out.print("</br>请求的真实路径:"+request.getRealPath("register_request_recieve_2_5.jsp"));
+out.print("</br>请求的上下文路径:"+request.getContextPath());
+
+	 %>
 </body>
 </html>

@@ -33,7 +33,7 @@
 	<tr>
 	<td>用户名:</td><td><input type="text" name="inputName"></td>
 	</tr>
-		<td>密码:<input type="password" name="inputPassWord"></td>
+		<td>密码:<input type="password" name="passWord"></td>
 	
 	</tr>
 	
