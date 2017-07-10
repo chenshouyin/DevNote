@@ -27,14 +27,10 @@ JNIEXPORT jstring JNICALL Java_com_example_testndkeclipse_JniClient_AddStr
 {
     //jstring str = (*env)->NewStringUTF(env, instringA+"=="+instringB+"are from JNI");
     jstring str = (*env)->NewStringUTF(env,"I am from JNI");
-
-	int len1 = strlen(instringA);
-	int len2 = strlen(instringB);
-//	char str1[len1] = instringA;
-//	char str2[len2] = instringB;
-//	char str2[len2] ;
-//	str2 = instringA;
 	LOGI("%d",len1);//c语言输出  可以在eclipse中打印出来  用法如printf()
+
+	//将jstring转换成const char*指针，使用const修饰符表示其内容不可被修改
+	const char* str1 = (*env)->NewStringUTFChars(instringA,null);
     return str;
 }
 
