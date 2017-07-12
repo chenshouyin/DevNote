@@ -7,6 +7,30 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+/*
+ * Class:     com_example_testndkeclipse_JniClient
+ * Method:    AddStr
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_example_testndkeclipse_JniClient_AddStr
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_example_testndkeclipse_JniClient
+ * Method:    TestDataTypeJ2C
+ * Signature: (SIJFDCZBLjava/lang/String;[ILjava/lang/Object;Lcom/example/testndkeclipse/MyJavaClass;)V
+ */
+JNIEXPORT void JNICALL Java_com_example_testndkeclipse_JniClient_TestDataTypeJ2C
+  (JNIEnv *, jclass, jshort, jint, jlong, jfloat, jdouble, jchar, jboolean, jbyte, jstring, jintArray, jobject, jobject);
+
+/*
+ * Class:     com_example_testndkeclipse_JniClient
+ * Method:    sumArray
+ * Signature: ([I)[I
+ */
+JNIEXPORT jintArray JNICALL Java_com_example_testndkeclipse_JniClient_sumArray
+  (JNIEnv *, jclass, jintArray);
+
 #ifdef __cplusplus
 }
 #endif

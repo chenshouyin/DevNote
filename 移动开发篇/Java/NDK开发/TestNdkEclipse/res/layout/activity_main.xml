@@ -35,7 +35,20 @@
         android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="JNI 数据类型与 Java 数据类型的映射关系" />
+        
+        
+        <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="C中处理Java中传递的字符串-字符串相加" />
+        
+          <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JNI 访问数组--返回数组之和,返回数组给java" />
      
     </LinearLayout>
 
