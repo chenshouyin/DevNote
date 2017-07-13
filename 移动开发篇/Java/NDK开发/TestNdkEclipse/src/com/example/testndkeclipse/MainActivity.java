@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-	private Button bt1, bt2, bt3,bt4, bt5, bt6,bt7;
+	private Button bt1, bt2, bt3,bt4, bt5, bt6,bt7,bt8,bt9,bt10;
 	static {
 		// 加载so库
 		System.loadLibrary("TestNdk");// lib和.so为前缀后缀,不用加上
@@ -43,6 +43,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		bt5.setOnClickListener(this);
 		bt6 = (Button) this.findViewById(R.id.bt6);
 		bt6.setOnClickListener(this);
+		bt7 = (Button) this.findViewById(R.id.bt7);
+		bt7.setOnClickListener(this);
+		bt8 = (Button) this.findViewById(R.id.bt8);
+		bt8.setOnClickListener(this);
+		bt9 = (Button) this.findViewById(R.id.bt9);
+		bt9.setOnClickListener(this);
+		bt10 = (Button) this.findViewById(R.id.bt10);
+		bt10.setOnClickListener(this);
 	}
 
 	@Override
@@ -90,12 +98,25 @@ public class MainActivity extends Activity implements OnClickListener {
 			String strFromC = JniClient.AddStr("Java2C_参数1", "Java2C_参数2");
 			bt5.setText(bt5.getText()+strFromC);
 		}else if (v == bt6) {
+			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
 			int[] javaArray = new int[]{10,20,30,40,50,60};
 			//C中处理Java中传递的字符串-字符串相加
 			int[] javaArrayResult = JniClient.sumArray(javaArray );
 			if (javaArrayResult!=null) {
 				Toast.makeText(MainActivity.this, "native中返回数组"+ javaArrayResult[0],Toast.LENGTH_SHORT).show();
 			}
+		}else if (v == bt7) {
+			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
+			
+		}else if (v == bt8) {
+			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
+			
+		}else if (v == bt9) {
+			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
+			
+		}else if (v == bt10) {
+			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
+			
 		}
 	}
 
