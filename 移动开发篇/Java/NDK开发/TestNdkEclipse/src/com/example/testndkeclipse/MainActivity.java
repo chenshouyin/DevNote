@@ -90,29 +90,26 @@ public class MainActivity extends Activity implements OnClickListener {
 			double d = 10000.000;
 			byte b = 1;
 			char c = 60;
-			//JNI 数据类型与 Java 数据类型的映射关系  http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/relational.html
+			//JNI 数据类型与 Java 数据类型的映射关系 http://www.jianshu.com/p/04786ef923f4
+			
 			JniClient.TestDataTypeJ2C(s, i, l, f, d, c, z, b, str, array, obj, mMyJavaClass);
 		}else if (v == bt5) {
 			//C中处理Java中传递的字符串-字符串相加
-			//
+			//http://www.jianshu.com/p/de2a9141b1e6
 			String strFromC = JniClient.AddStr("Java2C_参数1", "Java2C_参数2");
 			bt5.setText(bt5.getText()+strFromC);
 		}else if (v == bt6) {
-			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
+			//http://www.jianshu.com/p/f2d3f71a1c99
 			int[] javaArray = new int[]{10,20,30,40,50,60};
-			//C中处理Java中传递的字符串-字符串相加
 			int[] javaArrayResult = JniClient.sumArray(javaArray );
 			if (javaArrayResult!=null) {
 				Toast.makeText(MainActivity.this, "native中返回数组"+ javaArrayResult[0],Toast.LENGTH_SHORT).show();
 			}
 		}else if (v == bt7) {
-			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
-			
+			//http://www.jianshu.com/p/f2d3f71a1c99			
 		}else if (v == bt8) {
-			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
 			
 		}else if (v == bt9) {
-			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
 			
 		}else if (v == bt10) {
 			//http://wiki.jikexueyuan.com/project/jni-ndk-developer-guide/array.html
