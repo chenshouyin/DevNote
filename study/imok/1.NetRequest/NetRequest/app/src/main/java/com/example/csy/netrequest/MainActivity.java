@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                Dbug.e(getClass().getSimpleName(),"===onResponse=="+response);
-                Dbug.e(getClass().getSimpleName(),"===onResponse==message=="+response.message());
-                Dbug.e(getClass().getSimpleName(),"===onResponse==isSuccessful=="+response.isSuccessful());
+                Dbug.d(getClass().getSimpleName(),"===onResponse=="+response);
+                Dbug.d(getClass().getSimpleName(),"===onResponse==message=="+response.message());
+                Dbug.d(getClass().getSimpleName(),"===onResponse==isSuccessful=="+response.isSuccessful());
             }
         });//异步
     }
@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 doGet(v);
             } catch (IOException e) {
                 e.printStackTrace();
+                Dbug.e(getClass().getSimpleName(),"===onFailure=="+e.getMessage());
             }
         }
     }

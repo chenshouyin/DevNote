@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class Dbug {
 	private static boolean IS_DEBUG = true;
-	private final static String HeadStr = "CSY====LOG>>>";
+	private final static String HeadStr = "CCSSYY====LOG>>>";
 	public static void openOrCloseDebug(boolean isOpen) {
 		IS_DEBUG = isOpen;
 	}
