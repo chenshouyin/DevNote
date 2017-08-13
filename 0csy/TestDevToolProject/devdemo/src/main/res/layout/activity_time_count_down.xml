@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btCountDownTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒计时:60"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <Button
+        android:id="@+id/btCountDownTimerCansel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btCountDownTimer"
+        android:layout_margin="5dp"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/btCountDownTimerFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btCountDownTimerCansel"
+        android:layout_margin="5dp"
+        android:text="finish" />
+</RelativeLayout>
