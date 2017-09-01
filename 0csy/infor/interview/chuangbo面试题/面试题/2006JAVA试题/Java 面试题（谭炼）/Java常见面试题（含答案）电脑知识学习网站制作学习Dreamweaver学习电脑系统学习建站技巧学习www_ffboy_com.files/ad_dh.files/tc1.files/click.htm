@@ -1,0 +1,93 @@
+
+var siteid="";
+siteid="2484";
+
+var soft="";
+soft=navigator.appName;
+if (soft != "")
+	soft=escape(soft);
+
+var color="";
+if (soft != "Netscape") 
+	color=screen.colorDepth;
+else 
+	color=screen.pixelDepth;
+
+var resolve="";
+resolve=screen.width+"x"+screen.height;
+resolve=escape(resolve);
+
+var title="";
+title=escape(document.title);
+
+var fromurl="";
+fromurl=top.document.referrer;
+fromurl=(fromurl=="")?document.referrer:fromurl;
+fromurl=escape(fromurl);
+
+var resource="";
+resource=document.URL;
+if (resource != "")
+	resource=escape(resource);
+
+var clientsys="";
+clientsys=navigator.userAgent;
+if (clientsys != "")
+	clientsys=escape(clientsys);
+
+r="?id="+siteid+"&referer="+fromurl+"&resolve="+resolve+"&navigator="+soft+"&color="+color+"&title="+title+"&resource="+resource+"&clientsys="+clientsys;
+
+function getCookieVal(offset) {
+	var endstr=document.cookie.indexOf(";",offset);
+	if( endstr==-1 )
+		endstr=document.cookie.length;
+	return document.cookie.substring(offset,endstr);
+}
+
+function GetCookie(name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	var j;
+	while( i<clen ) {
+		j = i + alen;
+		if( document.cookie.substring(i,j)==arg )
+			return getCookieVal(j);
+		i = document.cookie.indexOf(" ",i)+1;
+		if(i==0)
+			break;
+	}
+	return null;
+}
+
+var newuser="";
+function flux_stat() 
+{
+	var expireDate = new Date();
+	var expiretime = 93312000;
+	var c_value = "0.33369500 11238099872088932122";
+	expireDate.setTime (expireDate.getTime() + expiretime);
+	document.cookie = "flux_stat_user=" + c_value + "; expires=" + expireDate.toGMTString() +  "; ";
+	return c_value;
+}
+offset = document.cookie.indexOf("flux_stat_user");
+if (offset == -1) 
+{
+	newuser = 10;
+	coockie_value = flux_stat();
+}
+else
+{
+	newuser = 20;
+	coockie_value = GetCookie("flux_stat_user");
+}
+
+r = r+"&flux_stat_user="+coockie_value; 
+r = r+"&flux_new_user="+newuser;
+
+document.open();
+
+document.write("<script language=\"JavaScript\" type=\"text/javascript\" src=\"http://60.28.252.115/info.cnt"+r+"\"></script>");
+document.write( "<a href=\"http://union1.50bang.com/report_out.htm?id=2484\" target=\"_blank\"><img src=\"http://union1.50bang.com/images/icon.gif\" width=\"20\" height=\"20\" border=\"0\" alt=\"武林榜免费流量统计系统\"></a>" );
+document.close();
