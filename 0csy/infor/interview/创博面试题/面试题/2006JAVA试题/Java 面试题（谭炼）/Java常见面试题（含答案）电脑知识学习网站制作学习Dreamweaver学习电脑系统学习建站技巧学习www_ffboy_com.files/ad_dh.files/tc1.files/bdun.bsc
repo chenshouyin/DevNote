@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0183)http://unstat.baidu.com/bdun.bsc?tn=anyangaaa&cv=1&cid=56382&csid=1&rkcs=2&bgcr=FFFFFF&ftcr=000000&wd=330&ht=50&tbsz=12&sropls=1,4,6,2,3&kwnm=0&kwgp=1&rk=1&bd=1&bdas=0&tbst=1&sropst=0 -->
+<!--STATUS OK--><HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2800.1505" name=GENERATOR></HEAD>
+<BODY>
+<SCRIPT language=javascript>
+ var frmact = new Array();
+ frmact[1]="http://www.baidu.com/s";
+ frmact[2]="http://news.baidu.com/ns"
+ frmact[3]="http://post.baidu.com/f";
+ frmact[4]="http://mp3.baidu.com/m";
+ frmact[6]="http://image.baidu.com/i";
+ var frmtn = new Array();
+ frmtn[1]="anyangaaa";
+ frmtn[2]="news";
+ frmtn[3]="baiduPostSearch";
+ frmtn[4]="baidump3";
+ frmtn[6]="baiduimage";
+ var frmct = new Array();
+ frmct[1] = "";
+ frmct[2] = "";
+ frmct[3] = "352321536";
+ frmct[4] = "134217728";
+ frmct[6] = "201326592";
+ var frmlm = new Array();
+ frmlm[1] = "";
+ frmlm[2] = "";
+ frmlm[3] = "65536";
+ frmlm[4] = "-1";
+ frmlm[6] = "-1";
+ var frmz = new Array();
+ frmz[1] = "";
+ frmz[2] = "";
+ frmz[3] = "";
+ frmz[4] = "";
+ frmz[6] = "0";
+ var frmrn = new Array();
+ frmrn[1] = "";
+ frmrn[2] = "";
+ frmrn[3] = "10";
+ frmrn[4] = "";
+ frmrn[6] = "";
+
+ var bd_idx="1";
+
+function bd_chg_idx(idx)
+{
+ bd_idx=idx;
+}
+
+function gowhere(formname)
+{
+ var url;
+ var idx = bd_idx;
+ if (frmact[idx] == null || frmact[idx] == "")  idx = "1";
+ url = frmact[idx];
+ if (frmtn[idx] != "") document.search_form.tn.value = frmtn[idx];
+ if (frmct[idx] != "") document.search_form.ct.value = frmct[idx];
+ if (frmlm[idx] != "") document.search_form.lm.value = frmlm[idx];
+ if (frmz[idx] != "") document.search_form.z.value = frmz[idx];
+ if (frmrn[idx] != "") document.search_form.rn.value = frmrn[idx];
+ formname.method = "get";
+ formname.action = url;
+ return true;
+} 
+</SCRIPT>
+
+<TABLE height=50 cellSpacing=0 borderColorDark=#ffffff cellPadding=0 width=330 
+bgColor=#ffffff borderColorLight=#000000 border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <FORM name=search_form onsubmit="return gowhere(this)" 
+        target=_blank><INPUT type=hidden name=tn> <INPUT type=hidden name=ct> 
+        <INPUT type=hidden name=lm> <INPUT type=hidden name=z> <INPUT 
+        type=hidden name=rn> 
+        <TBODY>
+        <TR>
+          <TD width=110 rowSpan=2>
+            <DIV align=center><A 
+            href="http://d.baidu.com/index.php?tn=anyangaaa" target=_blank><IMG 
+            alt=百度中文搜索引擎 src="bdun.files/logo_union2.gif" border=0></A></DIV></TD>
+          <TD><FONT style="FONT-SIZE: 12px; COLOR: #000000"></FONT></TD></TR>
+        <TR>
+          <TD>
+            <DIV valign="bottom"><INPUT id=word 
+            onblur="if (this.value =='') this.value='请输入关键字'" 
+            onmouseover=this.focus() 
+            style="BORDER-RIGHT: #665b8e 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #665b8e 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #665b8e 1px solid; CURSOR: text; COLOR: #333333; PADDING-TOP: 1px; BORDER-BOTTOM: #665b8e 1px solid" 
+            onfocus=this.select() 
+            onclick="if (this.value=='请输入关键字') this.value=''" size=12 
+            value=请输入关键字 name=word> <INPUT id=_si type=image 
+            src="bdun.files/search_m.gif" align=middle border=0 name=_si> <A 
+            href="http://game.baidu.com/traf/click.php?id=714&amp;url=http%3A%2F%2Fdisk.baidu.com" 
+            target=_blank><FONT 
+            style="FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none"><B>硬盘搜索</B></FONT></A> 
+            <FONT style="FONT-SIZE: 12px"><A 
+            href="http://union.baidu.com/paihang/index.php?class=2" 
+            target=_blank><FONT 
+        color=#000000>排行榜</FONT></A>　　</FONT></DIV></TD></TR></FORM></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript src="bdun.files/embed.htm"></SCRIPT>
+</BODY></HTML>
