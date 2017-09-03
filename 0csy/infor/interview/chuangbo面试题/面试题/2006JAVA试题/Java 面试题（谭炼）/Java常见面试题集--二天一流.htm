@@ -1,0 +1,594 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://no2space.blogchina.com/504914.html -->
+<HTML><HEAD><TITLE>Java常见面试题集--二天一流</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=GBK">
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Cache-Control content=no-cache>
+<META http-equiv=Expires content=0>
+<META 
+content="（转）军人+文人+女人=日本人Java常见面试题集辉煌灿烂的东亚文明  博客 博客中国 博客动力 blog blogdriver blogger 中国" 
+name=description>
+<META 
+content="二天一流 （转）军人+文人+女人=日本人Java常见面试题集辉煌灿烂的东亚文明 博客 博客中国 博客动力 blog blogdriver blogger 中国" 
+name=keywords><LINK href="Java常见面试题集--二天一流.files/diary.css" type=text/css 
+rel=stylesheet>
+<SCRIPT language=JavaScript src="Java常见面试题集--二天一流.files/UBB.js"></SCRIPT>
+
+<SCRIPT src="Java常见面试题集--二天一流.files/blog.js" type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.2800.1505" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=container>
+<DIV id=header>
+<H1 class=title><A 
+href="http://no2space.blogchina.com/index.html">二天一流</A></H1></DIV>
+<DIV id=category><A title=上一篇 
+href="http://no2space.blogchina.com/502719.html">（转）军人+文人+女人=日本人</A>- -| <A 
+href="http://no2space.blogchina.com/index.html">回首页</A> | <A 
+href="http://no2space.blogchina.com/catalog_2005.html">2005年索引</A> | - -<A 
+title=下一篇 href="http://no2space.blogchina.com/510023.html">辉煌灿烂的东亚文明</A></DIV>
+<DIV class=entity>
+<H2 class=diaryTitle>Java常见面试题集- -</H2>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<P>Java基础方面: <BR>1、作用域public,private,protected,以及不写时的区别 <BR>答：区别如下： <BR>作用域 当前类 
+同一package 子孙类 其他package <BR>public √ √ √ √ <BR>protected √ √ √ × <BR>friendly √ 
+√ × × <BR>private √ × × × <BR>不写时默认为friendly <BR>
+<P>2、ArrayList和Vector的区别,HashMap和Hashtable的区别 <BR>答：就ArrayList与Vector主要从二方面来说. 
+<BR>一.同步性:Vector是线程安全的，也就是说是同步的，而ArrayList是线程序不安全的，不是同步的 
+<BR>二.数据增长:当需要增长时,Vector默认增长为原来一培，而ArrayList却是原来的一半 
+<BR>就HashMap与HashTable主要从三方面来说。 
+<BR>一.历史原因:Hashtable是基于陈旧的Dictionary类的，HashMap是Java 1.2引进的Map接口的一个实现 
+<BR>二.同步性:Hashtable是线程安全的，也就是说是同步的，而HashMap是线程序不安全的，不是同步的 
+<BR>三.值：只有HashMap可以让你将空值作为一个表的条目的key或value </P>
+<P>3、char型变量中能不能存贮一个中文汉字?为什么? 
+<BR>答：是能够定义成为一个中文的，因为java中以unicode编码，一个char占16个字节，所以放一个中文是没问题的 </P>
+<P>4、多线程有几种实现方法,都是什么?同步有几种实现方法,都是什么? <BR>答：多线程有两种实现方法，分别是继承Thread类与实现Runnable接口 
+<BR>同步的实现方面有两种，分别是synchronized,wait与notify </P>
+<P>5、继承时候类的执行顺序问题,一般都是选择题,问你将会打印出什么? <BR>答:父类： <BR>package test; <BR>public 
+class FatherClass <BR>{ <BR>public FatherClass() <BR>{ 
+<BR>System.out.println("FatherClass Create"); <BR>} <BR>} <BR>子类: <BR>package 
+test; <BR>import test.FatherClass; <BR>public class ChildClass extends 
+FatherClass <BR>{ <BR>public ChildClass() <BR>{ 
+<BR>System.out.println("ChildClass Create"); <BR>} <BR>public static void 
+main(String[] args) <BR>{ <BR>FatherClass fc = new FatherClass(); <BR>ChildClass 
+cc = new ChildClass(); <BR>} <BR>} <BR>输出结果： <BR>C:&gt;java test.ChildClass 
+<BR>FatherClass Create <BR>FatherClass Create <BR>ChildClass Create </P>
+<P>6、内部类的实现方式? <BR>答：示例代码如下： <BR>package test; <BR>public class OuterClass <BR>{ 
+<BR>private class InterClass <BR>{ <BR>public InterClass() <BR>{ 
+<BR>System.out.println("InterClass Create"); <BR>} <BR>} <BR>public OuterClass() 
+<BR>{ <BR>InterClass ic = new InterClass(); <BR>System.out.println("OuterClass 
+Create"); <BR>} <BR>public static void main(String[] args) <BR>{ <BR>OuterClass 
+oc = new OuterClass(); <BR>} <BR>} <BR>输出结果: <BR>C:&gt;java test/OuterClass 
+<BR>InterClass Create <BR>OuterClass Create <BR>再一个例题： <BR>public class 
+OuterClass { <BR>private double d1 = 1.0; <BR>//insert code here <BR>} <BR>You 
+need to insert an inner class declaration at line 3. Which two inner class 
+declarations are </P>
+<P>valid?(Choose two.) <BR>A. class InnerOne{ <BR>public static double methoda() 
+{return d1;} <BR>} <BR>B. public class InnerOne{ <BR>static double methoda() 
+{return d1;} <BR>} <BR>C. private class InnerOne{ <BR>double methoda() {return 
+d1;} <BR>} <BR>D. static class InnerOne{ <BR>protected double methoda() {return 
+d1;} <BR>} <BR>E. abstract class InnerOne{ <BR>public abstract double methoda(); 
+<BR>} <BR>说明如下： <BR>一.静态内部类可以有静态成员，而非静态内部类则不能有静态成员。 故 A、B 错 
+<BR>二.静态内部类的非静态成员可以访问外部类的静态变量，而不可访问外部类的非静态变量；return d1 出错。 </P>
+<P>故 D 错 <BR>三.非静态内部类的非静态成员可以访问外部类的非静态变量。 故 C 正确 <BR>四.答案为C、E </P>
+<P>7、垃圾回收机制,如何优化程序? <BR>希望大家补上，谢谢 </P>
+<P>8、float型float f=3.4是否正确? <BR>答:不正确。精度不准确,应该用强制类型转换，如下所示：float f=(float)3.4 
+</P>
+<P>9、介绍JAVA中的Collection FrameWork(包括如何写自己的数据结构)? <BR>答：Collection FrameWork如下： 
+<BR>Collection <BR>├List <BR>│├LinkedList <BR>│├ArrayList <BR>│└Vector 
+<BR>│　└Stack <BR>└Set <BR>Map <BR>├Hashtable <BR>├HashMap <BR>└WeakHashMap 
+<BR>Collection是最基本的集合接口，一个Collection代表一组Object，即Collection的元素（Elements） 
+<BR>Map提供key到value的映射 </P>
+<P>10、Java中异常处理机制，事件机制？ </P>
+<P>11、JAVA中的多形与继承？ <BR>希望大家补上，谢谢 </P>
+<P>12、抽象类与接口？ <BR>答：抽象类与接口都用于抽象，但是抽象类(JAVA中)可以有自己的部分实现，而接口则完全是一个标识(同时有多重继承的功能)。 
+</P>
+<P>13、Java 的通信编程，编程题(或问答)，用JAVA SOCKET编程，读服务器几个字符，再写入本地显示？ <BR>答:Server端程序: 
+<BR>package test; <BR>import java.net.*; <BR>import java.io.*; </P>
+<P>public class Server <BR>{ <BR>private ServerSocket ss; <BR>private Socket 
+socket; <BR>private BufferedReader in; <BR>private PrintWriter out; <BR>public 
+Server() <BR>{ <BR>try <BR>{ <BR>ss=new ServerSocket(10000); <BR>while(true) 
+<BR>{ <BR>socket = ss.accept(); <BR>String RemoteIP = 
+socket.getInetAddress().getHostAddress(); <BR>String RemotePort = 
+":"+socket.getLocalPort(); <BR>System.out.println("A client come 
+in!IP:"+RemoteIP+RemotePort); <BR>in = new BufferedReader(new </P>
+<P>InputStreamReader(socket.getInputStream())); <BR>String line = in.readLine(); 
+<BR>System.out.println("Cleint send is :" + line); <BR>out = new 
+PrintWriter(socket.getOutputStream(),true); <BR>out.println("Your Message 
+Received!"); <BR>out.close(); <BR>in.close(); <BR>socket.close(); <BR>} 
+<BR>}catch (IOException e) <BR>{ <BR>out.println("wrong"); <BR>} <BR>} 
+<BR>public static void main(String[] args) <BR>{ <BR>new Server(); <BR>} <BR>}; 
+<BR>Client端程序: <BR>package test; <BR>import java.io.*; <BR>import java.net.*; 
+</P>
+<P>public class Client <BR>{ <BR>Socket socket; <BR>BufferedReader in; 
+<BR>PrintWriter out; <BR>public Client() <BR>{ <BR>try <BR>{ 
+<BR>System.out.println("Try to Connect to 127.0.0.1:10000"); <BR>socket = new 
+Socket("127.0.0.1",10000); <BR>System.out.println("The Server Connected!"); 
+<BR>System.out.println("Please enter some Character:"); <BR>BufferedReader line 
+= new BufferedReader(new </P>
+<P>InputStreamReader(System.in)); <BR>out = new 
+PrintWriter(socket.getOutputStream(),true); <BR>out.println(line.readLine()); 
+<BR>in = new BufferedReader(new InputStreamReader(socket.getInputStream())); 
+<BR>System.out.println(in.readLine()); <BR>out.close(); <BR>in.close(); 
+<BR>socket.close(); <BR>}catch(IOException e) <BR>{ <BR>out.println("Wrong"); 
+<BR>} <BR>} <BR>public static void main(String[] args) <BR>{ <BR>new Client(); 
+<BR>} <BR>}; </P>
+<P>14、用JAVA实现一种排序，JAVA类实现序列化的方法(二种)？ 如在COLLECTION框架中，实现比较要实现什么样的接口？ 
+<BR>答:用插入法进行排序代码如下 <BR>package test; <BR>import java.util.*; <BR>class 
+InsertSort <BR>{ <BR>ArrayList al; <BR>public InsertSort(int num,int mod) <BR>{ 
+<BR>al = new ArrayList(num); <BR>Random rand = new Random(); 
+<BR>System.out.println("The ArrayList Sort Before:"); <BR>for (int i=0;i&lt;num 
+;i++ ) <BR>{ <BR>al.add(new Integer(Math.abs(rand.nextInt()) % mod + 1)); 
+<BR>System.out.println("al["+i+"]="+al.get(i)); <BR>} <BR>} <BR>public void 
+SortIt() <BR>{ <BR>Integer tempInt; <BR>int MaxSize=1; <BR>for(int 
+i=1;i&lt;al.size();i++) <BR>{ <BR>tempInt = (Integer)al.remove(i); 
+<BR>if(tempInt.intValue()&gt;=((Integer)al.get(MaxSize-1)).intValue()) <BR>{ 
+<BR>al.add(MaxSize,tempInt); <BR>MaxSize++; 
+<BR>System.out.println(al.toString()); <BR>} else { <BR>for (int 
+j=0;j&lt;MaxSize ;j++ ) <BR>{ <BR>if </P>
+<P>(((Integer)al.get(j)).intValue()&gt;=tempInt.intValue()) <BR>{ 
+<BR>al.add(j,tempInt); <BR>MaxSize++; <BR>System.out.println(al.toString()); 
+<BR>break; <BR>} <BR>} <BR>} <BR>} <BR>System.out.println("The ArrayList Sort 
+After:"); <BR>for(int i=0;i&lt;al.size();i++) <BR>{ 
+<BR>System.out.println("al["+i+"]="+al.get(i)); <BR>} <BR>} <BR>public static 
+void main(String[] args) <BR>{ <BR>InsertSort is = new InsertSort(10,100); 
+<BR>is.SortIt(); <BR>} <BR>} <BR>JAVA类实现序例化的方法是实现java.io.Serializable接口 
+<BR>Collection框架中实现比较要实现Comparable 接口和 Comparator 接口 </P>
+<P>15、编程：编写一个截取字符串的函数，输入为一个字符串和字节数，输出为按字节截取的字符串。 
+但是要保证汉字不被截半个，如"我ABC"4，应该截为"我AB"，输入"我ABC汉DEF"，6，应该输出为"我ABC"而不是"我ABC+汉的半个"。 
+<BR>答：代码如下： <BR>package test; </P>
+<P>class SplitString <BR>{ <BR>String SplitStr; <BR>int SplitByte; <BR>public 
+SplitString(String str,int bytes) <BR>{ <BR>SplitStr=str; <BR>SplitByte=bytes; 
+<BR>System.out.println("The String is:′"+SplitStr+"′;SplitBytes="+SplitByte); 
+<BR>} <BR>public void SplitIt() <BR>{ <BR>int loopCount; </P>
+<P><BR>loopCount=(SplitStr.length()%SplitByte==0)?(SplitStr.length()/SplitByte):(SplitStr.length()/Split 
+</P>
+<P>Byte+1); <BR>System.out.println("Will Split into "+loopCount); <BR>for (int 
+i=1;i&lt;=loopCount ;i++ ) <BR>{ <BR>if (i==loopCount){ </P>
+<P><BR>System.out.println(SplitStr.substring((i-1)*SplitByte,SplitStr.length())); 
+<BR>} else { </P>
+<P><BR>System.out.println(SplitStr.substring((i-1)*SplitByte,(i*SplitByte))); 
+<BR>} <BR>} <BR>} <BR>public static void main(String[] args) <BR>{ 
+<BR>SplitString ss = new SplitString("test中dd文dsaf中男大3443n中国43中国人 </P>
+<P>0ewldfls=103",4); <BR>ss.SplitIt(); <BR>} <BR>} </P>
+<P>16、JAVA多线程编程。 用JAVA写一个多线程程序，如写四个线程，二个加1，二个对一个变量减一，输出。 <BR>希望大家补上，谢谢 </P>
+<P>17、STRING与STRINGBUFFER的区别。 
+<BR>答：STRING的长度是不可变的，STRINGBUFFER的长度是可变的。如果你对字符串中的内容经常进行操作，特别是内容要修改时，那么使用StringBuffer，如果最后需要String，那么使用StringBuffer的toString()方法 
+</P>
+<P>Jsp方面 </P>
+<P>1、jsp有哪些内置对象?作用分别是什么? <BR>答:JSP共有以下9种基本内置组件（可与ASP的6种内部组件相对应）： <BR>　request 
+用户端请求，此请求会包含来自GET/POST请求的参数 <BR>response 网页传回用户端的回应 <BR>pageContext 网页的属性是在这里管理 
+<BR>session 与请求有关的会话期 <BR>application servlet 正在执行的内容 <BR>out 用来传送回应的输出 
+<BR>config servlet的构架部件 <BR>page JSP网页本身 <BR>exception 针对错误网页，未捕捉的例外 </P>
+<P>2、jsp有哪些动作?作用分别是什么? <BR>答:JSP共有以下6种基本动作 <BR>jsp:include：在页面被请求的时候引入一个文件。 
+<BR>jsp:useBean：寻找或者实例化一个JavaBean。 <BR>jsp:setProperty：设置JavaBean的属性。 
+<BR>jsp:getProperty：输出某个JavaBean的属性。 <BR>jsp:forward：把请求转到一个新的页面。 
+<BR>jsp:plugin：根据浏览器类型为Java插件生成OBJECT或EMBED标记 </P>
+<P>3、JSP中动态INCLUDE与静态INCLUDE的区别？ <BR>答：动态INCLUDE用jsp:include动作实现 
+<BR>&lt;jsp:include page="included.jsp" flush="true" 
+/&gt;它总是会检查所含文件中的变化，适合用于包含动态页面，并且可以带参数 
+<BR>静态INCLUDE用include伪码实现,定不会检查所含文件的变化，适用于包含静态页面 <BR>&lt;%@ include 
+file="included.htm" %&gt; </P>
+<P>4、两种跳转方式分别是什么?有什么区别? <BR>答：有两种，分别为： <BR>&lt;jsp:include page="included.jsp" 
+flush="true"&gt; <BR>&lt;jsp:forward page= "nextpage.jsp"/&gt; 
+<BR>前者页面不会转向include所指的页面，只是显示该页的结果，主页面还是原来的页面。执行完后还会回来，相当于函数调用。并且可以带参数.后者完全转向新页面，不会再回来。相当于go 
+to 语句。 </P>
+<P>Servlet方面 </P>
+<P>1、说一说Servlet的生命周期? 
+<BR>答:servlet有良好的生存期的定义，包括加载和实例化、初始化、处理请求以及服务结束。这个生存期由javax.servlet.Servlet接口的init,service和destroy方法表达。 
+</P>
+<P>2、Servlet版本间(忘了问的是哪两个版本了)的不同? <BR>希望大家补上，谢谢 </P>
+<P>3、JAVA SERVLET API中forward() 与redirect()的区别？ 
+<BR>答:前者仅是容器中控制权的转向，在客户端浏览器地址栏中不会显示出转向后的地址；后者则是完全的跳转，浏览器将会得到跳转的地址，并重新发送请求链接。这样，从浏览器的地址栏中可以看到跳转后的链接地址。所以，前者更加高效，在前者可以满足需要时，尽量使用forward()方法，并且，这样也有助于隐藏实际的链接。在有些情况下，比如，需要跳转到一个其它服务器上的资源，则必须使用sendRedirect()方法。 
+</P>
+<P>4、Servlet的基本架构 <BR>public class ServletName extends HttpServlet { <BR>public 
+void doPost(HttpServletRequest request, HttpServletResponse response) throws 
+<BR>ServletException, IOException { <BR>} <BR>public void 
+doGet(HttpServletRequest request, HttpServletResponse response) throws 
+<BR>ServletException, IOException { <BR>} <BR>} </P>
+<P>Jdbc、Jdo方面 </P>
+<P>1、可能会让你写一段Jdbc连Oracle的程序,并实现数据查询. <BR>答:程序如下： <BR>package hello.ant; 
+<BR>import java.sql.*; <BR>public class jdbc <BR>{ <BR>String 
+dbUrl="jdbc:oracle:thin:@127.0.0.1:1521:orcl"; <BR>String theUser="admin"; 
+<BR>String thePw="manager"; <BR>Connection c=null; <BR>Statement conn; 
+<BR>ResultSet rs=null; <BR>public jdbc() <BR>{ <BR>try{ 
+<BR>Class.forName("oracle.jdbc.driver.OracleDriver").newInstance(); <BR>c = 
+DriverManager.getConnection(dbUrl,theUser,thePw); <BR>conn=c.createStatement(); 
+<BR>}catch(Exception e){ <BR>e.printStackTrace(); <BR>} <BR>} <BR>public boolean 
+executeUpdate(String sql) <BR>{ <BR>try <BR>{ <BR>conn.executeUpdate(sql); 
+<BR>return true; <BR>} <BR>catch (SQLException e) <BR>{ <BR>e.printStackTrace(); 
+<BR>return false; <BR>} <BR>} <BR>public ResultSet executeQuery(String sql) 
+<BR>{ <BR>rs=null; <BR>try <BR>{ <BR>rs=conn.executeQuery(sql); <BR>} <BR>catch 
+(SQLException e) <BR>{ <BR>e.printStackTrace(); <BR>} <BR>return rs; <BR>} 
+<BR>public void close() <BR>{ <BR>try <BR>{ <BR>conn.close(); <BR>c.close(); 
+<BR>} <BR>catch (Exception e) <BR>{ <BR>e.printStackTrace(); <BR>} <BR>} 
+<BR>public static void main(String[] args) <BR>{ <BR>ResultSet rs; <BR>jdbc conn 
+= new jdbc(); <BR>rs=conn.executeQuery("select * from test"); <BR>try{ <BR>while 
+(rs.next()) <BR>{ <BR>System.out.println(rs.getString("id")); 
+<BR>System.out.println(rs.getString("name")); <BR>} <BR>}catch(Exception e) 
+<BR>{ <BR>e.printStackTrace(); <BR>} <BR>} <BR>} </P>
+<P>2、Class.forName的作用?为什么要用? <BR>答：调用该访问返回一个以字符串指定类名的类的对象。 </P>
+<P>3、Jdo是什么? <BR>答:JDO是Java对象持久化的新的规范，为java data 
+object的简称,也是一个用于存取某种数据仓库中的对象的标准化API。JDO提供了透明的对象存储，因此对开发人员来说，存储数据对象完全不需要额外的代码（如JDBC 
+API的使用）。这些繁琐的例行工作已经转移到JDO产品提供商身上，使开发人员解脱出来，从而集中时间和精力在业务逻辑上。另外，JDO很灵活，因为它可以在任何数据底层上运行。JDBC只是面向关系数据库（RDBMS)JDO更通用，提供到任何数据底层的存储功能，比如关系数据库、文件、XML以及对象数据库（ODBMS）等等，使得应用可移植性更强。 
+</P>
+<P>4、在ORACLE大数据量下的分页解决方法。一般用截取ID方法，还有是三层嵌套方法。 <BR>答:一种分页方法 <BR>&lt;% <BR>int 
+i=1; <BR>int numPages=14; <BR>String pages = request.getParameter("page") ; 
+<BR>int currentPage = 1; 
+<BR>currentPage=(pages==null)?(1):{Integer.parseInt(pages)} <BR>sql = "select 
+count(*) from tables"; <BR>ResultSet rs = DBLink.executeQuery(sql) ; 
+<BR>while(rs.next()) i = rs.getInt(1) ; <BR>int intPageCount=1; 
+<BR>intPageCount=(i%numPages==0)?(i/numPages):(i/numPages+1); <BR>int nextPage ; 
+<BR>int upPage; <BR>nextPage = currentPage+1; <BR>if (nextPage&gt;=intPageCount) 
+nextPage=intPageCount; <BR>upPage = currentPage-1; <BR>if (upPage&lt;=1) 
+upPage=1; <BR>rs.close(); <BR>sql="select * from tables"; 
+<BR>rs=DBLink.executeQuery(sql); <BR>i=0; 
+<BR>while((i&lt;numPages*(currentPage-1))&amp;&amp;rs.next()){i++;} <BR>%&gt; 
+<BR>//输出内容 <BR>//输出翻页连接 
+<BR>合计:&lt;%=currentPage%&gt;/&lt;%=intPageCount%&gt;&lt;a 
+href="List.jsp?page=1"&gt;第一页&lt;/a&gt;&lt;a </P>
+<P>href="List.jsp?page=&lt;%=upPage%&gt;"&gt;上一页&lt;/a&gt; <BR>&lt;% <BR>for(int 
+j=1;j&lt;=intPageCount;j++){ <BR>if(currentPage!=j){ <BR>%&gt; <BR>&lt;a 
+href="list.jsp?page=&lt;%=j%&gt;"&gt;[&lt;%=j%&gt;]&lt;/a&gt; <BR>&lt;% 
+<BR>}else{ <BR>out.println(j); <BR>} <BR>} <BR>%&gt; <BR>&lt;a 
+href="List.jsp?page=&lt;%=nextPage%&gt;"&gt;下一页&lt;/a&gt;&lt;a 
+href="List.jsp?page=&lt;%=intPageCount%&gt;"&gt;最后页 </P>
+<P>&lt;/a&gt; </P>
+<P><BR>Xml方面 </P>
+<P>1、xml有哪些解析技术?区别是什么? <BR>答:有DOM,SAX,STAX等 
+<BR>DOM:处理大型文件时其性能下降的非常厉害。这个问题是由DOM的树结构所造成的，这种结构占用的内存较多，而且DOM必须在解析文件之前把整个文档装入内存,适合对XML的随机访问SAX:不现于DOM,SAX是事件驱动型的XML解析方式。它顺序读取XML文件，不需要一次全部装载整个文件。当遇到像文件开头，文档结束，或者标签开头与标签结束时，它会触发一个事件，用户通过在其回调事件中写入处理代码来处理XML文件，适合对XML的顺序访问 
+<BR>STAX:Streaming API for XML (StAX) </P>
+<P>2、你在项目中用到了xml技术的哪些方面?如何实现的? 
+<BR>答:用到了数据存贮，信息配置两方面。在做数据交换平台时，将不能数据源的数据组装成XML文件，然后将XML文件压缩打包加密后通过网络传送给接收者，接收解密与解压缩后再同XML文件中还原相关信息进行处理。在做软件配置时，利用XML可以很方便的进行，软件的各种配置参数都存贮在XML文件中。 
+</P>
+<P>3、用jdom解析xml文件时如何解决中文问题?如何解析? <BR>答:看如下代码,用编码方式加以解决 <BR>package test; 
+<BR>import java.io.*; <BR>public class DOMTest <BR>{ <BR>private String inFile = 
+"c:\people.xml"; <BR>private String outFile = "c:\people.xml"; <BR>public static 
+void main(String args[]) <BR>{ <BR>new DOMTest(); <BR>} <BR>public DOMTest() 
+<BR>{ <BR>try <BR>{ <BR>javax.xml.parsers.DocumentBuilder builder = </P>
+<P><BR>javax.xml.parsers.DocumentBuilderFactory.newInstance().newDocumentBuilder(); 
+<BR>org.w3c.dom.Document doc = builder.newDocument(); <BR>org.w3c.dom.Element 
+root = doc.createElement("老师"); <BR>org.w3c.dom.Element wang = 
+doc.createElement("王"); <BR>org.w3c.dom.Element liu = doc.createElement("刘"); 
+<BR>wang.appendChild(doc.createTextNode("我是王老师")); <BR>root.appendChild(wang); 
+<BR>doc.appendChild(root); <BR>javax.xml.transform.Transformer transformer = 
+<BR>javax.xml.transform.TransformerFactory.newInstance().newTransformer(); 
+<BR>transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, 
+"gb2312"); 
+<BR>transformer.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes"); 
+</P>
+<P><BR>transformer.transform(new javax.xml.transform.dom.DOMSource(doc), <BR>new 
+</P>
+<P>javax.xml.transform.stream.StreamResult(outFile)); <BR>} <BR>catch (Exception 
+e) <BR>{ <BR>System.out.println (e.getMessage()); <BR>} <BR>} <BR>} </P>
+<P>4、编程用JAVA解析XML的方式. <BR>答:用SAX方式解析XML，XML文件如下： <BR>&lt;?xml version="1.0" 
+encoding="gb2312"?&gt; <BR>&lt;person&gt; <BR>&lt;name&gt;王小明&lt;/name&gt; 
+<BR>&lt;college&gt;信息学院&lt;/college&gt; 
+<BR>&lt;telephone&gt;6258113&lt;/telephone&gt; 
+<BR>&lt;notes&gt;男,1955年生,博士，95年调入海南大学&lt;/notes&gt; <BR>&lt;/person&gt; 
+<BR>事件回调类SAXHandler.java <BR>import java.io.*; <BR>import java.util.Hashtable; 
+<BR>import org.xml.sax.*; <BR>public class SAXHandler extends HandlerBase <BR>{ 
+<BR>private Hashtable table = new Hashtable(); <BR>private String currentElement 
+= null; <BR>private String currentValue = null; <BR>public void 
+setTable(Hashtable table) <BR>{ <BR>this.table = table; <BR>} <BR>public 
+Hashtable getTable() <BR>{ <BR>return table; <BR>} <BR>public void 
+startElement(String tag, AttributeList attrs) <BR>throws SAXException <BR>{ 
+<BR>currentElement = tag; <BR>} <BR>public void characters(char[] ch, int start, 
+int length) <BR>throws SAXException <BR>{ <BR>currentValue = new String(ch, 
+start, length); <BR>} <BR>public void endElement(String name) throws 
+SAXException <BR>{ <BR>if (currentElement.equals(name)) 
+<BR>table.put(currentElement, currentValue); <BR>} <BR>} 
+<BR>JSP内容显示源码,SaxXml.jsp: <BR>&lt;HTML&gt; <BR>&lt;HEAD&gt; 
+<BR>&lt;TITLE&gt;剖析XML文件people.xml&lt;/TITLE&gt; <BR>&lt;/HEAD&gt; 
+<BR>&lt;BODY&gt; <BR>&lt;%@ page errorPage="ErrPage.jsp" 
+<BR>contentType="text/html;charset=GB2312" %&gt; <BR>&lt;%@ page 
+import="java.io.*" %&gt; <BR>&lt;%@ page import="java.util.Hashtable" %&gt; 
+<BR>&lt;%@ page import="org.w3c.dom.*" %&gt; <BR>&lt;%@ page 
+import="org.xml.sax.*" %&gt; <BR>&lt;%@ page 
+import="javax.xml.parsers.SAXParserFactory" %&gt; <BR>&lt;%@ page 
+import="javax.xml.parsers.SAXParser" %&gt; <BR>&lt;%@ page import="SAXHandler" 
+%&gt; <BR>&lt;% <BR>File file = new File("c:\people.xml"); <BR>FileReader reader 
+= new FileReader(file); <BR>Parser parser; <BR>SAXParserFactory spf = 
+SAXParserFactory.newInstance(); <BR>SAXParser sp = spf.newSAXParser(); 
+<BR>SAXHandler handler = new SAXHandler(); <BR>sp.parse(new InputSource(reader), 
+handler); <BR>Hashtable hashTable = handler.getTable(); 
+<BR>out.println("&lt;TABLE BORDER=2&gt;&lt;CAPTION&gt;教师信息表&lt;/CAPTION&gt;"); 
+<BR>out.println("&lt;TR&gt;&lt;TD&gt;姓名&lt;/TD&gt;" + "&lt;TD&gt;" + 
+<BR>(String)hashTable.get(new String("name")) + "&lt;/TD&gt;&lt;/TR&gt;"); 
+<BR>out.println("&lt;TR&gt;&lt;TD&gt;学院&lt;/TD&gt;" + "&lt;TD&gt;" + 
+<BR>(String)hashTable.get(new String("college"))+"&lt;/TD&gt;&lt;/TR&gt;"); 
+<BR>out.println("&lt;TR&gt;&lt;TD&gt;电话&lt;/TD&gt;" + "&lt;TD&gt;" + 
+<BR>(String)hashTable.get(new String("telephone")) + "&lt;/TD&gt;&lt;/TR&gt;"); 
+<BR>out.println("&lt;TR&gt;&lt;TD&gt;备注&lt;/TD&gt;" + "&lt;TD&gt;" + 
+<BR>(String)hashTable.get(new String("notes")) + "&lt;/TD&gt;&lt;/TR&gt;"); 
+<BR>out.println("&lt;/TABLE&gt;"); <BR>%&gt; <BR>&lt;/BODY&gt; <BR>&lt;/HTML&gt; 
+</P>
+<P>EJB方面 </P>
+<P>1、EJB2.0有哪些内容?分别用在什么场合? EJB2.0和EJB1.1的区别? 
+<BR>答：规范内容包括Bean提供者，应用程序装配者，EJB容器，EJB配置工具，EJB服务提供者，系统管理员。这里面，EJB容器是EJB之所以能够运行的核心。EJB容器管理着EJB的创建，撤消，激活，去活，与数据库的连接等等重要的核心工作。JSP,Servlet,EJB,JNDI,JDBC,JMS..... 
+</P>
+<P>2、EJB与JAVA BEAN的区别？ <BR>答:Java Bean 是可复用的组件，对Java 
+Bean并没有严格的规范，理论上讲，任何一个Java类都可以是一个Bean。但通常情况下，由于Java Bean是被容器所创建（如Tomcat)的，所以Java 
+Bean应具有一个无参的构造器，另外，通常Java Bean还要实现Serializable接口用于实现Bean的持久性。Java 
+Bean实际上相当于微软COM模型中的本地进程内COM组件，它是不能被跨进程访问的。Enterprise Java Bean 
+相当于DCOM，即分布式组件。它是基于Java的远程方法调用（RMI）技术的，所以EJB可以被远程访问（跨进程、跨计算机）。但EJB必须被布署在诸如Webspere、WebLogic这样的容器中，EJB客户从不直接访问真正的EJB组件，而是通过其容器访问。EJB容器是EJB组件的代理，EJB组件由容器所创建和管理。客户通过容器来访问真正的EJB组件。 
+</P>
+<P>3、EJB的基本架构 <BR>答:一个EJB包括三个部分: <BR>Remote Interface 接口的代码 <BR>package Beans; 
+<BR>import javax.ejb.EJBObject; <BR>import java.rmi.RemoteException; <BR>public 
+interface Add extends EJBObject <BR>{ <BR>//some method declare <BR>} <BR>Home 
+Interface 接口的代码 <BR>package Beans; <BR>import java.rmi.RemoteException; 
+<BR>import jaax.ejb.CreateException; <BR>import javax.ejb.EJBHome; <BR>public 
+interface AddHome extends EJBHome <BR>{ <BR>//some method declare <BR>} 
+<BR>EJB类的代码 <BR>package Beans; <BR>import java.rmi.RemoteException; <BR>import 
+javax.ejb.SessionBean; <BR>import javx.ejb.SessionContext; <BR>public class 
+AddBean Implements SessionBean <BR>{ <BR>//some method declare <BR>} </P>
+<P>J2EE,MVC方面 </P>
+<P>1、MVC的各个部分都有那些技术来实现?如何实现? <BR>答:MVC是Model－View－Controller的简写。"Model" 
+代表的是应用的业务逻辑（通过JavaBean，EJB组件实现）， "View" 是应用的表示面（由JSP页面产生），"Controller" 
+是提供应用的处理过程控制（一般是一个Servlet），通过这种设计模型把应用逻辑，处理过程和显示逻辑分成不同的组件实现。这些组件可以进行交互和重用。 </P>
+<P>2、应用服务器与WEB SERVER的区别？ <BR>希望大家补上，谢谢 </P>
+<P><BR>3、J2EE是什么？ 
+<BR>答:Je22是Sun公司提出的多层(multi-diered),分布式(distributed),基于组件(component-base)的企业级应用模型(enterpriese 
+application 
+model).在这样的一个应用系统中，可按照功能划分为不同的组件，这些组件又可在不同计算机上，并且处于相应的层次(tier)中。所属层次包括客户层(clietn 
+tier)组件,web层和组件,Business层和组件,企业信息系统(EIS)层。 </P>
+<P>4、WEB SERVICE名词解释。JSWDL开发包的介绍。JAXP、JAXM的解释。SOAP、UDDI,WSDL解释。 <BR>答：Web 
+Service描述语言WSDL <BR>SOAP即简单对象访问协议(Simple Object Access 
+Protocol)，它是用于交换XML编码信息的轻量级协议。 <BR>UDDI 的目的是为电子商务建立标准；UDDI是一套基于Web的、分布式的、为Web 
+Service提供的、信息注册中心的实现标准规范，同时也包含一组使企业能将自身提供的Web Service注册，以使别的企业能够发现的访问协议的实现标准。 
+</P>
+<P><BR>5、BS与CS的联系与区别。 <BR>希望大家补上，谢谢 </P>
+<P>6、STRUTS的应用(如STRUTS架构) <BR>答：Struts是采用Java Servlet/JavaServer 
+Pages技术，开发Web应用程序的开放源码的framework。 
+采用Struts能开发出基于MVC(Model-View-Controller)设计模式的应用构架。 Struts有如下的主要功能： 
+<BR>一.包含一个controller servlet，能将用户的请求发送到相应的Action对象。 
+<BR>二.JSP自由tag库，并且在controller servlet中提供关联支持，帮助开发员创建交互式表单应用。 
+<BR>三.提供了一系列实用对象：XML处理、通过Java reflection APIs自动处理JavaBeans属性、国际化的提示和消息。 </P>
+<P>设计模式方面 </P>
+<P>1、开发中都用到了那些设计模式?用在什么场合? 
+<BR>答：每个模式都描述了一个在我们的环境中不断出现的问题，然后描述了该问题的解决方案的核心。通过这种方式，你可以无数次地使用那些已有的解决方案，无需在重复相同的工作。主要用到了MVC的设计模式。用来开发JSP/Servlet或者J2EE的相关应用。简单工厂模式等。 
+</P>
+<P><BR>2、UML方面 <BR>答：标准建模语言UML。用例图,静态图(包括类图、对象图和包图),行为图,交互图(顺序图,合作图),实现图, </P>
+<P>JavaScript方面 </P>
+<P>1、如何校验数字型? <BR>var re=/^d{1,8}$|.d{1,2}$/; <BR>var 
+str=document.form1.all(i).value; <BR>var r=str.match(re); <BR>if (r==null) <BR>{ 
+<BR>sign=-4; <BR>break; <BR>} <BR>else{ 
+<BR>document.form1.all(i).value=parseFloat(str); <BR>} </P>
+<P><BR>CORBA方面 </P>
+<P>1、CORBA是什么?用途是什么? <BR>答：CORBA 标准是公共对象请求代理结构(Common Object Request Broker 
+Architecture)，由对象管理组织 (Object Management Group，缩写为 OMG)标准化。它的组成是接口定义语言(IDL), 
+语言绑定(binding:也译为联编)和允许应用程序间互操作的协议。 其目的为： <BR>用不同的程序设计语言书写 <BR>在不同的进程中运行 
+<BR>为不同的操作系统开发 </P>
+<P><BR>LINUX方面 </P>
+<P>1、LINUX下线程，GDI类的解释。 
+<BR>答：LINUX实现的就是基于核心轻量级进程的"一对一"线程模型，一个线程实体对应一个核心轻量级进程，而线程之间的管理在核外函数库中实现。 
+<BR>GDI类为图像设备编程接口类库。</P>
+<P>=================================================</P>
+<P>一些著名的大公司面试题目往往很基础. </P>
+<P>一、Java基础知识<BR>1. Java有那些基本数据类型，String是不是基本数据类型，他们有何区别。<BR>&nbsp;Integer 
+literals,Floating-point literals,character literals,Boolean literal,String 
+iteral.<BR>&nbsp;String 不是基本数据类型<BR>2. 
+字符串的操作：<BR>写一个方法，实现字符串的反转，如：输入abc，输出cba<BR>&nbsp;&nbsp;&nbsp; public static 
+String reverse(String s){<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int 
+length=s.length();<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBuffer 
+result=new StringBuffer(length);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+for(int 
+i=length-1;i&gt;=0;i--)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+result.append(s.charAt(i));<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 
+result.toString();<BR>&nbsp;&nbsp;&nbsp; 
+}<BR>写一个方法，实现字符串的替换，如：输入bbbwlirbbb，输出bbbhhtccc。<BR>3. 
+数据类型之间的转换<BR>如何将数值型字符转换为数字（Integer，Double）<BR>如何将数字转换为字符<BR>如何去小数点前两位，并四舍五入。<BR>4. 
+日期和时间<BR>如何取得年月日，小时分秒<BR>Date dat=new 
+Date();<BR>dat.getYear();dat.getMonth();dat.getDay();dat.getHours();...<BR>如何取得从1970年到现在的毫秒数<BR>long 
+now=dat.getTime();<BR>如何获取某个日期是当月的最后一天<BR>如何格式化日期<BR>DateFormate 
+df=DateFormate.getInstance();<BR>df.Format(dat);<BR>5. 数组和集合<BR>6. 
+文件和目录（I/O）操作<BR>如何列出某个目录下的所有文件<BR>如何列出某个目录下的所有子目录<BR>判断一个文件或目录是否存在<BR>如何读写文件<BR>7. 
+Java多态的实现（继承、重载、覆盖）<BR>8. 编码转换，怎样实现将GB2312编码的字符串转换为ISO-8859-1编码的字符串。<BR>9. 
+Java中访问数据库的步骤，Statement和PreparedStatement之间的区别。<BR>10. 
+找出下列代码可能存在的错误，并说明原因：<BR>二、JSP&amp;Servlet技术<BR>1. 
+描述JSP和Servlet的区别、共同点、各自应用的范围<BR>2. 在Web开发中需要处理HTML标记时，应做什么样的处理，要筛选那些字符（&lt; &gt; 
+&amp; ""）<BR>3. 在JSP中如何读取客户端的请求，如何访问CGI变量，如何确定某个Jsp文件的真实路径。<BR>4. 
+描述Cookie和Session的作用，区别和各自的应用范围，Session工作原理。<BR>5. 列出Jsp中包含外部文件的方式，两者有何区别。<BR>6. 
+说明Jsp中errorPage的作用，应用范围。<BR>7. 介绍在Jsp中如何使用JavaBeans。<BR>8. 简单介绍JSP的标记库<BR>9. 
+Jsp和Servlet中的请求转发分别如何实现。<BR>三、J2EE相关知识<BR>1. 介绍J2EE、J2SE、J2SE的区别。<BR>2. 
+J2EE是一种技术还是一种平台，他提供了那些技术。<BR>3. 什么是Application Server，它有什么功能和优点。<BR>4. 
+简单介绍连接池的优点和原理。<BR>5. Web.xml的作用<BR>四、其他<BR>1. 
+Web安全性的考虑（表单验证、浏览器Basic方式的验证，应用程序的安全性，SSL，代码考虑）<BR>2. 简单介绍您所了解的MVC。<BR>3. 
+简单介绍所了解的XML。<BR>4. 文档和编码规范<BR>5. Java中的分页、效率考虑。<BR>6. 简单介绍您所了解的structs。</P>
+<P><BR>找出以下程序错误。<BR>Class Test{<BR>&nbsp;&nbsp;&nbsp; private String 
+par1;<BR>&nbsp;&nbsp;&nbsp; private String par2;<BR>&nbsp;&nbsp;&nbsp; 
+Test(){<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; 
+public static void main(String[] 
+arg){<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a 
+;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+if(a){<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+System.out.println("par1="+par1);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+}else{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+System.out.println("par2=" + 
+par2);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp; 
+}<BR>}</P>
+<P>==================================</P>
+<P>public class Test <BR>{ <BR>public static int a = 5; <BR>public static void 
+main(String[] args) <BR>{ <BR>Test test = new Test(); <BR>test = null; 
+<BR>System.out.println(test.a); <BR>} <BR>} <BR>答案是5，a为静态变量；不依赖对象，即使为空。</P>
+<P><BR>阅读全文(576) | 回复(3) | 引用(0) </P>
+<P><BR>J2EE初学者需要理解的问题 <BR>&nbsp;</P>
+<P>原文出处： <A 
+href="http://www.scjp.com.cn/news/article_show.asp?id=19617">http://www.scjp.com.cn/news/article_show.asp?id=19617</A><BR>&nbsp; 
+<BR>一、J2EE提出的背景 <BR>1、 企业级应用框架的需求 </P>
+<P>在许多企业级应用中，例如数据库连接、邮件服务、事务处理等都是一些通用企业需求模块，这些模块如果每次再开发中都由开发人员来完成的话，将会造成开发周期长和代码可*性差等问题。于是许多大公司开发了自己的通用模块服务。这些服务性的软件系列统称为中间件。 
+</P>
+<P>2、 为了通用必须要提出规范，不然无法达到通用 </P>
+<P>在上面的需求基础之上，许多公司都开发了自己的中间件，但其与用户的沟通都各有不同，从而导致用户无法将各个公司不同的中间件组装在一块为自己服务。从而产生瓶颈。于是提出标准的概念。其实J2EE就是基于JAVA技术的一系列标准。 
+</P>
+<P>注：中间件的解释 
+中间件处在操作系统和更高一级应用程序之间。他充当的功能是：将应用程序运行环境与操作系统隔离，从而实现应用程序开发者不必为更多系统问题忧虑，而直接关注该应用程序在解决问题上的能力 
+。我们后面说到的容器的概念就是中间件的一种。 </P>
+<P>二、相关名词解释 <BR>容器：充当中间件的角色 </P>
+<P>WEB容器：给处于其中的应用程序组件（JSP，SERVLET）提供一个环境，使JSP,SERVLET直接更容器中的环境变量接口交互，不必关注其它系统问题。主要有WEB服务器来实现。例如：TOMCAT,WEBLOGIC,WEBSPHERE等。该容器提供的接口严格遵守J2EE规范中的WEB 
+APPLICATION 标准。我们把遵守以上标准的WEB服务器就叫做J2EE中的WEB容器。 </P>
+<P>EJB容器：Enterprise java bean 
+容器。更具有行业领域特色。他提供给运行在其中的组件EJB各种管理功能。只要满足J2EE规范的EJB放入该容器，马上就会被容器进行高效率的管理。并且可以通过现成的接口来获得系统级别的服务。例如邮件服务、事务管理。 
+</P>
+<P>WEB容器和EJB容器在原理上是大体相同的，更多的区别是被隔离的外界环境。WEB容器更多的是跟基于HTTP的请求打交道。而EJB容器不是。它是更多的跟数据库、其它服务打交道。但他们都是把与外界的交互实现从而减轻应用程序的负担。例如SERVLET不用关心HTTP的细节，直接引用环境变量session,request,response就行、EJB不用关心数据库连接速度、各种事务控制，直接由容器来完成。 
+</P>
+<P>RMI/IIOP:远程方法调用/internet对象请求中介协议，他们主要用于通过远程调用服务。例如，远程有一台计算机上运行一个程序，它提供股票分析服务，我们可以在本地计算机上实现对其直接调用。当然这是要通过一定的规范才能在异构的系统之间进行通信。RMI是JAVA特有的。 
+</P>
+<P>JNDI:JAVA命名目录服务。主要提供的功能是：提供一个目录系统，让其它各地的应用程序在其上面留下自己的索引，从而满足快速查找和定位分布式应用程序的功能。 
+</P>
+<P>JMS:JAVA消息服务。主要实现各个应用程序之间的通讯。包括点对点和广播。 </P>
+<P>JAVAMAIL:JAVA邮件服务。提供邮件的存储、传输功能。他是JAVA编程中实现邮件功能的核心。相当MS中的EXCHANGE开发包。 </P>
+<P>JTA：JAVA事务服务。提供各种分布式事务服务。应用程序只需调用其提供的接口即可。 </P>
+<P>JAF:JAVA安全认证框架。提供一些安全控制方面的框架。让开发者通过各种部署和自定义实现自己的个性安全控制策略。 </P>
+<P>EAI:企业应用集成。是一种概念，从而牵涉到好多技术。J2EE技术是一种很好的集成实现。 </P>
+<P>三、J2EE的优越性 <BR>1、 基于JAVA 技术，平台无关性表现突出 </P>
+<P>2、 开放的标准，许多大型公司已经实现了对该规范支持的应用服务器。如BEA ,IBM,ORACLE等。 </P>
+<P>3、 提供相当专业的通用软件服务。 </P>
+<P>4、 提供了一个优秀的企业级应用程序框架，对快速高质量开发打下基础 </P>
+<P>四、现状 <BR>J2EE是由SUN 公司开发的一套企业级应用规范。现在最高版本是1.4。支持J2EE的应用服务器有IBM WEBSPHERE 
+APPLICATION SERVER,BEA WEBLOGIC SERVER,JBOSS,ORACLE APPLICATION SERVER,SUN ONE 
+APPLICATION SERVER 等。 <BR>&nbsp;<BR>ff2004发表评论于2004-12-14 22:07:37 | 引用 </P>
+<P><BR>学习Java的30个基本概念 <BR>&nbsp;</P>
+<P><BR>Java概述:</P>
+<P><BR>目前Java主要应用于中间件的开发(middleware)---处理客户机于服务器之间的通信技术,早期的实践证明,Java不适合pc应用程序的开发,其发展逐渐变成在开发手持设备,互联网信息站,及车载计算机的开发.Java于其他语言所不同的是程序运行时提供了平台的独立性,称许可以在windows,solaris,linux其他操作系统上使用完全相同的代码.Java的语法与C++语法类似,C++/C程序员很容易掌握,而且Java是完全的彻底的面向对象的,其中提出了很好的GC(Garbage 
+Collector)垃圾处理机制,防止内存溢出.</P>
+<P><BR>Java的白皮书为我们提出了Java语言的11个关键特性.</P>
+<P><BR>(1)Easy:Java的语法比C++的相对简单,另一个方面就是Java能使软件在很小的机器上运行,基础解释其和类库的支持的大小约为40kb,增加基本的标准库和线程支持的内存需要增加125kb.</P>
+<P><BR>(2)分布式:Java带有很强大的TCP/IP协议族的例程库,Java应用程序能够通过URL来穿过网络来访问远程对象,由于servlet机制的出现,使Java编程非常的高效,现在许多的大的web 
+server都支持servlet.</P>
+<P><BR>(3)OO:面向对象设计是把重点放在对象及对象的接口上的一个编程技术.其面向对象和C++有很多不同,在与多重继承的处理及Java的原类模型.</P>
+<P><BR>(4)健壮特性:Java采取了一个安全指针模型,能减小重写内存和数据崩溃的可能性。</P>
+<P><BR>(5)安全:Java用来设计网路和分布系统,这带来了新的安全问题,Java可以用来构建防病毒和防攻击的System.事实证明Java在防毒这一方面做的比较好.</P>
+<P>(6)中立体系结构:Java编译其生成体系结构中立的目标文件格式可以在很多处理器上执行,编译器产生的指令字节码(Javabytecode)实现此特性,此字节码可以在任何机器上解释执行.</P>
+<P><BR>(7)可移植性:Java中对基本数据结构类型的大小和算法都有严格的规定所以可移植性很好.</P>
+<P><BR>(8)多线程:Java处理多线程的过程很简单,Java把多线程实现交给底下操作系统或线程程序完成.所以多线程是Java作为服务器端开发语言的流行原因之一</P>
+<P><BR>(9)Applet和servlet:能够在网页上执行的程序叫Applet,需要支持Java的浏览器很多,而applet支持动态的网页,这是很多其他语言所不能做到的.</P>
+<P><BR>基本概念:</P>
+<P><BR>1.OOP中唯一关系的是对象的接口是什么,就像计算机的销售商她不管电源内部结构是怎样的,他只关系能否给你提供电就行了,也就是只要知道can or 
+not而不是how and 
+why.所有的程序是由一定的属性和行为对象组成的,不同的对象的访问通过函数调用来完成,对象间所有的交流都是通过方法调用,通过对封装对象数据,很大限度上提高复用率.</P>
+<P><BR>2.OOP中最重要的思想是类,类是模板是蓝图,从类中构造一个对象,即创建了这个类的一个实例(instance)</P>
+<P><BR>3.封装:就是把数据和行为结合起在一个包中)并对对象使用者隐藏数据的实现过程,一个对象中的数据叫他的实例字段(instance 
+field)</P>
+<P><BR>4.通过扩展一个类来获得一个新类叫继承(inheritance),而所有的类都是由Object根超类扩展而得,根超类下文会做介绍.</P>
+<P><BR>5.对象的3个主要特性 </P>
+<P>behavior---说明这个对象能做什么. </P>
+<P>state---当对象施加方法时对象的反映.</P>
+<P>identity---与其他相似行为对象的区分标志.</P>
+<P>每个对象有唯一的indentity 而这3者之间相互影响.</P>
+<P>6.类之间的关系:</P>
+<P>use-a :依赖关系</P>
+<P>has-a :聚合关系</P>
+<P>is-a :继承关系--例:A类继承了B类,此时A类不仅有了B类的方法,还有其自己的方法.(个性存在于共性中)</P>
+<P><BR>7.构造对象使用构造器:构造器的提出,构造器是一种特殊的方法,构造对象并对其初始化.</P>
+<P>例:Data类的构造器叫Data</P>
+<P>new Data()---构造一个新对象,且初始化当前时间.</P>
+<P>Data happyday=new </P>
+<P>Data()---把一个对象赋值给一个变量happyday,从而使该对象能够多次使用,此处要声明的使变量与对象变量二者是不同的.new返回的值是一个引用.</P>
+<P>构造器特点:构造器可以有0个,一个或多个参数</P>
+<P>构造器和类有相同的名字</P>
+<P>一个类可以有多个构造器</P>
+<P>构造器没有返回值</P>
+<P>构造器总是和new运算符一起使用.</P>
+<P><BR>8.重载:当多个方法具有相同的名字而含有不同的参数时,便发生重载.编译器必须挑选出调用哪个方法.</P>
+<P><BR>9.包(package)Java允许把一个或多个类收集在一起成为一组,称作包,以便于组织任务,标准Java库分为许多包.java.lang 
+java.util java,net等,包是分层次的所有的java包都在java和javax包层次内.</P>
+<P><BR>10.继承思想:允许在已经存在的类的基础上构建新的类,当你继承一个已经存在的类时,那么你就复用了这个类的方法和字段,同时你可以在新类中添加新的方法和字段.</P>
+<P><BR>11.扩展类:扩展类充分体现了is-a的继承关系. 形式为:class (子类) extends (基类).</P>
+<P><BR>12.多态:在java中,对象变量是多态的.而java中不支持多重继承.</P>
+<P><BR>13.动态绑定:调用对象方法的机制.</P>
+<P>(1)编译器检查对象声明的类型和方法名.</P>
+<P>(2)编译器检查方法调用的参数类型.</P>
+<P>(3)静态绑定:若方法类型为priavte static final 编译器会准确知道该调用哪个方法.</P>
+<P>(4)当程序运行并且使用动态绑定来调用一个方法时,那么虚拟机必须调用x所指向的对象的实际类型相匹配的方法版本.</P>
+<P>(5)动态绑定:是很重要的特性,它能使程序变得可扩展而不需要重编译已存代码.</P>
+<P><BR>14.final类:为防止他人从你的类上派生新类,此类是不可扩展的.</P>
+<P><BR>15.动态调用比静态调用花费的时间要长,</P>
+<P><BR>16.抽象类:规定一个或多个抽象方法的类本身必须定义为abstract例: public abstract string 
+getDescripition</P>
+<P><BR>17.Java中的每一个类都是从Object类扩展而来的.</P>
+<P><BR>18.object类中的equal和toString方法.equal用于测试一个对象是否同另一个对象相等.toString返回一个代表该对象的字符串,几乎每一个类都会重载该方法,以便返回当前状态的正确表示.(toString 
+方法是一个很重要的方法)</P>
+<P><BR>19.通用编程:任何类类型的所有值都可以同object类性的变量来代替.</P>
+<P><BR>20.数组列表:ArrayList动态数组列表,是一个类库,定义在java.uitl包中,可自动调节数组的大小.</P>
+<P><BR>21.class类 
+object类中的getclass方法返回ckass类型的一个实例,程序启动时包含在main方法的类会被加载,虚拟机要加载他需要的所有类,每一个加载的类都要加载它需要的类.</P>
+<P><BR>22.class类为编写可动态操纵java代码的程序提供了强大的功能反射,这项功能为JavaBeans特别有用,使用反射Java能支持VB程序员习惯使用的工具.能够分析类能力的程序叫反射器,Java中提供此功能的包叫Java.lang.reflect反射机制十分强大.</P>
+<P>1.在运行时分析类的能力.</P>
+<P>2.在运行时探察类的对象.</P>
+<P>3.实现通用数组操纵代码.</P>
+<P>4.提供方法对象.</P>
+<P>而此机制主要针对是工具者而不是应用及程序.</P>
+<P>反射机制中的最重要的部分是允许你检查类的结构.用到的API有:</P>
+<P>java.lang.reflect.Field 返回字段.</P>
+<P>java.reflect.Method 返回方法.</P>
+<P>java.lang.reflect.Constructor 返回参数.</P>
+<P>方法指针:java没有方法指针,把一个方法的地址传给另一个方法,可以在后面调用它,而接口是更好的解决方案.</P>
+<P>&nbsp;</P>
+<P>23.接口(Interface)说明类该做什么而不指定如何去做,一个类可以实现一个或多个interface.</P>
+<P><BR>24.接口不是一个类,而是对符合接口要求的类的一套规范.若实现一个接口需要2个步骤:</P>
+<P>1.声明类需要实现的指定接口.</P>
+<P>2.提供接口中的所有方法的定义.</P>
+<P>声明一个类实现一个接口需要使用implements 关键字class actionB implements Comparable 
+其actionb需要提供CompareTo方法,接口不是类,不能用new实例化一个接口.</P>
+<P><BR>25.一个类只有一个超类,但一个类能实现多个接口.Java中的一个重要接口Cloneable</P>
+<P><BR>26.接口和回调.编程一个常用的模式是回调模式,在这种模式中你可以指定当一个特定时间发生时回调对象上的方法.例:ActionListener 
+接口监听.</P>
+<P>类似的API有:java.swing.JOptionPane</P>
+<P>java.swing.Timer</P>
+<P>java.awt.Tookit</P>
+<P><BR>27.对象clone:clone方法是object一个保护方法,这意味着你的代码不能简单的调用它.</P>
+<P><BR>28.内部类:一个内部类的定义是定义在另一个内部的类</P>
+<P>原因是:1.一个内部类的对象能够访问创建它的对象的实现,包括私有数据</P>
+<P>2.对于同一个包中的其他类来说,内部类能够隐藏起来.</P>
+<P>3.匿名内部类可以很方便的定义回调.</P>
+<P>4.使用内部类可以非常方便的编写事件驱动程序.</P>
+<P><BR>29.代理类(proxy):1.指定接口要求所有代码 2.object类定义的所有的方法(toString equals)</P>
+<P><BR>30.数据类型:Java是强调类型的语言,每个变量都必须先申明它都类型,java中总共有8个基本类型.4种是整型,2种是浮点型,一种是字符型,被用于Unicode编码中的字符,布尔型.</P>
+<P><BR>(来源：PConline)<BR>&nbsp;<BR></P>
+<P></P>
+<P class=diaryFoot>- 作者： <A title=源一 
+onclick="window.open('/control/postMessage.b?receiverName=源一&amp;receiver=122794','发送短消息','width=310,height=265')" 
+href="javascript:void(0);">源一</A> 2005年01月6日, 星期四 15:35 <A 
+href="javascript:void(keyit=window.open('http://blogmark.blogchina.com/jsp/key/quickaddkey.jsp?k='+encodeURI('Java常见面试题集')+'&amp;u='+encodeURI('http://no2space.blogchina.com/no2space/504914.html')+'&amp;c='+encodeURI(''),'keyit','scrollbars=no,width=500,height=430,status=no,resizable=yes'));keyit.focus();">加入博采</A> 
+</P></DIV>
+<DIV class=operation><A name=trackback>
+<H3>Trackback</H3></A>
+<P class=trackback>你可以使用这个链接引用该篇文章 
+http://publishblog.blogchina.com/blog/tb.b?diaryID=504914 </P></DIV>
+<DIV class=operation><A name=comment>
+<H3>回复</H3></A><A name=comment$(remark.remarkID)>
+<H4>- 评论人：是浮点型, </H4></A>
+<H5>Wed Jan 19 14:13:48 CST 2005　 </H5><BR>
+<P class=comment>是浮点型,<BR><BR></P></DIV>
+<DIV class=operation>
+<TABLE class=comment cellSpacing=0 cellPadding=0 width=700 border=0>
+  <FORM id=replyForm method=post><INPUT type=hidden value=120187 name=blogID> 
+  <INPUT type=hidden value=504914 name=diaryID> <INPUT type=hidden 
+  value=no2space name=blogDomino>
+  <SCRIPT>
+if(getCookie('userID') == null){        
+document.write('<tr><td width="70">发布人：</td>');
+document.write('<td width="150"> <input name="remark.authorNameFUI" type="text" size="20" class="inputStyle" maxlength="20"></td>');
+document.write('<td width="70">邮箱：</td>');
+document.write('<td width="435"> <input name="remark.authorEmail" type="text" size="20" class="inputStyle" maxlength="40"></td>');
+document.write('</tr><tr><td>主　页：</td>');
+document.write('<td colspan="3"> <input name="remark.authorURL" type="text" class="inputStyle" value="HTTP://" size="63" maxlength="40"></td></tr>');
+}else{
+document.write('<input type="hidden" name="remark.authorNameFUI" value="Blogchina网友">');
+}
+</SCRIPT>
+   
+  <TBODY>
+  <TR align=left>
+    <TD colSpan=4>评论内容：<BR><TEXTAREA class=textStyle id=remark name=remark.remarkFUI rows=8 cols=60>          </TEXTAREA> 
+    </TD></TR>
+  <TR align=left>
+    <TD colSpan=4>　　　　　　 　　　　　　 <INPUT onclick=reply() type=button value=提交> 　 
+<INPUT type=reset value=重置> </TD></TR></FORM></TBODY></TABLE></DIV></DIV>
+<SCRIPT src="Java常见面试题集--二天一流.files/extend3.js" type=text/javascript></SCRIPT>
+
+<DIV id=footer><A href="http://blog.blogchina.com/">2003-2004 BlogChina.COM All 
+rights reserved</A><BR><A href="http://www.blogdriver.com/">Powered by 
+BlogDriver 2.1</A> </DIV></BODY></HTML>

@@ -1,0 +1,59 @@
+
+
+	var d=document;
+	var ac="56382";
+	//var WSpn="";
+	//var pg=Math.round(Math.random()*(99999 - 1))+1;
+	var ref = d.referrer;
+	var WSvp = (typeof(document.location) != "undefined") ? document.location : "";
+		if(WSvp) {
+
+		WSvp = escape(WSvp);
+	}
+
+	if(ref) {
+		ref.toLowerCase();
+		if(ref.indexOf("unknown") != -1) {
+			ref = "";
+		}
+		ref = escape(ref);
+	}
+
+	var dobj = new Date();
+	var tzoffset = "";
+	if (dobj.getTimezoneOffset) tzoffset = dobj.getTimezoneOffset();
+	var langs = "";
+	if (navigator.systemLanguage) langs =  navigator.systemLanguage;
+	var ck = "0";
+
+	var s=screen;
+	var sw=s.width,sh=s.height,sc=s.colorDepth,sp=s.pixelDepth;
+	if (!sw){var sw="";}
+	if (!sh){var sh="";}
+	if (!sc){var sc=sp;}
+	if (!sc){var sc="";}
+
+	var use37=0;
+	try {
+		var c3721= new ActiveXObject("CnsHelper.CH");
+	}catch (ex){
+		c3721 = null ;
+	}
+	if(c3721==null){
+		use37=0;
+	}else{
+		use37=1;
+	}
+	var usehp=0;
+	try {
+		var chp= new ActiveXObject("Assist.EasyAssist");
+	}catch (ex){
+		chp = null ;
+	}
+	if(chp==null){
+		usehp=0;
+	}else{
+		usehp=1;
+	}
+	d.write('<scr'+'ipt language=JavaScript src="http://ucstat.baidu.com/stat.php?cid=' +ac+'&ref=' +ref+'&page=' +WSvp+ '&sw=' +sw+ '&sh=' +sh+ '&cd=' +sc+ '&tz=' +tzoffset+'&la=' + langs +'&use37=' + use37 + '&usehp=' + usehp+ '"><\/script>');
+	

@@ -1,0 +1,201 @@
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #333333
+}
+A:visited {
+	COLOR: #333333
+}
+A:hover {
+	COLOR: #ff6600
+}
+A:active {
+	COLOR: #333333
+}
+A.channel:link {
+	COLOR: #333333
+}
+A.channel:visited {
+	COLOR: #333333
+}
+A.channel:hover {
+	COLOR: #ff6600
+}
+A.channel:active {
+	COLOR: #333333
+}
+A.channel2:link {
+	COLOR: #333333
+}
+A.channel2:visited {
+	COLOR: #333333
+}
+A.channel2:hover {
+	COLOR: #ff6600
+}
+A.channel2:active {
+	COLOR: #333333
+}
+A.bottom:link {
+	COLOR: #333333
+}
+A.bottom:visited {
+	COLOR: #333333
+}
+A.bottom:hover {
+	COLOR: #ff6600
+}
+A.bottom:active {
+	COLOR: #333333
+}
+A.class:link {
+	COLOR: #333333
+}
+A.class:visited {
+	COLOR: #333333
+}
+A.class:hover {
+	COLOR: #ff6600
+}
+A.class:active {
+	COLOR: #333333
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #f6f6f6; FONT-SIZE: 9pt; BACKGROUND: url(/skin/adv43/ad_bg.gif); SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #cccccc; SCROLLBAR-3DLIGHT-COLOR: #cccccc; SCROLLBAR-ARROW-COLOR: #330000; SCROLLBAR-TRACK-COLOR: #f6f6f6; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: ËÎÌו
+}
+INPUT {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #666666 1px solid; COLOR: #666666; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+BUTTON {
+	FONT-SIZE: 9pt; HEIGHT: 20px
+}
+SELECT {
+	FONT-SIZE: 9pt; HEIGHT: 20px
+}
+.top_userlogin {
+	COLOR: #037fa8
+}
+.s_headline1 {
+	COLOR: #ff6600
+}
+.s_headline2 {
+	COLOR: #ff6600
+}
+.s_headline3 {
+	COLOR: #ff6600
+}
+.s_headline4 {
+	COLOR: red
+}
+.top_tdbgall {
+	BORDER-RIGHT: #a7a9a7 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #a7a9a7 1px solid; WIDTH: 760px
+}
+.top_channel {
+	BACKGROUND: url(/skin/adv43/ad_dhbg.gif); COLOR: #333333! important; HEIGHT: 29px; TEXT-ALIGN: right
+}
+.top_announce {
+	BACKGROUND: url(/skin/blue/top_nav_menu.gif); COLOR: #333333; HEIGHT: 30px
+}
+.top1_announce {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.announce:link {
+	COLOR: #ffffff
+}
+A.announce:visited {
+	COLOR: #ffffff
+}
+A.announce:hover {
+	COLOR: #ffffff
+}
+A.announce:active {
+	COLOR: #ffffff
+}
+.top_nav_menu {
+	BACKGROUND: url(/skin/blue/top_nav_menu.gif); COLOR: #333333; HEIGHT: 30px
+}
+.top_path {
+	BORDER-RIGHT: #a7a9a7 1px solid; BACKGROUND: url(/skin/adv43/ad_mqdh.gif); BORDER-LEFT: #a7a9a7 1px solid; WIDTH: 760px; HEIGHT: 25px
+}
+.top_userlogin {
+	COLOR: #037fa8
+}
+.center_tdbgall {
+	BORDER-RIGHT: #a7a9a7 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #a7a9a7 1px solid
+}
+.left_tdbgall {
+	BORDER-RIGHT: #a7a9a7 1px solid; BACKGROUND: #f8f8f8
+}
+.left_title {
+	FONT-WEIGHT: bold; BACKGROUND: url(/skin/adv43/ad_dhtp.gif); COLOR: #333333; HEIGHT: 28px
+}
+.left_tdbg1 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; LINE-HEIGHT: 150%
+}
+.left_tdbg2 {
+	
+}
+.main_tdbgall {
+	BACKGROUND: #ffffff; WIDTH: 572px
+}
+.main_shadow {
+	
+}
+.main_announce {
+	BACKGROUND: url(/skin/blue/main_announce.gif); COLOR: #333333; HEIGHT: 25px
+}
+.main_search {
+	BACKGROUND: #f7f7f7; COLOR: #333333; HEIGHT: 25px
+}
+.main_top {
+	BACKGROUND: url(/skin/blue/main_top.gif); HEIGHT: 187px
+}
+.main_title_575 {
+	BACKGROUND: url(/skin/adv43/ad_dhtp.gif); COLOR: #333333; HEIGHT: 28px
+}
+.main_tdbg_575 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; LINE-HEIGHT: 150%; TEXT-ALIGN: left
+}
+.main_title_282 {
+	BACKGROUND: url(/skin/adv43/ad_dhtp.gif); COLOR: #333333; HEIGHT: 28px
+}
+.main_tdbg_282 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; LINE-HEIGHT: 150%; TEXT-ALIGN: left
+}
+.listbg {
+	HEIGHT: 24px
+}
+.listbg2 {
+	HEIGHT: 24px
+}
+.main_articletitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #ff0000; LINE-HEIGHT: 150%
+}
+.main_articlesubheading {
+	FONT-WEIGHT: bold; COLOR: #037fa8; LINE-HEIGHT: 150%
+}
+.main_title_760 {
+	PADDING-LEFT: 5px; BACKGROUND: url(/skin/blue/main_title_760.gif); COLOR: #037fa8; HEIGHT: 25px
+}
+.main_tdbg_760 {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.bottom_tdbgall {
+	BORDER-RIGHT: #a7a9a7 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #a7a9a7 1px solid; WIDTH: 760px
+}
+.bottom_adminlogo {
+	BACKGROUND: url(/skin/adv43/ad_dhbg.gif); COLOR: #333333; HEIGHT: 29px
+}
+.bottom_copyright {
+	BACKGROUND: #ffffff; COLOR: #333333
+}
+.menu {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; WIDTH: 97%; BORDER-BOTTOM: 1px; BACKGROUND-COLOR: #cccccc
+}
+.menubody {
+	BACKGROUND-COLOR: #ffffff
+}

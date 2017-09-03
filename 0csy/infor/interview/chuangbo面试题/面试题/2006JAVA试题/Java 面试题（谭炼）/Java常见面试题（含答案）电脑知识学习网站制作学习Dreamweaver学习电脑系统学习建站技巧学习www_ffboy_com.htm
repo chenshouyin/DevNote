@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.ffboy.com/Article/cxsj/java/200507/4285.html -->
+<HTML><HEAD><TITLE>Java常见面试题（含答案）|电脑知识学习|网站制作学习|Dreamweaver学习|电脑系统学习|建站技巧学习|www.ffboy.com</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content=Java常见面试题（含答案） name=keywords>
+<META 
+content=Java常见面试题（含答案）|电脑知识学习|网站制作学习|Dreamweaver学习|电脑系统学习|建站技巧学习|www.ffboy.com 
+name=description>
+<META content="MSHTML 6.00.2800.1505" name=GENERATOR></HEAD>
+<BODY leftMargin=0 topMargin=0><LINK 
+href="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/Skin3.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript 
+src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/menu.js" 
+type=text/JavaScript></SCRIPT>
+
+<SCRIPT language=JavaScript1.2 
+src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/stm31.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript type=text/JavaScript>
+//改变图片大小
+function resizepic(thispic)
+{
+if(thispic.width>700) thispic.width=700;
+}
+//无级缩放图片大小
+function bbimg(o)
+{
+  var zoom=parseInt(o.style.zoom, 10)||100;
+  zoom+=event.wheelDelta/12;
+  if (zoom>0) o.style.zoom=zoom+'%';
+  return false;
+}
+//双击鼠标滚动屏幕的代码
+var currentpos,timer;
+function initialize()
+{
+timer=setInterval ("scrollwindow ()",30);
+}
+function sc()
+{
+clearInterval(timer);
+}
+function scrollwindow()
+{
+currentpos=document.body.scrollTop;
+window.scroll(0,++currentpos);
+if (currentpos !=document.body.scrollTop)
+sc();
+}
+document.onmousedown=sc
+document.ondblclick=initialize
+//更改字体大小
+var status0='';
+var curfontsize=10;
+var curlineheight=18;
+function fontZoomA(){
+  if(curfontsize>8){
+    document.getElementById('fontzoom').style.fontSize=(--curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(--curlineheight)+'pt';
+  }
+}
+function fontZoomB(){
+  if(curfontsize<64){
+    document.getElementById('fontzoom').style.fontSize=(++curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(++curlineheight)+'pt';
+  }
+}
+</SCRIPT>
+
+<SCRIPT src=""></SCRIPT>
+<NOSCRIPT><IFRAME 
+src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dh.htm"></iframe></IFRAME></NOSCRIPT>
+<DIV id=menuDiv 
+style="Z-INDEX: 1000; VISIBILITY: hidden; WIDTH: 1px; POSITION: absolute; HEIGHT: 1px; BACKGROUND-COLOR: #9cc5f8"></DIV><!-- ********网页顶部代码开始******** -->
+<TABLE class=top_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 
+cellPadding=0 width=760 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#4f4f4f height=4></TD></TR>
+  <TR>
+    <TD align=middle height=72>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle width=180 height=72><IMG 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/powerease_logo.gif"></TD>
+          <TD align=middle width=*>　
+            <SCRIPT language=javascript 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/4.js"></SCRIPT>
+             </TD>
+          <TD width=72>
+            <TABLE height=54 cellSpacing=0 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD align=middle><A class=Bottom 
+                  onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.ffboy.com');" 
+                  href="http://www.ffboy.com/Article/cxsj/java/200507/4285.html#">设为首页</A></TD></TR>
+              <TR>
+                <TD align=middle><A class=Bottom 
+                  href="javascript:window.external.addFavorite('http://www.ffboy.com','峰峰网络');">加入收藏</A></TD></TR>
+              <TR>
+                <TD align=middle><A class=Bottom 
+                  href="mailto:fengfeng1980629@tom.com">联系站长</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR><!--频道显示代码-->
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right width="30%" 
+          background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dhbg1.gif 
+          height=29><FONT color=#ffffff>今天是：
+            <SCRIPT language=JavaScript 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/date.js" 
+            type=text/JavaScript></SCRIPT>
+             </FONT><IMG height=29 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dhc.gif" 
+            width=28 align=absMiddle></TD>
+          <TD class=top_Channel align=right width="70%">&nbsp;|&nbsp;<A 
+            class=Channel 
+            href="http://www.ffboy.com/Index.html">网站首页</A>&nbsp;|&nbsp;<A 
+            class=Channel2 href="http://www.ffboy.com/Article/Index.html" 
+            target=_self>网络学院</A>&nbsp;|&nbsp;<A class=Channel 
+            href="http://www.ffboy.com/music" 
+            target=_blank>音乐</A>&nbsp;|&nbsp;<A class=Channel 
+            href="http://www.ffboy.com/Soft/Index.html" 
+            target=_self>下载中心</A>&nbsp;|&nbsp;<A class=Channel 
+            href="http://www.ffboy.com/tv" target=_self>网络电视</A>&nbsp;|&nbsp;<A 
+            class=Channel href="http://www.ffboy.com/film" 
+            target=_blank>免费电影</A>&nbsp;|&nbsp;<A class=Channel 
+            href="http://www.ffboy.com/z" target=_blank>网址站</A>&nbsp;|&nbsp;<A 
+            class=Channel href="http://www.ffboy.com/xphoto/Index.asp" 
+            target=_blank>图片</A>&nbsp;|&nbsp;<A class=Channel 
+            href="http://www.ffboy.com/GuestBook/Index.asp" 
+            target=_self>留言</A>&nbsp;|&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD 
+    background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dhgg.gif 
+    height=23>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <SCRIPT language=JavaScript1.2 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ShowClass_Menu.js" 
+            type=text/JavaScript></SCRIPT>
+          </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#f2f2f2><IFRAME name=n 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/CAANIBM1.jsp" 
+      frameBorder=0 width="100%" scrolling=no height=84></IFRAME></TD></TR>
+  <TR><!--banner广告显示代码-->
+    <TD align=middle>
+      <SCRIPT language=javascript 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/2.js"></SCRIPT>
+      　</TD></TR></TBODY></TABLE><!--导航代码开始-->
+<TABLE class=top_Path style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 
+width=760 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="5%"><IMG height=25 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_mqdhl.gif" 
+      width=40></TD>
+    <TD width="73%">您现在的位置：&nbsp;<A 
+      href="http://www.ffboy.com/">峰峰网络</A>&nbsp;&gt;&gt;&nbsp;<A 
+      href="http://www.ffboy.com/Article/Index.html">网络学院</A>&nbsp;&gt;&gt;&nbsp;<A 
+      href="http://www.ffboy.com/Article/cxsj/Index.html">程序设计</A>&nbsp;&gt;&gt;&nbsp;<A 
+      href="http://www.ffboy.com/Article/cxsj/java/Index.html">Java语言</A>&nbsp;&gt;&gt;&nbsp;文章正文</TD>
+    <TD align=middle width="22%"><IMG height=13 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/User_Login.gif" 
+      width=13 align=absMiddle> <A class=top_UserLogin 
+      href="http://www.ffboy.com/User/User_Login.asp" target=_blank>用户登录</A> 
+      <IMG height=13 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/User_Reg.gif" 
+      width=13 align=absMiddle> <A class=top_UserLogin 
+      href="http://www.ffboy.com/Reg/User_Reg.asp" target=_blank>新用户注册</A> 
+  </TD></TR></TBODY></TABLE><!--导航代码结束--><!-- ********网页顶部代码结束******** --><!-- ********网页中部代码开始******** -->
+<TABLE class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 
+cellPadding=0 width=760 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=*>　</TD></TR>
+  <TR>
+    <TD vAlign=top width=*><!--网页中部左栏文章内容代码开始-->
+      <TABLE style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=main_title_282 vAlign=center width="3%"><IMG height=28 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dh.gif" 
+            width=29 align=absMiddle></TD>
+          <TD class=main_title_282 width="66%">Java常见面试题（含答案）</TD>
+          <TD class=main_title_282 
+            align=middle>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT 
+            color=#009999></FONT></TD></TR></TBODY></TABLE>
+      <TABLE class=main_tdbg_575 style="WORD-BREAK: break-all" cellSpacing=0 
+      cellPadding=0 width="100%" align=center border=0>
+        <TBODY>
+        <TR vAlign=center align=middle>
+          <TD class=main_ArticleTitle style="WORD-BREAK: break-all" 
+          background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_dybg2.gif 
+          colSpan=2 height=48>Java常见面试题（含答案）</TD></TR>
+        <TR vAlign=center align=middle bgColor=#f8f8f8>
+          <TD style="WORD-BREAK: break-all" colSpan=2 height=22>百度搜索相关网站：<A 
+            class=style1 
+            href="http://www.baidu.com/baidu?myselectvalue=0&amp;tn=anyangaaa&amp;ct=&amp;lm=&amp;word=Java常见面试题（含答案）" 
+            target=_blank><FONT color=#ff0000><SPAN 
+            style="BACKGROUND-COLOR: #ffffff">点击进入“Java常见面试题（含答案）”相关的网站</SPAN></FONT></A><FONT 
+            color=#ff0000><SPAN style="BACKGROUND-COLOR: #ffffff"> 
+          </SPAN></FONT></TD></TR>
+        <TR align=middle bgColor=#eeeeee>
+          <TD colSpan=2 height=24>作者：<A title=峰峰网络 
+            href="http://www.ffboy.com/Article/cxsj/java/200507/4285.html#">峰峰网络</A> 
+            文章来源：峰峰网络 更新时间：2005-7-14<A 
+            title=收藏的网页将被永久地保存到新浪ViVi收藏夹http://vivi.sina.com.cn 
+            href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(vivi=window.open('http://vivi.sina.com.cn/collect/icollect.php?pid=www.ffboy.com&amp;title='+escape(d.title)+'&amp;url='+escape(d.location.href)+'&amp;desc='+escape(t),'vivi','scrollbars=no,width=480,height=480,left=75,top=20,status=no,resizable=yes'));vivi.focus();"><IMG 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/vivi_coop.gif" 
+            border=0></A>【字体：<A class=top_UserLogin 
+            href="javascript:fontZoomA();">小</A> <A class=top_UserLogin 
+            href="javascript:fontZoomB();">大</A>】</TD></TR>
+        <TR>
+          <TD 
+          background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_bx1.gif 
+          colSpan=2 height=6>　</TD></TR>
+        <TR>
+          <TD colSpan=2></TD></TR>
+        <TR>
+          <TD id=fontzoom style="WORD-BREAK: break-all" vAlign=top colSpan=2 
+          height=600>
+            <DIV class=ContentFont id=NewaspContentLabel 
+            style="PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><FONT 
+            id=font_word 
+            style="FONT-SIZE: 14px; FONT-FAMILY: 宋体, Verdana, Arial, Helvetica, sans-serif">&nbsp;第一，谈谈final, 
+            finally, finalize的区别。 
+            <BR>final?修饰符（关键字）如果一个类被声明为final，意味着它不能再派生出新的子类，不能作为父类被继承。因此一个类不能既被声明为 
+            abstract的，又被声明为final的。将变量或方法声明为final，可以保证它们在使用中不被改变。被声明为final的变量必须在声明时给定初值，而在以后的引用中只能读取，不可修改。被声明为final的方法也同样只能使用，不能重载 
+            <BR>finally?再异常处理时提供 finally 块来执行任何清除操作。如果抛出一个异常，那么相匹配的 catch 
+            子句就会执行，然后控制就会进入 finally 块（如果有的话）。 <BR>finalize?方法名。Java 技术允许使用 
+            finalize() 
+            方法在垃圾收集器将对象从内存中清除出去之前做必要的清理工作。这个方法是由垃圾收集器在确定这个对象没有被引用时对这个对象调用的。它是在 
+            Object 类中定义的，因此所有的类都继承了它。子类覆盖 finalize() 
+            方法以整理系统资源或者执行其他清理工作。finalize() 方法是在垃圾收集器删除对象之前对这个对象调用的。 
+            <BR><BR>第二，Anonymous Inner Class (匿名内部类) 
+            是否可以extends(继承)其它类，是否可以implements(实现)interface(接口)? 
+            <BR>匿名的内部类是没有名字的内部类。不能extends(继承) 其它类，但一个内部类可以作为一个接口，由另一个内部类实现。 
+            <BR><BR>第三，Static Nested Class 和 Inner Class的不同，说得越多越好(面试题有的很笼统)。 
+            <BR>Nested Class （一般是C++的说法），Inner Class 
+            (一般是JAVA的说法)。Java内部类与C++嵌套类最大的不同就在于是否有指向外部的引用上。具体可见http: 
+            //www.frontfree.net/articles/services/view.asp?id=704&amp;page=1 
+            <BR>注： 静态内部类（Inner 
+            Class）意味着1创建一个static内部类的对象，不需要一个外部类对象，2不能从一个static内部类的一个对象访问一个外部类对象 
+            <BR><BR>第四，&amp;和&amp;&amp;的区别。 <BR>&amp;是位运算符。&amp;&amp;是布尔逻辑运算符。 
+            <BR><BR>第五，HashMap和Hashtable的区别。 <BR>都属于Map接口的类，实现了将惟一键映射到特定的值上。 
+            <BR>HashMap 类没有分类或者排序。它允许一个 null 键和多个 null 值。 <BR>Hashtable 类似于 
+            HashMap，但是不允许 null 键和 null 值。它也比 HashMap 慢，因为它是同步的。 
+            <BR><BR>第六，Collection 和 Collections的区别。 
+            <BR>Collections是个java.util下的类，它包含有各种有关集合操作的静态方法。 
+            <BR>Collection是个java.util下的接口，它是各种集合结构的父接口。 
+            <BR><BR><BR>第七，什么时候用assert。 <BR>断言是一个包含布尔表达式的语句，在执行这个语句时假定该表达式为 
+            true。如果表达式计算为 false，那么系统会报告一个 AssertionError。它用于调试目的： <BR>assert(a 
+            &gt; 0); // throws an AssertionError if a &lt;= 0 <BR>断言可以有两种形式： 
+            <BR>assert Expression1 ; <BR>assert Expression1 : Expression2 ; 
+            <BR>Expression1 应该总是产生一个布尔值。 <BR>Expression2 
+            可以是得出一个值的任意表达式。这个值用于生成显示更多调试信息的 String 消息。 
+            <BR>断言在默认情况下是禁用的。要在编译时启用断言，需要使用 source 1.4 标记： <BR>javac -source 1.4 
+            Test.java <BR>要在运行时启用断言，可使用 -enableassertions 或者 -ea 标记。 
+            <BR>要在运行时选择禁用断言，可使用 -da 或者 -disableassertions 标记。 <BR>要系统类中启用断言，可使用 
+            -esa 或者 -dsa 标记。还可以在包的基础上启用或者禁用断言。 
+            <BR>可以在预计正常情况下不会到达的任何位置上放置断言。断言可以用于验证传递给私有方法的参数。不过，断言不应该用于验证传递给公有方法的参数，因为不管是否启用了断言，公有方法都必须检查其参数。不过，既可以在公有方法中，也可以在非公有方法中利用断言测试后置条件。另外，断言不应该以任何方式改变程序的状态。 
+            <BR><BR><BR>第八，GC是什么? 为什么要有GC? (基础)。 <BR>GC是垃圾收集器。Java 
+            程序员不用担心内存管理，因为垃圾收集器会自动进行管理。要请求垃圾收集，可以调用下面的方法之一： <BR>System.gc() 
+            <BR>Runtime.getRuntime().gc() <BR><BR>第九，String s = new 
+            String("xyz");创建了几个String Object? 
+            <BR>两个对象，一个是“xyx”,一个是指向“xyx”的引用对象s。 <BR><BR>第十，Math.round(11.5)等於多少? 
+            Math.round(-11.5)等於多少? 
+            <BR>Math.round(11.5)返回（long）12，Math.round(-11.5)返回（long）-11; 
+            <BR><BR>第十一，short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 
+            1;有什么错? <BR>short s1 = 1; s1 = s1 + 
+            1;有错，s1是short型，s1+1是int型,不能显式转化为short型。可修改为s1 =(short)(s1 + 1) 
+            。short s1 = 1; s1 += 1正确。 <BR><BR>第十二，sleep() 和 wait() 有什么区别? 搞线程的最爱 
+            <BR>sleep()方法是使线程停止一段时间的方法。在sleep 
+            时间间隔期满后，线程不一定立即恢复执行。这是因为在那个时刻，其它线程可能正在运行而且没有被调度为放弃执行，除非(a)“醒来”的线程具有更高的优先级 
+            <BR>(b)正在运行的线程因为其它原因而阻塞。 <BR>wait()是线程交互时，如果线程对一个同步对象x 
+            发出一个wait()调用，该线程会暂停执行，被调对象进入等待状态，直到被唤醒或等待时间到。 
+            <BR><BR><BR><BR>第十三，Java有没有goto? <BR>Goto?java中的保留字，现在没有在java中使用。 
+            <BR><BR>第十四，数组有没有length()这个方法? String有没有length()这个方法？ 
+            <BR>数组没有length()这个方法，有length的属性。 <BR>String有有length()这个方法。 
+            <BR><BR>第十五，Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型? 
+            <BR>方法的重写Overriding和重载Overloading是Java多态性的不同表现。重写Overriding是父类与子类之间多态性的一种表现，重载Overloading是一个类中多态性的一种表现。如果在子类中定义某方法与其父类有相同的名称和参数，我们说该方法被重写 
+            (Overriding)。子类的对象使用这个方法时，将调用子类中的定义，对它而言，父类中的定义如同被“屏蔽”了。如果在一个类中定义了多个同名的方法，它们或有不同的参数个数或有不同的参数类型，则称为方法的重载(Overloading)。Overloaded的方法是可以改变返回值的类型。 
+            <BR><BR>第十六，Set里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用==还是equals()? 它们有何区别? 
+            <BR>Set里的元素是不能重复的，那么用iterator()方法来区分重复与否。equals()是判读两个Set是否相等。 
+            <BR>equals()和==方法决定引用值是否指向同一对象equals()在类中被覆盖，为的是当两个分离的对象的内容和类型相配的话，返回真值。 
+            <BR><BR>第十七，给我一个你最常见到的runtime exception。 <BR>ArithmeticException, 
+            ArrayStoreException, BufferOverflowException, 
+            BufferUnderflowException, CannotRedoException, CannotUndoException, 
+            ClassCastException, CMMException, ConcurrentModificationException, 
+            DOMException, EmptyStackException, IllegalArgumentException, 
+            IllegalMonitorStateException, IllegalPathStateException, 
+            IllegalStateException, <BR>ImagingOpException, 
+            IndexOutOfBoundsException, MissingResourceException, 
+            NegativeArraySizeException, NoSuchElementException, 
+            NullPointerException, ProfileDataException, ProviderException, 
+            RasterFormatException, SecurityException, SystemException, 
+            UndeclaredThrowableException, UnmodifiableSetException, 
+            UnsupportedOperationException <BR><BR>第十八，error和exception有什么区别? 
+            <BR>error 表示恢复不是不可能但很困难的情况下的一种严重问题。比如说内存溢出。不可能指望程序能处理这样的情况。 
+            <BR>exception 表示一种设计或实现问题。也就是说，它表示如果程序运行正常，从不会发生的情况。 
+            <BR><BR><BR>第十九，List, Set, Map是否继承自Collection接口? <BR>List，Set是 
+            <BR><BR>Map不是 <BR><BR>第二十，abstract class和interface有什么区别? 
+            <BR>声明方法的存在而不去实现它的类被叫做抽象类（abstract 
+            class），它用于要创建一个体现某些基本行为的类，并为该类声明方法，但不能在该类中实现该类的情况。不能创建abstract 
+            类的实例。然而可以创建一个变量，其类型是一个抽象类，并让它指向具体子类的一个实例。不能有抽象构造函数或抽象静态方法。Abstract 
+            类的子类为它们父类中的所有抽象方法提供实现，否则它们也是抽象类为。取而代之，在子类中实现该方法。知道其行为的其它类可以在类中实现这些方法。 
+            <BR>接口（interface）是抽象类的变体。在接口中，所有方法都是抽象的。多继承性可通过实现这样的接口而获得。接口中的所有方法都是抽象的，没有一个有程序体。接口只可以定义static 
+            final成员变量。接口的实现与子类相似，除了该实现类不能从接口定义中继承行为。当类实现特殊接口时，它定义（即将程序体给予）所有这种接口的方法。然后，它可以在实现了该接口的类的任何对象上调用接口的方法。由于有抽象类，它允许使用接口名作为引用变量的类型。通常的动态联编将生效。引用可以转换到接口类型或从接口类型转换，instanceof 
+            运算符可以用来决定某对象的类是否实现了接口。 
+            <BR><BR>第二十一，abstract的method是否可同时是static,是否可同时是native，是否可同时是synchronized? 
+            <BR>都不能 <BR><BR>第二十二，接口是否可继承接口? 抽象类是否可实现(implements)接口? 
+            抽象类是否可继承实体类(concrete class)? 
+            <BR>接口可以继承接口。抽象类可以实现(implements)接口，抽象类是否可继承实体类，但前提是实体类必须有明确的构造函数。 
+            <BR><BR>第二十三，启动一个线程是用run()还是start()? 
+            <BR>启动一个线程是调用start()方法，使线程所代表的虚拟处理机处于可运行状态，这意味着它可以由JVM调度并执行。这并不意味着线程就会立即运行。run()方法可以产生必须退出的标志来停止一个线程。 
+            <BR><BR><BR><BR>第二十四，构造器Constructor是否可被override? 
+            <BR>构造器Constructor不能被继承，因此不能重写Overriding，但可以被重载Overloading。 
+            <BR><BR>第二十五，是否可以继承String类? <BR>String类是final类故不可以继承。 
+            <BR><BR>第二十六，当一个线程进入一个对象的一个synchronized方法后，其它线程是否可进入此对象的其它方法? 
+            <BR>不能，一个对象的一个synchronized方法只能由一个线程访问。 <BR><BR>第二十七，try 
+            {}里有一个return语句，那么紧跟在这个try后的finally 
+            {}里的code会不会被执行，什么时候被执行，在return前还是后? <BR>会执行，在return前执行。 
+            <BR><BR><BR>第二十八，<A class=wordstyle href="http://www.supcode.com/" 
+            target=_blank>编程</A>题: 用最有效率的方法算出2乘以8等於几? <BR>有C背景的程序员特别喜欢问这种问题。 
+            <BR><BR>2 &lt;&lt; 3 <BR><BR>第二十九，两个对象值相同(x.equals(y) == 
+            true)，但却可有不同的hash code，这句话对不对? <BR>不对，有相同的hash code。 
+            <BR><BR>第三十，当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递? 
+            <BR>是值传递。Java <A class=wordstyle href="http://www.supcode.com/" 
+            target=_blank>编程</A>语言只由值传递参数。当一个对象实例作为一个参数被传递到方法中时，参数的值就是对该对象的引用。对象的内容可以在被调用的方法中改变，但对象的引用是永远不会改变的。 
+            <BR><BR><BR>第三十一，swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上? 
+            <BR>switch（expr1）中，expr1是一个整数表达式。因此传递给 switch 和 case 语句的参数应该是 int、 
+            short、 char 或者 byte。long,string 都不能作用于swtich。 <BR><BR>第三十二，<A 
+            class=wordstyle href="http://www.supcode.com/" 
+            target=_blank>编程</A>题: 写一个Singleton出来。 
+            <BR>Singleton模式主要作用是保证在Java应用程序中，一个类Class只有一个实例存在。 
+            <BR>一般Singleton模式通常有几种种形式: <BR>第一种形式: 
+            定义一个类，它的构造函数为private的，它有一个static的private的该类变量，在类初始化时实例话，通过一个public的getInstance方法获取对它的引用,继而调用其中的方法。 
+            <BR>public class Singleton { <BR>　　private Singleton(){} 
+            <BR>　　//在自己内部定义自己一个实例，是不是很奇怪？ <BR>　　//注意这是private 只供内部调用 
+            <BR>　　private static Singleton instance = new Singleton(); 
+            <BR>　　//这里提供了一个供外部访问本class的静态方法，可以直接访问　　 <BR>　　public static 
+            Singleton getInstance() { <BR>　　　　return instance; 　　 <BR>　　 } <BR>} 
+            <BR>第二种形式: <BR>public class Singleton { <BR>　　private static 
+            Singleton instance = null; <BR>　　public static synchronized 
+            Singleton getInstance() { <BR>　　//这个方法比上面有所改进，不用每次都进行生成对象，只是第一次　　　 　 
+            <BR>　　//使用时生成实例，提高了效率！ <BR>　　if (instance==null) 
+            <BR>　　　　instance＝new Singleton(); <BR>return instance; 　　} <BR>} 
+            <BR>其他形式: <BR>定义一个类，它的构造函数为private的，所有方法为static的。 
+            <BR>一般认为第一种形式要更加安全些 <BR></FONT></DIV>
+            <DIV></DIV></TD></TR>
+        <TR></TD></TR>
+        <TR>
+          <TD class=left_tdbgall align=right colSpan=2 
+            height=24>文章录入：峰峰网络&nbsp;&nbsp;&nbsp;&nbsp;责任编辑：峰峰网络&nbsp; </TD></TR>
+        <TR>
+          <TD width=5></TD>
+          <TD width=787>
+            <LI>上一篇文章： 没有了<BR>
+            <LI>下一篇文章： 没有了</LI></TD></TR>
+        <TR class=left_tdbgall align=right>
+          <TD colSpan=2 height=24>【<A 
+            href="http://www.ffboy.com/Article/Comment.asp?ArticleID=4285" 
+            target=_blank>发表评论</A>】【<A 
+            href="http://www.ffboy.com/User/User_Favorite.asp?Action=Add&amp;ChannelID=1&amp;InfoID=4285" 
+            target=_blank>加入收藏</A>】【<A 
+            href="http://www.ffboy.com/Article/SendMail.asp?ArticleID=4285" 
+            target=_blank>告诉好友</A>】【<A 
+            href="http://www.ffboy.com/Article/Print.asp?ArticleID=4285" 
+            target=_blank>打印此文</A>】【<A 
+            href="javascript:window.close();">关闭窗口</A>】 </TD></TR></TBODY></TABLE><!--网页中部左栏文章内容代码结束-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD style="WORD-BREAK: break-all" height=22>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD style="WORD-BREAK: break-all" height=22>
+                  <P align=left>百度搜索相关网站：<A class=style1 
+                  href="http://www.baidu.com/baidu?myselectvalue=0&amp;tn=anyangaaa&amp;ct=&amp;lm=&amp;word=Java常见面试题（含答案）" 
+                  target=_blank><FONT color=#ff0000><SPAN 
+                  style="BACKGROUND-COLOR: #ffffff"><U>点击进入“Java常见面试题（含答案）”相关的网站</U></SPAN></FONT></A></P></TD></TR>
+              <TR>
+                <TD style="WORD-BREAK: break-all" height=22>
+                  <P align=left>网易搜索相关网站：<IFRAME border=0 name=I1 marginWidth=0 
+                  frameSpacing=0 marginHeight=0 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/tpl2.jsp" 
+                  frameBorder=0 width=604 scrolling=no 
+                  height=14></IFRAME></A></P></TD></TR>
+              <TR>
+                <TD style="WORD-BREAK: break-all" height=22>
+                  <P align=left><SPAN 
+                  style="BACKGROUND-COLOR: #ffffff">3721+一搜搜索</SPAN>相关网站：<A 
+                  href="http://search.union.3721.com/click/search.htm?fw=union&amp;m=52151&amp;p=1006&amp;name=Java常见面试题（含答案）" 
+                  target=_blank><U><FONT 
+                  color=#0000ff>Java常见面试题（含答案）</FONT></U></A></P></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD align=middle height=70>
+            <TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+              <TBODY>
+              <TR>
+                <TD 
+                background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_mqdh.gif><A 
+                  class=class 
+                  href="http://www.ffboy.com/Article/ShowHot.asp"><IMG height=28 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_zxrmwz.gif" 
+                  width=174 border=0></A></TD>
+                <TD 
+                background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_mqdh.gif><A 
+                  class=class 
+                  href="http://www.ffboy.com/Article/ShowElite.asp"><IMG 
+                  height=28 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_zxtjwz.gif" 
+                  width=174 border=0></A></TD>
+                <TD 
+                background=Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_mqdh.gif><IMG 
+                  height=28 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_xgwz.gif" 
+                  width=174 border=0></TD></TR>
+              <TR>
+                <TD>　
+                  <SCRIPT language=javascript 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/Article_Hot3.js"></SCRIPT>
+                   </TD>
+                <TD>
+                  <SCRIPT language=javascript 
+                  src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/Article_Elite3.js"></SCRIPT>
+                  　</TD>
+                <TD>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频宝典教程(98)javascript自定义对象&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-12 10:57:47" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4284.html">Dreamweaver&nbsp;MX2004视频宝典</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频宝典教程(99)javascript事件&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-12 10:57:47" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4283.html">Dreamweaver&nbsp;MX2004视频宝典</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频宝典教程(100)onchange事件&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-12 10:57:46" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4282.html">Dreamweaver&nbsp;MX2004视频宝典</A><BR>
+                  <LI><A 
+                  title="文章标题：40种网页常用小技巧(javascript)&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-7 14:32:36" 
+                  href="http://www.ffboy.com/Article/web/xjs/200507/4280.html">40种网页常用小技巧(jav</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(83) -- javascript概念、作用及特点&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:33" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4215.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(84) -- javascript的作用&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:33" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4214.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(85) -- javascript的变量&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:33" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4213.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(86) -- 表达式和运算符(上集)&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:31" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4212.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(86) -- 表达式和运算符(下集)&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:31" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4211.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>
+                  <LI><A 
+                  title="文章标题：Dreamweaver MX2004视频教程(87) -- javascript的语句(上集)&#13;&#10;作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名&#13;&#10;更新时间：2005-7-4 17:37:31" 
+                  href="http://www.ffboy.com/Article/web/dm/200507/4210.html">Dreamweaver&nbsp;MX2004视频教程</A><BR>　</LI></TD></TR></TBODY></TABLE>　
+            <SCRIPT language=javascript 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/6.js"></SCRIPT>
+             </TD></TR></TBODY></TABLE>
+      <TABLE class=center_tdbgall cellSpacing=0 cellPadding=0 width=760 
+      align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=main_shadow></TD></TR></TBODY></TABLE><!--文章显示代码结束--><!--网友评论代码开始-->
+      <TABLE class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 
+      cellPadding=0 width=760 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=left_title height=25><IMG height=28 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/ad_wypl.gif" 
+            width=174 align=absMiddle>（只显示最新10条。评论内容只代表网友观点，与本站立场无关！）</TD></TR>
+        <TR>
+          <TD>
+            <SCRIPT language=javascript 
+            src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/Comment.htm"></SCRIPT>
+          </TD></TR></TBODY></TABLE>
+      <TABLE class=center_tdbgall cellSpacing=0 cellPadding=0 width=760 
+      align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=main_shadow></TD></TR></TBODY></TABLE><!--网友评论代码结束--><!-- ********网页中部代码结束******** --><!-- ********网页底部代码开始******** -->
+      <P align=center>
+      <SCRIPT language=javascript 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/bottom.js"></SCRIPT>
+
+      <TABLE class=Bottom_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 
+      cellPadding=0 width=760 align=center border=0></TR>
+        <TBODY></TBODY></TABLE>
+      <SCRIPT language=javascript 
+      src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/1.js"></SCRIPT>
+<!-- ********网页底部代码结束******** --></P></TD></TR></TBODY></TABLE><NOSCRIPT><IFRAME 
+src="Java常见面试题（含答案）电脑知识学习网站制作学习Dreamweaver学习电脑系统学习建站技巧学习www_ffboy_com.files/tpl5.jsp" 
+width=0 height=0></IFRAME></IFRAME></NOSCRIPT><!-- Powered by: PowerEasy 2005 --></BODY></HTML>

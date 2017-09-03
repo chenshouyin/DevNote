@@ -1,0 +1,1046 @@
+主　　题：  java面试题[基础类]  
+作　　者：  villa123 ()  
+等　　级：    
+信 誉 值：  100  
+所属社区：  Java 非技术区  
+问题点数：  0  
+回复次数：  69  
+发表时间：  2005-8-3 16:43:07  
+   
+ 
+   
+
+想必大家都有参加过面试的或多或少的经历吧，不知道考官都会问啥米刁钻古怪的问题呢？下面的考题是我搜集的一些针对java的面试题目，还不少，大概分为[基础类][应用类][其他类]，仅供参考，大家还可以说说自己的面试经历。
+
+  
+  回复人： villa123() ( ) 信誉：100  2005-8-3 16:46:50  得分: 0  
+ 
+ 
+   
+一、Java基础知识
+1.Java有那些基本数据类型，String是不是基本数据类型，他们有何区别。
+2.字符串的操作：
+  写一个方法，实现字符串的反转，如：输入abc，输出cba
+  写一个方法，实现字符串的替换，如：输入bbbwlirbbb，输出bbbhhtccc。
+3.数据类型之间的转换
+  如何将数值型字符转换为数字（Integer，Double）
+  如何将数字转换为字符
+  如何取小数点前两位，并四舍五入。
+4.日期和时间
+  如何取得年月日，小时分秒
+  如何取得从1970年到现在的毫秒数
+  如何获取某个日期是当月的最后一天
+  如何格式化日期
+5.数组和集合
+6.文件和目录（I/O）操作
+  如何列出某个目录下的所有文件
+  如何列出某个目录下的所有子目录
+  判断一个文件或目录是否存在
+  如何读写文件
+7.Java多态的实现（继承、重载、覆盖）
+8.编码转换，怎样实现将GB2312编码的字符串转换为ISO-8859-1编码的字符串。
+9.Java中访问数据库的步骤，Statement和PreparedStatement之间的区别。
+10.找出下列代码可能存在的错误，并说明原因：
+
+二、JSP&Servlet技术
+1.描述JSP和Servlet的区别、共同点、各自应用的范围
+2.在Web开发中需要处理HTML标记时，应做什么样的处理，要筛选那些字符（< > & “”）
+3.在JSP中如何读取客户端的请求，如何访问CGI变量，如何确定某个Jsp文件的真实路径。
+4.描述Cookie和Session的作用，区别和各自的应用范围，Session工作原理。
+5.列出Jsp中包含外部文件的方式，两者有何区别。
+6.说明Jsp中errorPage的作用，应用范围。
+7.介绍在Jsp中如何使用JavaBeans。
+8.简单介绍JSP的标记库
+9.Jsp和Servlet中的请求转发分别如何实现。
+
+三、J2EE相关知识
+1.介绍J2EE、J2SE、J2SE的区别。
+2.J2EE是一种技术还是一种平台，他提供了那些技术。
+3.什么是Application Server，它有什么功能和优点。
+4.简单介绍连接池的优点和原理。
+5.Web.xml的作用
+
+四、其他
+1.Web安全性的考虑（表单验证、浏览器Basic方式的验证，应用程序的安全性，SSL，代码考虑）
+2.简单介绍您所了解的MVC。
+3.简单介绍所了解的XML。
+4.文档和编码规范
+5.Java中的分页、效率考虑。
+6.简单介绍您所了解的structs。
+
+  
+ 
+Top  
+ 
+ 回复人： joneyonly(每日回百贴) ( ) 信誉：99  2005-8-3 16:56:11  得分: 0  
+ 
+ 
+   
+收藏下
+
+  
+ 
+Top  
+ 
+ 回复人： villa123() ( ) 信誉：100  2005-8-3 16:58:02  得分: 0  
+ 
+ 
+   
+1.xml在项目中的作用
+2.s-EJB 与 e-EJB的区别
+3.会话面的作用
+4.cmp与bmp的优缺点
+5.j2me程序的必需的几个部分
+6.c/s与b/s的区别
+7.构建一个connect pool,然后再调用它，
+8.j2ee平台与dotnet平台的区别
+
+9.ejb的life cycle
+10.session bean 和 entity bean的区别
+11.ejb中的transaction机制
+12.synchronized (生产者和消费）
+13.String 和 StringBuffer
+14.Serializable
+15.MVC （Struts的工作流程）
+16.什么是MDA
+
+17.tcp与udp的区别
+18.链表与散列表和数组的区别
+19.堆和栈的区别
+20.ejb的分类及区别
+21.你对现在软件业以及国内软件业的看法
+22.谈谈java多线程
+23.谈谈文件加密技术
+24.软件开发生命周期
+25.路由协议种类及特点
+26.java的awt和swing组件的GUI设计的关键
+27.对于java流的认识
+
+28.简单描述一下awt与swing区别。
+29.简述java编程中事件处理模式。
+30.你编写过applet吗？applet的安全权限如何？试列举java application或者applet中与servlet/jsp通信可以采用的方式。
+
+31.简述逻辑操作(如&,|)与条件操作(如&&,||)的区别。
+32.简述 Java Server Page 和 Servlet 的联系和区别。
+33.简述synchronized和java.util.concurrent.locks.Lock的异同 ？
+34.EJB规范规定EJB中禁止的操作有哪些？
+
+  
+ 
+Top  
+ 
+ 回复人： villa123() ( ) 信誉：100  2005-8-3 16:59:11  得分: 0  
+ 
+ 
+   
+基础可不一定简单
+
+  
+ 
+Top  
+ 
+ 回复人： villa123() ( ) 信誉：100  2005-8-3 17:07:22  得分: 0  
+ 
+ 
+   
+35.java除了8种基本类型外，在虚拟机里还有哪一种，有什么作用?
+36.除了使用new关键字创建对象意外，试列举另外三种以上创建实例的方式?
+37.classloader中，JDK的API、Classpath中的同web-inf中的class加载方式有什么区别？
+38.列举三种以上垃圾回收算法，并比较其优缺点？
+39.编写代码实现一个线程池
+
+40.描述一下JVM加载class文件的原理机制?
+41.试举例说明一个典型的垃圾回收算法？ 
+42.请用java写二叉树算法，实现添加数据形成二叉树功能，并以先序的方式打印出来. 
+43.请写一个java程序实现线程连接池功能？ 
+44.给定一个C语言函数，要求实现在java类中进行调用。
+
+45.如何获得数组的长度？
+46.访问修饰符“public/private/protected/缺省的修饰符”的使用
+47.用关键字final修饰一个类或者方法时，有何意义？
+48.掌握类和对象的概念，掌握面向对象编程的本质
+49.静态变量和静态方法的意义，如何引用一个类的静态变量或者静态方法？
+50.JAVA语言如何进行异常处理，关键字：thorws,throw,try,catch,finally
+51.Object类(或者其子类)的finalize()方法在什么情况下被调用？
+52.一个“.java”原文件中是否可以包括多个类（不是内部类）？
+53.掌握内部类和接口的概念
+54.StringTokenizer类的使用
+55.数据结构，如何遍历List中的元素？
+   如果要按照键值保存或者访问数据，使用什么数据结构？
+   要掌握Collection相关的接口和类的使用
+56.使用StringBuffer类与String类进行字符串连接时有何区别？
+57.调用Thread类的destroy()方法有什么后果？
+58.多线程，用什么关键字修饰同步方法？stop()和suspend()方法为何不推荐使用？
+59.使用socket建立客户端与服务器的通信的过程
+60.JAVA语言国际化应用，Locale类，Unicode
+61.描述反射机制的作用
+62.如何读写一个文件？
+63.在图形界面中，一个按钮如何处理鼠标点击事件？
+64.在图形界面中，一个表格，如何实现编辑单元格时弹出下拉框？
+65.如何加载图片？
+66.什么是模态对话框？
+67.阐述MVC的概念
+68.GUI布局管理器的使用，FlowLayout,BorderLayout,GridBagLayout
+69.如何构造一棵树？选择树的一个节点时，如何得到这个节点？
+70.向编辑框中输入字符时，如何控制只输入整数？
+71.描述使用JDBC连接数据库的过程
+72.EJB分为几类？什么是BMP,CMP?
+73.什么是JNDI?
+
+74.ADO是什么?ActiveX数据对象,是一个应用级程序接口.
+75.四种JDBC方式?目前的版本?
+76.EJB有哪几种?区别是什么?
+77.JavaBean与EJB有什么区别?
+78.软件开发生命周期有哪几个阶段?
+79.软件开发有哪些因素?
+80.软件开发中如何进行版本控制?
+81.UML中,类视图如何表示类中的继承与聚合?
+82.客户端游标与服务器端游标的区别?
+83.动态游标与静态游标的区别?
+84.dotnet由哪几个基本框架组成?
+85.Oracle中SGA是什么?
+86.web servers是什么?
+87.UNIX中QT是什么意思?
+88.在软件开发生命周期中的哪个阶段开始测试?
+89.dotnet与J2EE的比较?
+90.什么是ActiveX?
+91.Java中IDL是什么?
+92.ISO9000和CMM是什么?IS09000和CMM(软件能力成熟度模型)认证是国际上通用的软件质量评估方法.CMM的五个成熟度等级。
+
+  
+ 
+Top  
+ 
+ 回复人： xjl2306(JAVA2 新人类) ( ) 信誉：100  2005-8-3 22:40:22  得分: 0  
+ 
+ 
+   
+我面试了2次,题目都是全英文的,但很少见有人在网上发表英文的试题
+
+  
+ 
+Top  
+ 
+ 回复人： luyuTommyCool(学习者) ( ) 信誉：100  2005-8-4 14:17:14  得分: 0  
+ 
+ 
+   
+问一下有没答案呀，不然个人有个人大看法，很乱的
+
+  
+ 
+Top  
+ 
+ 回复人： discolt(枫) ( ) 信誉：99  2005-8-4 14:31:06  得分: 0  
+ 
+ 
+   
+坑
+
+  
+ 
+Top  
+ 
+ 回复人： htar(Tatar) ( ) 信誉：100  2005-8-4 14:34:07  得分: 0  
+ 
+ 
+   
+mark一下
+
+
+  
+ 
+Top  
+ 
+ 回复人： joneyonly(每日回百贴) ( ) 信誉：99  2005-8-4 14:46:14  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： zhaogz2008(软件宝宝) ( ) 信誉：88  2005-8-4 14:54:14  得分: 0  
+ 
+ 
+   
+把答案也贴出来呀！！
+
+  
+ 
+Top  
+ 
+ 回复人： dudeng2005(dudeng) ( ) 信誉：100  2005-8-4 15:22:21  得分: 0  
+ 
+ 
+   
+答案也给我们看看啊
+
+  
+ 
+Top  
+ 
+ 回复人： xlhl(顽皮兔子) ( ) 信誉：100  2005-8-4 16:27:37  得分: 0  
+ 
+ 
+   
+r
+
+  
+ 
+Top  
+ 
+ 回复人： xiaofeng3385(day day study) ( ) 信誉：100  2005-8-4 19:37:08  得分: 0  
+ 
+ 
+   
+不错，顶下
+
+  
+ 
+Top  
+ 
+ 回复人： fatcatman() ( ) 信誉：94  2005-8-4 19:57:17  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： lghit() ( ) 信誉：100  2005-8-4 20:24:18  得分: 0  
+ 
+ 
+   
+笔试大都不能考出真实能力的,偏偏很多公司又要这个,郁闷,
+
+  
+ 
+Top  
+ 
+ 回复人： nhkwokyo(子夜星雨) ( ) 信誉：100  2005-8-4 20:52:35  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： Lx_KingTran_81(土豆丝炒肉) ( ) 信誉：100  2005-8-4 21:29:04  得分: 0  
+ 
+ 
+   
+看看 学习一下
+
+  
+ 
+Top  
+ 
+ 回复人： roypan2008(中原侠士（JAVA）) ( ) 信誉：100  2005-8-4 21:37:21  得分: 0  
+ 
+ 
+   
+有收获呀
+UP
+
+  
+ 
+Top  
+ 
+ 回复人： CrazyBoBo(永远的Beginner) ( ) 信誉：100  2005-8-4 22:15:44  得分: 0  
+ 
+ 
+   
+收藏中……
+
+  
+ 
+Top  
+ 
+ 回复人： bistar(明星鱼) ( ) 信誉：99  2005-8-4 22:52:09  得分: 0  
+ 
+ 
+   
+收收收～
+
+  
+ 
+Top  
+ 
+ 回复人： bistar(明星鱼) ( ) 信誉：99  2005-8-4 22:52:30  得分: 0  
+ 
+ 
+   
+收收收～
+
+  
+ 
+Top  
+ 
+ 回复人： king_h(好无赖) ( ) 信誉：100  2005-8-4 23:08:59  得分: 0  
+ 
+ 
+   
+兄弟呀,题目不错哦,谢谢啦,看看有好处!!
+可是没有answer??
+
+  
+ 
+Top  
+ 
+ 回复人： nlstone(天外流星) ( ) 信誉：100  2005-8-4 23:34:25  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： wanchao2001() ( ) 信誉：100  2005-8-4 23:49:20  得分: 0  
+ 
+ 
+   
+mark
+
+
+  
+ 
+Top  
+ 
+ 回复人： lovebeyondforever(我不信) ( ) 信誉：100  2005-8-5 6:12:43  得分: 0  
+ 
+ 
+   
+MARK
+
+  
+ 
+Top  
+ 
+ 回复人： flying310(林林) ( ) 信誉：100  2005-8-5 9:01:07  得分: 0  
+ 
+ 
+   
+支持。
+
+  
+ 
+Top  
+ 
+ 回复人： ForeverGI(CJ) ( ) 信誉：100  2005-8-5 10:42:14  得分: 0  
+ 
+ 
+   
+thx
+
+  
+ 
+Top  
+ 
+ 回复人： cosmograd(cosmograd) ( ) 信誉：95  2005-8-5 10:49:30  得分: 0  
+ 
+ 
+   
+收了再说。
+
+  
+ 
+Top  
+ 
+ 回复人： j7fs() ( ) 信誉：100  2005-8-5 14:01:47  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： liyi3618(江江) ( ) 信誉：100  2005-8-5 15:21:15  得分: 0  
+ 
+ 
+   
+mark一下
+
+  
+ 
+Top  
+ 
+ 回复人： skay452(走过路过！~) ( ) 信誉：100  2005-8-5 15:47:11  得分: 0  
+ 
+ 
+   
+好东西,还不快点收藏啊..............
+
+  
+ 
+Top  
+ 
+ 回复人： qingzhuang(半片云) ( ) 信誉：105  2005-8-5 16:13:33  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： HaiSenLing(HaiSen) ( ) 信誉：100  2005-8-5 16:46:16  得分: 0  
+ 
+ 
+   
+up
+
+  
+ 
+Top  
+ 
+ 回复人： lodestar51(天堂或地狱) ( ) 信誉：100  2005-8-5 17:11:51  得分: 0  
+ 
+ 
+   
+收一下
+都是好东西的呀。
+
+  
+ 
+Top  
+ 
+ 回复人： jiang_xiao(原来秋天) ( ) 信誉：100  2005-8-5 19:53:50  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： mingr6370(丑男) ( ) 信誉：97  2005-8-5 20:32:56  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： tlowl(风流才子) ( ) 信誉：100  2005-8-5 22:23:14  得分: 0  
+ 
+ 
+   
+顶下先
+
+  
+ 
+Top  
+ 
+ 回复人： xuxiheng(金贝贝) ( ) 信誉：100  2005-8-6 9:12:48  得分: 0  
+ 
+ 
+   
+参加过Java面试的朋友把你们收集的题目共享一下啊！
+
+  
+ 
+Top  
+ 
+ 回复人： Aimar500(艾马尔) ( ) 信誉：100  2005-8-6 9:35:29  得分: 0  
+ 
+ 
+   
+谢谢s a lot !
+
+  
+ 
+Top  
+ 
+ 回复人： qnjian(南一郎　) ( ) 信誉：100  2005-8-6 9:42:25  得分: 0  
+ 
+ 
+   
+强烈要求提供参考答案！！
+
+  
+ 
+Top  
+ 
+ 回复人： wind_rain(风雨人生) ( ) 信誉：96  2005-8-6 10:14:54  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： zhb79(zhb) ( ) 信誉：100  2005-8-6 10:21:05  得分: 0  
+ 
+ 
+   
+mr
+
+  
+ 
+Top  
+ 
+ 回复人： qiliner() ( ) 信誉：100  2005-8-6 11:06:52  得分: 0  
+ 
+ 
+   
+好多不会啊。
+
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-8-6 11:37:53  得分: 0  
+ 
+ 
+   
+//反转这符串
+    public String convertStr(String s_text){
+        String b = "";
+        int li_len = s_text.length();
+        for (int i = li_len-1;i>=0;i--){
+            b = b + String.valueOf(s_text.charAt(i));
+        }
+        return b;
+    }
+    //替换字符串
+    public String replaceStr(int start,int end ,String s_newStr,
+            String s_oldAllStr){
+        String ls_temp =  "";
+        int li_len = s_oldAllStr.length();
+        ls_temp = s_oldAllStr.substring(0,start);
+        ls_temp = ls_temp + s_newStr;
+        ls_temp = ls_temp + s_oldAllStr.substring(end+1,li_len);
+        
+        
+        return ls_temp;
+    }
+
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-8-6 12:48:41  得分: 0  
+ 
+ 
+   
+字符串与整型互换：String.valueOf(int val)  Integer.parseInt(String val);
+
+//四舍五入方法
+    public double getRound(double d_val,int i_sit){
+        
+        String ls_temp = "";
+        ls_temp = String.valueOf(d_val);
+        int li_index = ls_temp.indexOf(".");
+        int li_len = ls_temp.length();
+        int li_weak = li_len - (li_index + 1);
+        
+        String ls_str;
+        //位数
+        char ch_index;
+        double d_unit,d_temp=d_val;
+        String ls_subStr=ls_temp;
+        for (int i=li_len-1; i>=li_index; i--){
+
+            ch_index = ls_temp.charAt(i);
+            li_weak = i - li_index;
+            ls_str = "0.";
+            
+            if (li_weak == i_sit){
+                ls_subStr = ls_subStr.substring(0,i+1);
+                d_temp = Double.parseDouble(ls_subStr);
+                break;
+            }
+            
+            if (Integer.parseInt(String.valueOf(ch_index))>=5){
+        for (int l=0;l<li_weak-1;l++){
+            if (l != li_weak -2)
+              ls_str = ls_str + "0";
+            else
+              ls_str = ls_str + "1";
+        }
+        d_unit = Double.parseDouble(ls_str);
+        d_temp = Double.parseDouble(ls_subStr) + d_unit;
+        ls_subStr = String.valueOf(d_temp);
+        continue;
+            }
+            else{
+                ls_subStr = ls_subStr.substring(0,i);
+                d_temp = Double.parseDouble(ls_subStr);
+                continue;
+            }
+        }
+        return d_temp;
+    }
+
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-8-6 13:47:18  得分: 0  
+ 
+ 
+   
+如何取得年月日，小时分秒
+    //获取日期
+    public String getToday() {
+        
+        String ls_date = "";
+        GregorianCalendar obj_date = new GregorianCalendar(); 
+        ls_date = ls_date + obj_date.get(Calendar.YEAR);
+        ls_date = ls_date + "-"+obj_date.get(Calendar.MONTH);
+        ls_date = ls_date + "-"+obj_date.get(Calendar.DATE);
+        ls_date = ls_date + " "+obj_date.get(Calendar.HOUR_OF_DAY);
+        ls_date = ls_date + ":"+obj_date.get(Calendar.MINUTE);
+        ls_date = ls_date + ":"+obj_date.get(Calendar.SECOND);
+        
+        return ls_date;
+    }
+//如何取得从1970年到现在的毫秒数
+    public String getMillSecond(int i_yes){
+        GregorianCalendar obj_date = new GregorianCalendar(); 
+        int li_weak = obj_date.get(Calendar.YEAR) - i_yes;
+        int li_m = obj_date.get(Calendar.MONTH);
+        int li_d = obj_date.get(Calendar.DATE);
+        int li_h = obj_date.get(Calendar.HOUR_OF_DAY);
+        int li_min = obj_date.get(Calendar.MINUTE);
+        int li_s = obj_date.get(Calendar.SECOND);
+        //天数需要另外调整，包括锐年锐月、大小月不等，这里用30天将就一下，实际中另写
+        long bi_weak = li_weak * 12 * 30 * 24 * 60 * 60 * 1000;
+        long bi_m = li_m * 30 * 24 * 60 * 60 * 1000;
+        long bi_d = li_d * 24 * 60 * 60 * 1000;
+        long bi_h = li_h * 60 * 60 * 1000;
+        long bi_min = li_min * 60 * 1000;
+        long bi_s = li_s * 1000;
+        long bi_total;
+        bi_total = bi_weak;
+        bi_total = bi_total+bi_m;
+        bi_total = bi_total+bi_d;
+        bi_total = bi_total+bi_h;
+        bi_total = bi_total+bi_min;
+        bi_total = bi_total+bi_s;
+        
+        return String.valueOf(bi_total);
+    }
+
+
+  
+ 
+Top  
+ 
+ 回复人： majianbing() ( ) 信誉：100  2005-8-6 18:10:24  得分: 0  
+ 
+ 
+   
+请问这些是在电脑上操作还是全部手写代码?如果全部手写代码,请面试官一起来写吧
+
+  
+ 
+Top  
+ 
+ 回复人： kmbirdman() ( ) 信誉：100  2005-8-6 19:29:47  得分: 0  
+ 
+ 
+   
+mark
+
+  
+ 
+Top  
+ 
+ 回复人： liwenchao() ( ) 信誉：100  2005-8-6 19:43:52  得分: 0  
+ 
+ 
+   
+up
+
+  
+ 
+Top  
+ 
+ 回复人： wodanxin(菜鸟学习J2EE中ing) ( ) 信誉：100  2005-8-6 21:29:53  得分: 0  
+ 
+ 
+   
+mark
+
+
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-8-6 22:08:03  得分: 0  
+ 
+ 
+   
+靠。手工我是写不出来。
+
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-8-6 22:08:40  得分: 0  
+ 
+ 
+   
+主要是那个思想。在机子上调试了好久。
+
+  
+ 
+Top  
+ 
+ 回复人： topboy8381(火柴天堂) ( ) 信誉：100  2005-8-6 23:56:49  得分: 0  
+ 
+ 
+   
+不错，很全面，可是记不清那些方法名怎么办，用工具用习惯了，不好啊！！！！
+
+  
+ 
+Top  
+ 
+ 回复人： woaini_1320(晴天) ( ) 信誉：100  2005-8-7 8:49:16  得分: 0  
+ 
+ 
+   
+楼主能不能把答案也给贴出来啊！
+先顶一下
+
+  
+ 
+Top  
+ 
+ 回复人： bonwei(阿邦) ( ) 信誉：100  2005-8-7 14:16:08  得分: 0  
+ 
+ 
+   
+//如何取得从1970年到现在的毫秒数
+    public String getMillSecond(int i_yes){
+        GregorianCalendar obj_date = new GregorianCalendar(); 
+        int li_weak = obj_date.get(Calendar.YEAR) - i_yes;
+        int li_m = obj_date.get(Calendar.MONTH);
+        int li_d = obj_date.get(Calendar.DATE);
+        int li_h = obj_date.get(Calendar.HOUR_OF_DAY);
+        int li_min = obj_date.get(Calendar.MINUTE);
+        int li_s = obj_date.get(Calendar.SECOND);
+        //天数需要另外调整，包括锐年锐月、大小月不等，这里用30天将就一下，实际中另写
+        long bi_weak = li_weak * 12 * 30 * 24 * 60 * 60 * 1000;
+        long bi_m = li_m * 30 * 24 * 60 * 60 * 1000;
+        long bi_d = li_d * 24 * 60 * 60 * 1000;
+        long bi_h = li_h * 60 * 60 * 1000;
+        long bi_min = li_min * 60 * 1000;
+        long bi_s = li_s * 1000;
+        long bi_total;
+        bi_total = bi_weak;
+        bi_total = bi_total+bi_m;
+        bi_total = bi_total+bi_d;
+        bi_total = bi_total+bi_h;
+        bi_total = bi_total+bi_min;
+        bi_total = bi_total+bi_s;
+        
+        return String.valueOf(bi_total);
+    }
+-----------------------------------------------------------
+
+这个不用这样子吧
+System.currentTimeMillis()不就是吗?
+还有上面的代码也都是太复杂了吧
+
+  
+ 
+Top  
+ 
+ 回复人： wangxdsharing(分享) ( ) 信誉：100  2005-8-7 18:27:00  得分: 0  
+ 
+ 
+   
+我也mark
+
+  
+ 
+Top  
+ 
+ 回复人： liudang77(KNOW&EXPRESS) ( ) 信誉：100  2005-8-7 19:32:28  得分: 0  
+ 
+ 
+   
+收
+
+  
+ 
+Top  
+ 
+ 回复人： gaomen800(嘟嘟) ( ) 信誉：100  2005-8-7 20:35:36  得分: 0  
+ 
+ 
+   
+顶了
+
+  
+ 
+Top  
+ 
+ 回复人： ericqxg007(一笑而过) ( ) 信誉：100  2005-8-7 21:47:06  得分: 0  
+ 
+ 
+   
+收藏
+
+  
+ 
+Top  
+ 
+ 回复人： axiang80() ( ) 信誉：100  2005-08-08 08:59:00  得分: 0  
+ 
+ 
+   mark
+  
+ 
+Top  
+ 
+ 回复人： newste(旭林) ( ) 信誉：100  2005-08-08 09:54:00  得分: 0  
+ 
+ 
+   在java 1.4后提供了一个四舍五入方法
+NumberFormat
+  /**
+   * 格式化double数
+   * @param dNumber double
+   * @param iFrac int 保留小数点后几位;
+   * @return String
+   */
+  public static String RoundFracToString(double dNumber, int iScale)
+  {
+    String sReturn = "";
+    NumberFormat format = NumberFormat.getNumberInstance();
+    if (iScale >= 0)
+    {
+      format.setGroupingUsed(true);            //是否分组显示,如:1,400.00
+      format.setMaximumFractionDigits(iScale);
+      format.setMinimumFractionDigits(iScale);
+      sReturn = format.format(dNumber);
+    }
+    return sReturn;
+  }
+  
+ 
+Top  
+ 
+ 回复人： lllllllllluoyi(罗毅) ( ) 信誉：100  2005-08-08 10:24:00  得分: 0  
+ 
+ 
+   楼上的方法可行。
+  
+ 
+Top  
+ 
+ 回复人： liqian008(理智的愤青) ( ) 信誉：100  2005-08-08 11:24:00  得分: 0  
+ 
+ 
+   mark
+  
+ 
+Top  
+ 
+ 回复人： naci007(阿淼) ( ) 信誉：95  2005-08-08 15:42:00  得分: 0  
+ 
+ 
+   mark
+  
+ 
+Top  
+ 
+ 回复人： gaohui7141(开拓者) ( ) 信誉：100  2005-08-09 10:04:00  得分: 0  
+ 
+ 
+   不会吧  面试考这些？
+  
+ 
+Top  
+ 
+ 回复人： ply6669747(阿七) ( ) 信誉：100  2005-08-11 08:55:00  得分: 0  
+ 
+ 
+   收场，谢谢
+  
+ 
+Top  
+ 
+ 回复人： yangtao411(小幺) ( ) 信誉：100  2005-08-11 09:26:00  得分: 0  
+ 
+ 
+   恩
+不错
+  
+ 
+Top  
+ 
+ 回复人： w_y_job() ( ) 信誉：100  2005-08-11 09:50:00  得分: 0  
+ 
+ 
+   四舍五入方法
+  /**
+   * 保留x位小数(将进行四舍五入)
+   * @param str 需保留的字符串型数据
+   * @param x 需要保留的小数位
+   * @return String 返回保留后的字符串
+   **/
+  static public String getRound(String str, int x)
+  {
+    if (str == null || str.equals(""))
+    {
+      return "0";
+    }
+    String cStr = "";
+    String rStr = "";
+    while (rStr.length() < x)
+    {
+      rStr += "#";
+    }
+    java.text.DecimalFormat df = new java.text.DecimalFormat("##." + rStr);
+    return df.format(Double.parseDouble(str));
+  }
+
+  
+ 
+Top  
+ 
+ 
+
+ 
+ 
+ 
+    
+ 
+
+ 
+ 管理 | 关闭窗口  
+ 
+ 
+
+
+
+--------------------------------------------------------------------------------
+
+网站简介 - 广告服务 - 网站地图 - 帮助信息 - 联系方式    
+百联美达美公司 版权所有 京ICP证020026号 
+Copyright ? CSDN.net, Inc. All rights reserved  
+  
+
+  

@@ -1,0 +1,231 @@
+DIV {
+	WORD-BREAK: break-all
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+A:link {
+	COLOR: #032936; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #032936; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #032936; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #032936; TEXT-DECORATION: underline
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; HEIGHT: auto
+}
+H1 {
+	MARGIN-TOP: 30px; FONT-WEIGHT: normal; FONT-SIZE: 20pt; MARGIN-LEFT: 200px; COLOR: #000; FONT-FAMILY: verdana; TEXT-ALIGN: center
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 35px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/operattitle.gif); PADDING-BOTTOM: 10px; MARGIN: 0px 0px 20px; COLOR: #920702; PADDING-TOP: 12px; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: left
+}
+H2.count {
+	
+}
+H3 {
+	DISPLAY: none
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 35px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/operattitle.gif); PADDING-BOTTOM: 10px; MARGIN: 0px; COLOR: #920702; PADDING-TOP: 12px; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: left
+}
+H4.textDiary {
+	DISPLAY: none
+}
+H5 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 50% bottom; PADDING-LEFT: 10px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/article_sep_bg_2.gif); PADDING-BOTTOM: 0px; COLOR: #920702; PADDING-TOP: 5px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 23px; TEXT-ALIGN: left
+}
+H5.diaryTitle A {
+	COLOR: #920702
+}
+H6 {
+	
+}
+TD.tdText {
+	
+}
+H6.name {
+	DISPLAY: none
+}
+UL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 160px; LINE-HEIGHT: 150%; PADDING-TOP: 5px
+}
+UL.bookmarkGroup {
+	
+}
+LI {
+	LINE-HEIGHT: 150%; LIST-STYLE-TYPE: none
+}
+LI.weblog {
+	
+}
+LI.guestBook {
+	COLOR: #003366; LINE-HEIGHT: 20px
+}
+SPAN.text {
+	COLOR: black
+}
+LI.bookmark {
+	LIST-STYLE-TYPE: none
+}
+LI.friendBlog {
+	LIST-STYLE-TYPE: none
+}
+SPAN.friendBlogText {
+	
+}
+IMG.bookmarkImg {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG.rss {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG.logo {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG.operat {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 50px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG.imgShow {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+DIV.logoFrm {
+	TEXT-ALIGN: center
+}
+INPUT.guestbookName {
+	BORDER-RIGHT: #6e6855 1px solid; BORDER-TOP: #6e6855 1px solid; FONT: 11px arial; MARGIN-LEFT: 20px; BORDER-LEFT: #6e6855 1px solid; WIDTH: 60px; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #6e6855 1px solid; HEIGHT: 15px; BACKGROUND-COLOR: #eeeeee
+}
+.guestbookInput {
+	BORDER-RIGHT: #6e6855 1px solid; BORDER-TOP: #6e6855 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; FONT: 11px arial; MARGIN-LEFT: 18px; BORDER-LEFT: #6e6855 1px solid; WIDTH: 150px; COLOR: #000; BORDER-BOTTOM: #6e6855 1px solid; HEIGHT: 50px; BACKGROUND-COLOR: #eeeeee
+}
+INPUT.inputStyle {
+	BORDER-RIGHT: #6e6855 1px solid; BORDER-TOP: #6e6855 1px solid; FONT: 11px arial; MARGIN-LEFT: 5px; BORDER-LEFT: #6e6855 1px solid; WIDTH: 70px; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #6e6855 1px solid; HEIGHT: 15px; BACKGROUND-COLOR: #eeeeee
+}
+INPUT.buttonStyle {
+	BORDER-RIGHT: #6e6855 1px solid; BORDER-TOP: #6e6855 1px solid; FONT: 11px arial; BORDER-LEFT: #6e6855 1px solid; COLOR: #000; MARGIN-RIGHT: 5px; BORDER-BOTTOM: #6e6855 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+DIV#container {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 1003px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+DIV#header {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 0px; FLOAT: left; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/header.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 1003px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: center
+}
+DIV#myPhoto {
+	BACKGROUND-IMAGE: none
+}
+DIV#myPhoto TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+DIV#calendar {
+	BACKGROUND-IMAGE: none
+}
+DIV#loginFrm {
+	BACKGROUND-IMAGE: none
+}
+DIV#myPhoto A {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+DIV#otherFrm {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV#otherFrm TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV#myPhoto H4 {
+	
+}
+DIV#newWeblog H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title1.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 10px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+DIV#blogIndex H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title2.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+DIV#guestBook H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title3.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+DIV#friendBlog H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title4.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+DIV#remark H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title6.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+DIV#textBookmark H4 {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center bottom; PADDING-LEFT: 60px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/title6.gif); PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+IMG.myPhoto {
+	BORDER-TOP-WIDTH: 0px; MARGIN-TOP: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 7px; WIDTH: 100px; MARGIN-RIGHT: 5px; HEIGHT: 92px; BORDER-RIGHT-WIDTH: 0px
+}
+DIV#textBookmark H4 {
+	PADDING-LEFT: 45px; FONT-SIZE: 12px; HEIGHT: 20px
+}
+DIV#leftFrm {
+	FLOAT: left; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/operabg.gif); WIDTH: 209px; BACKGROUND-REPEAT: repeat-y; TEXT-ALIGN: center
+}
+DIV#operaTitle {
+	DISPLAY: none
+}
+DIV.operation {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/operabg2.gif); PADDING-BOTTOM: 10px; WIDTH: 200px; COLOR: #000000; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-y; FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+DIV.friendBlogDIV {
+	
+}
+DIV#rightFrm {
+	FLOAT: right; WIDTH: 775px
+}
+DIV#blogImg {
+	DISPLAY: none
+}
+DIV#blogContent {
+	BORDER-RIGHT: #afafaf 2px solid; PADDING-RIGHT: 5px; BORDER-TOP: #afafaf 2px solid; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; MARGIN: 20px 0px 0px; BORDER-LEFT: #afafaf 2px solid; COLOR: #000000; LINE-HEIGHT: 120%; PADDING-TOP: 0px; BORDER-BOTTOM: #afafaf 2px solid; FONT-FAMILY: "Tahoma"; TEXT-ALIGN: left
+}
+P.content {
+	MARGIN: 0px
+}
+DIV#diary {
+	MARGIN: 0px
+}
+DIV.diaryContent {
+	
+}
+DIV.entity {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; COLOR: #000000; LINE-HEIGHT: 120%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+P.diaryFoot {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/article_sep_bg_1.gif); PADDING-BOTTOM: 10px; PADDING-TOP: 20px; BACKGROUND-REPEAT: repeat-x; TEXT-ALIGN: right
+}
+DIV#category {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 23px; TEXT-ALIGN: center
+}
+DIV#category A {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #920702
+}
+#footer {
+	FLOAT: left; BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/bot_bg.gif); PADDING-BOTTOM: 0px; WIDTH: 1003px; PADDING-TOP: 10px; BACKGROUND-REPEAT: repeat-x; TEXT-ALIGN: right
+}
+.calendarBigBorder {
+	BACKGROUND-IMAGE: url(http://blog.blogchina.com/template/template5/images/cal_1.gif); MARGIN: 5px; WIDTH: 95%; PADDING-TOP: 6px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial,Helvetica,sans-serif; TEXT-DECORATION: none
+}
+.calendarTd {
+	FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: #000; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center
+}
+.calendarNow {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: #003366; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.calendarDaySat {
+	FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: #000; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.calendarDaySun {
+	FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: #000; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.calendarLink {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: blue; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center; TEXT-DECORATION: underline
+}
+.calendarHover {
+	FONT-SIZE: 9pt; WIDTH: 12%; CURSOR: hand; COLOR: #f00; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 18px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
