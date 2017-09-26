@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,61 +7,35 @@
     tools:context="com.example.csy.mybottomcustomview.MainActivity">
 
     <LinearLayout
-        android:id="@+id/ll_bottom_parent"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ffffff"
-        android:orientation="horizontal">
+        android:layout_height="45dp">
 
-        <FrameLayout
-            android:id="@+id/fl_location"
-            style="@style/beibao_bottom_item_parent_Style"
-            android:onClick="show">
+        <Button
+            android:id="@+id/btOne"
+            android:text="一个菜单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                style="@style/beibao_bottom_item_text_Style"
-                android:drawableLeft="@mipmap/ic_launcher"
-                android:text="位置" />
-        </FrameLayout>
+        <Button
+            android:id="@+id/btTwo"
+            android:text="二个菜单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        <View
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/frame_color_e5e5e5" />
-
-        <FrameLayout
-            android:id="@+id/fl_recharge"
-            style="@style/beibao_bottom_item_parent_Style"
-            android:onClick="show">
-
-            <TextView
-                android:id="@+id/beibao_recharge"
-                style="@style/beibao_bottom_item_text_Style"
-                android:drawableLeft="@mipmap/ic_launcher"
-                android:text="充值" />
-        </FrameLayout>
-
-        <View
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/frame_color_e5e5e5" />
-
-        <FrameLayout
-            android:id="@+id/fl_more"
-            style="@style/beibao_bottom_item_parent_Style"
-            android:onClick="show">
-
-            <TextView
-                style="@style/beibao_bottom_item_text_Style"
-                android:drawableLeft="@mipmap/ic_launcher"
-                android:text="更多" />
-        </FrameLayout>
-
+        <Button
+            android:id="@+id/btThree"
+            android:text="三个菜单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
+    <com.example.csy.mybottomcustomview.views.CustomBottomItemView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/mCustomBottomItemView"
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       ></com.example.csy.mybottomcustomview.views.CustomBottomItemView>
 
-</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csy.mybottomcustomview.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_first"
+            style="@style/bottom_item_parent_Style"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_first"
+                style="@style/bottom_item_text_Style"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="first" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/line_second"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/frame_color_e5e5e5"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_second"
+            style="@style/bottom_item_parent_Style"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_second"
+                style="@style/bottom_item_text_Style"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="second" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/line_third"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/frame_color_e5e5e5"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_third"
+            style="@style/bottom_item_parent_Style"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_third"
+                style="@style/bottom_item_text_Style"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="third" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -25,4 +25,31 @@
         <item name="android:drawablePadding">10dp</item>
     </style>
 
+
+    <style name="bottom_item_text_Style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/frame_color_565656</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="bottom_item_parent_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/frame_common_click_effect_no_corner_no_stroke_selector</item>
+    </style>
+
+    <style name="frame_common_bottom_popu_item_text_Style">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/frame_color_747474</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>
