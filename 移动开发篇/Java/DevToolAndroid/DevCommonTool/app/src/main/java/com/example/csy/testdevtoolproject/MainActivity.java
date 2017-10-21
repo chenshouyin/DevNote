@@ -1,7 +1,9 @@
 package com.example.csy.testdevtoolproject;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.tool.csy.devcsytool.statusbar.StatusBarHelper;
 
@@ -35,5 +37,34 @@ public class MainActivity extends AppCompatActivity {
         helper.setColor(getResources().getColor(R.color.colorPrimaryDark));
         // or set background drawable
         // helper.setDrawable(new ColorDrawable(Color.BLUE));
+
+        ImageView mImageView = new ImageView(getApplicationContext());
+        mImageView.invalidate();
+        Handler mHandler = null;
+        mImageView.post(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+
+        mHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                
+            }
+        });
+        
+
+        mImageView.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },1000);
+
+        Object object;
+        object.
+        mImageView.postInvalidate();
     }
 }
