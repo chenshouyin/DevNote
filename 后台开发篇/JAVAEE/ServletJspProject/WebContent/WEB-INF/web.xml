@@ -10,12 +10,25 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-	<servlet>
-	<servlet-name>MailSendServlet</servlet-name>
-	<servlet-class>com.csy.servlet.MailSendServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	<servlet-name>MailSendServlet</servlet-name>
-	<url-pattern>doMailSend</url-pattern>
-	</servlet-mapping>
+  <!-- 邮件发送和验证 -->
+  <servlet>
+    <servlet-name>MailSend</servlet-name>
+    <servlet-class>com.csy.servlet.MailSend</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MailSend</servlet-name>
+    <url-pattern>/MailSend</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>VeryCountEmail</servlet-name>
+    <servlet-class>com.csy.servlet.VeryCountEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VeryCountEmail</servlet-name>
+    <url-pattern>/VeryCountEmail</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- 邮件发送和验证 -->
 </web-app>

@@ -18,7 +18,20 @@ public class MailSenderInfo {
     private String fromAddress;
     // 邮件接收者的地址   
     private String toAddress;
-    // 登陆邮件发送服务器的用户名和密码   
+    // 群发邮件接收者的地址   
+    private String[] toAddresses;
+  
+	//是否群发
+    private boolean isSnedToAll = false;
+    public boolean isSnedToAll() {
+		return isSnedToAll;
+	}
+
+	public void setSnedToAll(boolean isSnedToAll) {
+		this.isSnedToAll = isSnedToAll;
+	}
+
+	// 登陆邮件发送服务器的用户名和密码   
     private String userName;
     private String password;
     // 是否需要身份验证   
@@ -120,4 +133,14 @@ public class MailSenderInfo {
     public void setContent(String textContent) {
         this.content = textContent;
     }
+    
+    public String[] getToAddresses() {
+		return toAddresses;
+	}
+
+	public void setToAddresses(String[] toAddresses) {
+		this.toAddresses = toAddresses;
+	}
+
+	
 }   

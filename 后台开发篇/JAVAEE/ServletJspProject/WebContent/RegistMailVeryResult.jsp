@@ -7,12 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-注册并验证邮箱测试<br><br>
-<form action =<% getServletContext().getContextPath();%>"MailSend"  method="post" >
-邮箱:<input type="text" value="" id="mail" name="mail">
-密码:<input type="password" value="" id="password" name="password"><br>
-<input type="submit" value="注册" >
-</form>
+验证结果:<br>
+<%out.print(request.getAttribute("result"));%>
 
 </body>
 </html>

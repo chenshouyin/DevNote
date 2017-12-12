@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="index.jsp">发送电子邮件+验证激活</a>
+<a href="Regist.jsp">发送电子邮件+验证激活</a>
 </body>
 </html>
