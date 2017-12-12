@@ -1,4 +1,4 @@
-package com.csy.servlet;
+package com.csy.servlet.regist;
 
 import java.io.IOException;
 

@@ -13,7 +13,7 @@
   <!-- 邮件发送和验证 -->
   <servlet>
     <servlet-name>MailSend</servlet-name>
-    <servlet-class>com.csy.servlet.MailSend</servlet-class>
+    <servlet-class>com.csy.servlet.regist.MailSend</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MailSend</servlet-name>
@@ -22,7 +22,7 @@
   
     <servlet>
     <servlet-name>VeryCountEmail</servlet-name>
-    <servlet-class>com.csy.servlet.VeryCountEmail</servlet-class>
+    <servlet-class>com.csy.servlet.regist.VeryCountEmail</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>VeryCountEmail</servlet-name>

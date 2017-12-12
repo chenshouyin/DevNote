@@ -1,4 +1,4 @@
-package com.csy.servlet;
+package com.csy.servlet.regist;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -77,8 +77,8 @@ public class MailSend extends HttpServlet {
 		mailInfo.setMailServerPort("25");
 		mailInfo.setValidate(true);
 		// 参考readme获取网易客户端授权密码,这里不能为空
-		String username = null ;// 不要带后缀
-		String password = null ;
+		String username = "15116197841";// 不要带后缀
+		String password = "wyaqmcsy313";
 		if (password == null || username == null) {
 			throw new RuntimeException("请到网易申请，具体参考readme，这里帐号密码不能为空！");
 		}
