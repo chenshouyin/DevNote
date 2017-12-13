@@ -38,10 +38,19 @@
         <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods>
     </package>
      -->
+     <constant name="struts.devMode" value="true" />
+     <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
      
-     <package name="default" extends="struts-default" namespace="test2">
-        <action name="action1" class="com.csy.struct2.HelloStruct2" >
-        	<result name="success">/HelloStruct2.jsp</result>
+     <!-- 注意:
+     1.Struct2.5需要知道Action  
+     2.
+     -->
+     <package name="default" extends="struts-default" namespace="/test">
+         
+        <action name="hello" class="com.csy.struct2.HelloStruct2" >
+        	<result  name="SUCCESS">/HelloStruct2.jsp</result>
+        	<result  name="index">/index.jsp</result>
+        	<result  name="SUCCESS33">/HelloStruct2.jsp</result>
         </action>
     </package>
 </struts>
