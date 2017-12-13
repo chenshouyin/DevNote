@@ -39,9 +39,9 @@
     </package>
      -->
      
-     <package name="default" extends="struts-default" namespace="">
-        <action name="test" >
-        	<result>/HelloStruct2.jsp</result>
+     <package name="default" extends="struts-default" namespace="test2">
+        <action name="action1" class="com.csy.struct2.HelloStruct2" >
+        	<result name="success">/HelloStruct2.jsp</result>
         </action>
     </package>
 </struts>
