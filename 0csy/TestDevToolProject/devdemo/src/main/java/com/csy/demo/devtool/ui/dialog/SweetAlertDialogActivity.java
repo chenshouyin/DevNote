@@ -1,11 +1,12 @@
-package com.example.csy.testdevtoolproject.ui.dialog;
+package com.csy.demo.devtool.ui.dialog;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 
-import com.example.csy.testdevtoolproject.R;
+import com.csy.demo.devtool.R;
+
 import com.tool.csy.devcsytool.ui.dialog.sweetalert.SweetAlertDialog;
 
 

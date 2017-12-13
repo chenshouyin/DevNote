@@ -1,4 +1,4 @@
-package com.example.csy.testdevtoolproject.ui.dialog;
+package com.csy.demo.devtool.ui.dialog;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -14,8 +14,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.csy.testdevtoolproject.MainActivity;
-import com.example.csy.testdevtoolproject.R;
+
+import com.csy.demo.devtool.R;
 import com.tool.csy.devcsytool.ui.dialog.materialishprogress.ProgressWheel;
 import com.tool.csy.devcsytool.utils.convert.DensityUtils;
 

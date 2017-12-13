@@ -1,4 +1,4 @@
-package com.example.csy.testdevtoolproject.utils.countdowntimer;
+package com.csy.demo.devtool;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.csy.testdevtoolproject.R;
 import com.tool.csy.devcsytool.base.BaseActivity;
 
 import butterknife.BindView;

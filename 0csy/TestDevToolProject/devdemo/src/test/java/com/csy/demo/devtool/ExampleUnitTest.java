@@ -1,4 +1,4 @@
-package com.example.csy.testdevtoolproject;
+package com.csy.demo.devtool;
 
 import org.junit.Test;
 

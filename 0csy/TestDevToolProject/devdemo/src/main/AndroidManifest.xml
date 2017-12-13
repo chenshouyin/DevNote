@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.csy.testdevtoolproject">
+    package="com.csy.demo.devtool">
 
     <application
         android:allowBackup="true"
@@ -29,7 +29,7 @@
         </activity>
 
         <!--4.倒计时-->
-        <activity android:name=".utils.countdowntimer.CountDownTimerActivity">
+        <activity android:name="com.csy.demo.devtool.CountDownTimerActivity">
         </activity>
     </application>
 

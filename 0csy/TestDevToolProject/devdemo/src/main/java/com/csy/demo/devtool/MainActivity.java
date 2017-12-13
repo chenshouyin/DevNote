@@ -1,24 +1,22 @@
-package com.example.csy.testdevtoolproject;
+package com.csy.demo.devtool;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.csy.testdevtoolproject.ui.dialog.ProgressDialogActivity;
-import com.example.csy.testdevtoolproject.ui.dialog.SweetAlertDialogActivity;
-import com.example.csy.testdevtoolproject.ui.statusbar.StatusBarActivity;
-import com.example.csy.testdevtoolproject.utils.countdowntimer.CountDownTimerActivity;
+import com.csy.demo.devtool.ui.dialog.ProgressDialogActivity;
+import com.csy.demo.devtool.ui.dialog.SweetAlertDialogActivity;
+import com.csy.demo.devtool.ui.statusbar.StatusBarActivity;
 import com.tool.csy.devcsytool.base.BaseActivity;
 import com.tool.csy.devcsytool.ui.dialog.sweetalert.SweetAlertDialog;
-import com.tool.csy.devcsytool.ui.statusbar.StatusBarHelper;
 import com.tool.csy.devcsytool.utils.log.klog.KLog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.csy.demo.devtool.R;
 
 public class MainActivity extends BaseActivity {
 

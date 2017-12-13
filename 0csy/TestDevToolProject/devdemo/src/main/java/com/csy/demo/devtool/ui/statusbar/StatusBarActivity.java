@@ -1,4 +1,4 @@
-package com.example.csy.testdevtoolproject.ui.statusbar;
+package com.csy.demo.devtool.ui.statusbar;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.csy.testdevtoolproject.R;
+import com.csy.demo.devtool.R;
 import com.tool.csy.devcsytool.base.BaseActivity;
 import com.tool.csy.devcsytool.ui.statusbar.StatusBarHelper;
 
