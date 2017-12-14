@@ -47,10 +47,11 @@
      -->
      <package name="default" extends="struts-default" namespace="/test">
          
-        <action name="hello" class="com.csy.struct2.HelloStruct2" >
+        <action name="hello" class="com.csy.struct2.HelloStruct2">
+        <result >/HelloStruct2.jsp</result>
         	<result  name="SUCCESS">/HelloStruct2.jsp</result>
         	<result  name="index">/index.jsp</result>
-        	<result  name="SUCCESS33">/HelloStruct2.jsp</result>
+        	<result  name="execute">/HelloStruct2.jsp</result>
         </action>
     </package>
 </struts>
