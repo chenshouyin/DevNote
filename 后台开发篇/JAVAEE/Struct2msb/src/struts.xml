@@ -38,7 +38,7 @@
         <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods>
     </package>
      -->
-     <constant name="struts.devMode" value="true" />
+     <constant name="struts.devMode" value="false" />
      <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
      
      <!-- 注意:
@@ -52,6 +52,13 @@
         	<result  name="SUCCESS">/HelloStruct2.jsp</result>
         	<result  name="index">/index.jsp</result>
         	<result  name="execute">/HelloStruct2.jsp</result>
+        </action>
+        
+        <!-- 记住 return SUCCESS; 源码里面返回的是 小写 "success" 除非返回return "SUCCESS";-->
+        <action name="*_*" class="com.csy.struct2.{1}" method="{2}">
+            <result name="success">/WEB-INF/jsp/{1}_{2}_success.jsp</result>
+            <result name="error">/WEB-INF/jsp/{1}_{2}_error.jsp</result>
+            <allowed-methods>hello,add,receiveParams,receiveParams</allowed-methods>                                      
         </action>
     </package>
 </struts>
