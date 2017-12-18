@@ -48,5 +48,20 @@ basePath:<%out.print(basePath); %>
 地址栏的地址是:http://localhost:8080/Struct2msb/WEB-INF/jsp/ResultTypeRedirect.jsp   404
 <a href="http://www.jianshu.com/p/123bfa241c73">访问WebContent/WEB-INF下的jsp页面404</a>
 </br>
+<a href="<%=basePath %>test/RequestSessionApplicationUsage01_putAttrs">5.访问web元素:取Map类型的request、session、application01</a>
+</br>
+<a href="<%=basePath %>test/RequestSessionApplicationUsage02_putAttrs">5.访问web元素:取Map类型的request、session、application02<font color="#ff0000">(最常用的一种,实现RequestAware等接口)</font></a>
+</br>
+<a href="<%=basePath %>test/RequestSessionApplicationUsage03_putAttrs">5.访问web元素:真实类型的Httprequest、session、application03</a>
+</br>
+<a href="<%=basePath %>test/RequestSessionApplicationUsage04_putAttrs">5.访问web元素:真实类型的Httprequest、session、application04</a>
+</br>
+</br>
+<a href="<%=basePath %>test/TestIncludeAction06_test">6.使用include标签(注意不要加后缀:<include file="struts_6"></include>)</a>
+</br>
+</br>
+<a href="<%=basePath %>test/not_exist_action">7.默认Action,如果敲一个不存在的Action的话,默认跳到默认页面(1.貌似不能放在include标签里面 2.如果加了通配符,类似 00_kk 则要按照此格式才不会报错)</a>
+
+
 </body>
 </html>

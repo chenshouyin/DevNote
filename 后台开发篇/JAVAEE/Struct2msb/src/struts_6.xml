@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+
+   
+     <!-- 注意:
+     1.Struct2.5需要知道Action  
+     2.
+     -->
+     <package name="default" extends="struts-default" namespace="/test">
+         
+        <action name="test" class="com.csy.struct2.TestIncludeAction06" method="test">
+        <result name="success">/TestIncludeAction06_test_success.jsp</result>
+       <allowed-methods>test</allowed-methods>                                      
+        
+        </action>
+      
+    </package>
+</struts>

@@ -27,8 +27,20 @@
 	<constant name="struts.devMode" value="true" />
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
 	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+
+
+
 	<!-- 注意: 1.Struct2.5需要知道Action 2. -->
 	<package name="default" extends="struts-default" namespace="/test">
+
+	    <!-- 配置默认Action,如果找不到Action就会跳转此页面 -->
+		<default-action-ref name="index"></default-action-ref>
+		<action name="index">
+			<result>/WEB-INF/jsp/default_index.jsp</result>
+			<allowed-methods>index</allowed-methods>
+		</action>
+
+
 
 		<action name="hello" class="com.csy.struct2.HelloStruct2">
 			<result>/HelloStruct2.jsp</result>
@@ -37,11 +49,13 @@
 			<result name="execute">/HelloStruct2.jsp</result>
 		</action>
 
+
 		<!-- 记住 return SUCCESS; 源码里面返回的是 小写 "success" 除非返回return "SUCCESS"; -->
 		<action name="*_*" class="com.csy.struct2.{1}" method="{2}">
 			<result name="success">/WEB-INF/jsp/{1}_{2}_success.jsp</result>
 			<result name="error">/WEB-INF/jsp/{1}_{2}_error.jsp</result>
-			<allowed-methods>hello,add,receiveParams,receiveParams</allowed-methods>
+
+			<allowed-methods>hello,add,receiveParams,receiveParams,putAttrs,test</allowed-methods>
 		</action>
 
 
@@ -69,5 +83,11 @@
 			</result>
 		</action>
 
+			<include file="struts_6"></include>
+		
 	</package>
+
+
+
+
 </struts>
