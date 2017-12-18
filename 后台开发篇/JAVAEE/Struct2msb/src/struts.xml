@@ -28,12 +28,14 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
 	<constant name="struts.i18n.encoding" value="utf-8"></constant>
 
-
+	<include file="struts_6"></include>
 
 	<!-- 注意: 1.Struct2.5需要知道Action 2. -->
 	<package name="default" extends="struts-default" namespace="/test">
 
-	    <!-- 配置默认Action,如果找不到Action就会跳转此页面 -->
+
+
+		<!-- 配置默认Action,如果找不到Action就会跳转此页面 -->
 		<default-action-ref name="index"></default-action-ref>
 		<action name="index">
 			<result>/WEB-INF/jsp/default_index.jsp</result>
@@ -71,7 +73,7 @@
 
 		<!-- 配置参照文档 file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/redirect-result.html 
 			file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/result-types.html -->
-		
+
 		<action name="resultTypeRedirect" class="com.csy.struct2.ResultTypeRedirect"
 			method="doAction">
 
@@ -83,8 +85,8 @@
 			</result>
 		</action>
 
-			<include file="struts_6"></include>
-		
+
+
 	</package>
 
 
