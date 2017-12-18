@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
--->
+<!-- /* * Licensed to the Apache Software Foundation (ASF) under one * or 
+	more contributor license agreements. See the NOTICE file * distributed with 
+	this work for additional information * regarding copyright ownership. The 
+	ASF licenses this file * to you under the Apache License, Version 2.0 (the 
+	* "License"); you may not use this file except in compliance * with the License. 
+	You may obtain a copy of the License at * * http://www.apache.org/licenses/LICENSE-2.0 
+	* * Unless required by applicable law or agreed to in writing, * software 
+	distributed under the License is distributed on an * "AS IS" BASIS, WITHOUT 
+	WARRANTIES OR CONDITIONS OF ANY * KIND, either express or implied. See the 
+	License for the * specific language governing permissions and limitations 
+	* under the License. */ -->
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
@@ -26,39 +17,57 @@
 
 <struts>
 
-    <!--  Overwrite Convention -->
-    <!-- 原来的Demo配置
-    <constant name="struts.convention.action.suffix" value="Controller"/>
-    <constant name="struts.convention.action.mapAllMatches" value="true"/>
-    <constant name="struts.convention.default.parent.package" value="rest-showcase"/>
+	<!-- Overwrite Convention -->
+	<!-- 原来的Demo配置 <constant name="struts.convention.action.suffix" value="Controller"/> 
+		<constant name="struts.convention.action.mapAllMatches" value="true"/> <constant 
+		name="struts.convention.default.parent.package" value="rest-showcase"/> <constant 
+		name="struts.convention.package.locators" value="example"/> <package name="rest-showcase" 
+		extends="rest-default"> <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods> 
+		</package> -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<!-- 注意: 1.Struct2.5需要知道Action 2. -->
+	<package name="default" extends="struts-default" namespace="/test">
 
-    <constant name="struts.convention.package.locators" value="example"/>
+		<action name="hello" class="com.csy.struct2.HelloStruct2">
+			<result>/HelloStruct2.jsp</result>
+			<result name="SUCCESS">/HelloStruct2.jsp</result>
+			<result name="index">/index.jsp</result>
+			<result name="execute">/HelloStruct2.jsp</result>
+		</action>
 
-    <package name="rest-showcase" extends="rest-default">
-        <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods>
-    </package>
-     -->
-     <constant name="struts.devMode" value="false" />
-     <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
-     
-     <!-- 注意:
-     1.Struct2.5需要知道Action  
-     2.
-     -->
-     <package name="default" extends="struts-default" namespace="/test">
-         
-        <action name="hello" class="com.csy.struct2.HelloStruct2">
-        <result >/HelloStruct2.jsp</result>
-        	<result  name="SUCCESS">/HelloStruct2.jsp</result>
-        	<result  name="index">/index.jsp</result>
-        	<result  name="execute">/HelloStruct2.jsp</result>
-        </action>
-        
-        <!-- 记住 return SUCCESS; 源码里面返回的是 小写 "success" 除非返回return "SUCCESS";-->
-        <action name="*_*" class="com.csy.struct2.{1}" method="{2}">
-            <result name="success">/WEB-INF/jsp/{1}_{2}_success.jsp</result>
-            <result name="error">/WEB-INF/jsp/{1}_{2}_error.jsp</result>
-            <allowed-methods>hello,add,receiveParams,receiveParams</allowed-methods>                                      
-        </action>
-    </package>
+		<!-- 记住 return SUCCESS; 源码里面返回的是 小写 "success" 除非返回return "SUCCESS"; -->
+		<action name="*_*" class="com.csy.struct2.{1}" method="{2}">
+			<result name="success">/WEB-INF/jsp/{1}_{2}_success.jsp</result>
+			<result name="error">/WEB-INF/jsp/{1}_{2}_error.jsp</result>
+			<allowed-methods>hello,add,receiveParams,receiveParams</allowed-methods>
+		</action>
+
+
+		<!-- 配置参照文档 file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/dispatcher-result.html 
+			file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/result-types.html -->
+		<action name="resultType" class="com.csy.struct2.ResultType"
+			method="doAction">
+			<result name="success" type="dispatcher">
+				<param name="location">/WEB-INF/jsp/ResultType.jsp</param>
+			</result>
+			<allowed-methods>doAction</allowed-methods>
+		</action>
+
+		<!-- 配置参照文档 file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/redirect-result.html 
+			file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/result-types.html -->
+		
+		<action name="resultTypeRedirect" class="com.csy.struct2.ResultTypeRedirect"
+			method="doAction">
+
+			<result name="success" type="redirect">
+				<param name="location">/WEB-INF/jsp/ResultTypeRedirect.jsp</param>
+				<!-- <param name="reportType">pie</param> <param name="width">100</param> 
+					<param name="height">100</param> <param name="parse">false</param> <param 
+					name="anchor">summary</param> -->
+			</result>
+		</action>
+
+	</package>
 </struts>

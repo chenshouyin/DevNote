@@ -42,5 +42,11 @@ basePath:<%out.print(basePath); %>
 <a href="<%=basePath %>test/JspReceiveParamsFromAction4_receiveParams">4.java class action向jsp传参</a>
 </br>
 </br>
+<a href="<%=basePath %>test/resultType">11.Result类型01</a>
+</br>
+<a href="<%=basePath %>test/resultTypeRedirect">11.Result类型02_Redirect</a>
+地址栏的地址是:http://localhost:8080/Struct2msb/WEB-INF/jsp/ResultTypeRedirect.jsp   404
+<a href="http://www.jianshu.com/p/123bfa241c73">访问WebContent/WEB-INF下的jsp页面404</a>
+</br>
 </body>
 </html>

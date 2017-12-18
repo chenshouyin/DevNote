@@ -8,20 +8,19 @@ public class HelloStruct2 extends ActionSupport {
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("====HelloStruct  Exception");
-		return "success";
+		return "execute";
 	}
 
 	
 	public String index()  {
 		// TODO Auto-generated method stub
 		System.out.println("====HelloStruct2 index");
-		return "SUCCESS";
+		return "index";
 	}
-////	
-//	
+
 	public String add()  {
 		// TODO Auto-generated method stub
 		System.out.println("====HelloStruct2 add");
-		return "ADD";
+		return "add";
 	}
 }
