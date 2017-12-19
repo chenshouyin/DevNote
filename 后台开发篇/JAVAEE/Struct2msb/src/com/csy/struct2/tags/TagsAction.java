@@ -1,4 +1,4 @@
-package com.bjsxt.struts2.tags;
+package com.csy.struct2.tags;
 
 import com.opensymphony.xwork2.ActionSupport;
 

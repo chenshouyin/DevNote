@@ -1,4 +1,4 @@
-package com.bjsxt.struts2.tags;
+package com.csy.struct2.tags;
 
 public class S {
 	public static String STR = "STATIC STRING";
