@@ -42,12 +42,7 @@ basePath:<%out.print(basePath); %>
 <a href="<%=basePath %>test/JspReceiveParamsFromAction4_receiveParams">4.java class action向jsp传参</a>
 </br>
 </br>
-<a href="<%=basePath %>test/resultType">11.Result类型01</a>
-</br>
-<a href="<%=basePath %>test/resultTypeRedirect">11.Result类型02_Redirect</a>
-地址栏的地址是:http://localhost:8080/Struct2msb/WEB-INF/jsp/ResultTypeRedirect.jsp   404
-<a href="http://www.jianshu.com/p/123bfa241c73">访问WebContent/WEB-INF下的jsp页面404</a>
-</br>
+
 <a href="<%=basePath %>test/RequestSessionApplicationUsage01_putAttrs">5.访问web元素:取Map类型的request、session、application01</a>
 </br>
 <a href="<%=basePath %>test/RequestSessionApplicationUsage02_putAttrs">5.访问web元素:取Map类型的request、session、application02<font color="#ff0000">(最常用的一种,实现RequestAware等接口)</font></a>
@@ -60,8 +55,20 @@ basePath:<%out.print(basePath); %>
 <a href="<%=basePath %>test/TestIncludeAction06_test">6.使用include标签(注意不要加后缀:<include file="struts_6"></include>)</a>
 </br>
 </br>
-<a href="<%=basePath %>test/not_exist_action">7.默认Action,如果敲一个不存在的Action的话,默认跳到默认页面(1.貌似不能放在include标签里面 2.如果加了通配符,类似 00_kk 则要按照此格式才不会报错)</a>
+<a href="<%=basePath %>test/not_exist_action">7.默认Action,如果敲一个不存在的Action的话,默认跳到默认页面<font color="#ff0000">(1.貌似不能放在include标签里面 2.如果加了通配符,类似 00_kk 则要按照此格式才不会报错)</font></a>
+</br>
+</br>
 
+<a href="<%=basePath %>test/resultType">8.Result类型01:ResultTypeDispatcher</a>		
+</br>
+<a href="<%=basePath %>test/resultTypeRedirect">8.Result类型02:ResultTypeRedirect</a>
+（地址栏的地址是:http://localhost:8080/Struct2msb/WEB-INF/jsp/ResultTypeRedirect.jsp   404 客户端跳转方式不能直接访问web-inf下的文件
+<a href="http://www.jianshu.com/p/123bfa241c73">详见:访问WebContent/WEB-INF下的jsp页面404</a>）
+<br>其它type见文档file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/core-developers/result-types.html
+<br>
+<br>
+<a href="<%=basePath %>test/testGlobal?type=1">9.全局结果集01:Gloable_result 同一包名下可直接用,不同包名可继承上述包再使用 </a>
+<br><a href="<%=basePath %>test/testGlobal?type=0">9.全局结果集02:Gloable_result 同一包名下可直接用,不同包名可继承上述包再使用 </a>
 
 </body>
 </html>

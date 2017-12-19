@@ -33,10 +33,15 @@
 	<!-- 注意: 1.Struct2.5需要知道Action 2. -->
 	<package name="default" extends="struts-default" namespace="/test">
 
-
+		
 
 		<!-- 配置默认Action,如果找不到Action就会跳转此页面 -->
 		<default-action-ref name="index"></default-action-ref>
+		<!-- 必须按照一定的顺序排列 不然报错 http://blog.csdn.net/lc448986375/article/details/8027150-->
+		<global-results>
+			 <result name="global_default">/Global.jsp</result>
+		</global-results>
+		
 		<action name="index">
 			<result>/WEB-INF/jsp/default_index.jsp</result>
 			<allowed-methods>index</allowed-methods>
@@ -66,7 +71,7 @@
 		<action name="resultType" class="com.csy.struct2.ResultType"
 			method="doAction">
 			<result name="success" type="dispatcher">
-				<param name="location">/WEB-INF/jsp/ResultType.jsp</param>
+				<param name="location">/WEB-INF/jsp/ResultTypeDispatcher.jsp</param>
 			</result>
 			<allowed-methods>doAction</allowed-methods>
 		</action>
@@ -78,11 +83,17 @@
 			method="doAction">
 
 			<result name="success" type="redirect">
-				<param name="location">/WEB-INF/jsp/ResultTypeRedirect.jsp</param>
+				<param name="location">/ResultTypeRedirect.jsp</param>
 				<!-- <param name="reportType">pie</param> <param name="width">100</param> 
 					<param name="height">100</param> <param name="parse">false</param> <param 
 					name="anchor">summary</param> -->
 			</result>
+		</action>
+
+
+		<!-- 根据返回类型  success则用此处定义的页面  erro则用全局定义的那个-->
+		<action name="testGlobal" class="com.csy.struct2.GlobalResult" method="doAction">
+			<result name="success">/HelloStruct2.jsp</result>
 		</action>
 
 
