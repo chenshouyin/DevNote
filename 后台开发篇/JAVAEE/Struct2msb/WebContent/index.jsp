@@ -69,6 +69,18 @@ basePath:<%out.print(basePath); %>
 <br>
 <a href="<%=basePath %>test/testGlobal?type=1">9.全局结果集01:Gloable_result 同一包名下可直接用,不同包名可继承上述包再使用 </a>
 <br><a href="<%=basePath %>test/testGlobal?type=0">9.全局结果集02:Gloable_result 同一包名下可直接用,不同包名可继承上述包再使用 </a>
+<br><br>
+<a href="<%=basePath %>test/testDynamicResult?type=1">10.动态结果集Dynamic Result（$用于配置文件获取值栈的数据 ）</a>
+<br><a href="<%=basePath %>test/testDynamicResult?type=0">10.动态结果集Dynamic Result（$用于配置文件获取值栈的数据 ）</a>
+
+<br><a href="<%=basePath %>ognl/ognl.action?username=u&password=p&user.age=8">11.OGNL</a>
+file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/tag-developers/ognl.html
+
+<br><br><br><br>
+<font color="#ff0000">常见问题:</font>
+<br><a href="http://www.cnblogs.com/MessiAndDream/p/5869319.html0">1.OGNL表示式使用 和 值栈 </a>
+<br><a href="http://blog.csdn.net/u012877472/article/details/50804568">2.请求转发与请求重定向的区别 </a>
+
 
 </body>
 </html>
