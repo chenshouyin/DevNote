@@ -31,6 +31,7 @@
 	<include file="struts_6"></include>
 	
 	<include file="com/csy/struct2/ognl/ognl.xml"/>
+	<include file="com/csy/struct2/tags/struts.xml"/>
 
 	<!-- 注意: 1.Struct2.5需要知道Action 2. -->
 	<package name="default" extends="struts-default" namespace="/test">

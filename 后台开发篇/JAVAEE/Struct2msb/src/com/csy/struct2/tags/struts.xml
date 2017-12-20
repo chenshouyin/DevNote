@@ -12,7 +12,7 @@
 	<package name="tags" extends="struts-default">
 
         <action name="tags" class="com.csy.struct2.tags.TagsAction">
-            <result>/tags.jsp</result>
+            <result>/WEB-INF/jsp/tags/tags.jsp</result>
         </action>
 
     </package>

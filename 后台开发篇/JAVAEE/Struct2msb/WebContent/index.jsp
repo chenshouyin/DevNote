@@ -73,8 +73,17 @@ basePath:<%out.print(basePath); %>
 <a href="<%=basePath %>test/testDynamicResult?type=1">10.动态结果集Dynamic Result（$用于配置文件获取值栈的数据 ）</a>
 <br><a href="<%=basePath %>test/testDynamicResult?type=0">10.动态结果集Dynamic Result（$用于配置文件获取值栈的数据 ）</a>
 
-<br><a href="<%=basePath %>ognl/ognl.action?username=u&password=p&user.age=8">11.OGNL</a>
+<br><a href="<%=basePath %>ognl/ognl.action?username=u&password=p&user.age=8">11.OGNL表达式 访问java属性 对象 方法</a>
 file:///G:/csy/javaWeb/struct2%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81/Full%20Distribution/struts-2.5.14.1-all/struts-2.5.14.1/docs/docs/tag-developers/ognl.html
+<br>
+<br><a href="<%=basePath %>/tags.action?username=u&password=p">12.tags标签</a>
+<br><br><a href="">13.主题</a>
+<ul>
+<li>Struts2_2100_Theme_1</li>
+<li>Struts2_2100_Theme_2</li>
+<li>Struts2_2100_Theme_3</li>
+<li>Struts2_2100_Theme_4</li>
+</ul>
 
 <br><br><br><br>
 <font color="#ff0000">常见问题:</font>

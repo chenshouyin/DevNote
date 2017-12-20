@@ -14,7 +14,7 @@
 		<li>property: <s:property value="username"/> </li>
 		<li>property 取值为字符串: <s:property value="'username'"/> </li>
 		<li>property 设定默认值: <s:property value="admin" default="管理员"/> </li>
-		<li>property 设定HTML: <s:property value="'<hr/>'" escape="false"/> </li>
+		<li>property 设定HTML: <s:property value="'<hr/>'" escapeHtml="true"/> </li>
 		<hr />
 		<li>set 设定adminName值（默认为request 和 ActionContext）: <s:set var="adminName" value="username" /></li>
 		
