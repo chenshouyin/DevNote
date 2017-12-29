@@ -1,0 +1,13 @@
+
+修改表表结构
+
+1.给某个表格添加一个自动增长的主键字段，并且将该字段放在第一列
+
+alter table `表格名` add column `列名` int not null auto_increment primary key comment '主键' first;    
+
+
+如果想放到其他列后面，可以将上面sql语句中的 first 换成  after `已经有的列名`
+
+
+更新表数据
+
