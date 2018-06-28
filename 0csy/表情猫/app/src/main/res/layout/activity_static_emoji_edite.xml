@@ -1,0 +1,101 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layoutTitleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/main_color2">
+
+
+            <RelativeLayout
+                android:id="@+id/leftView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@mipmap/nav_back_normal" />
+            </RelativeLayout>
+
+
+            <com.emojicat.ui.widget.indicator.DachshundTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_toLeftOf="@+id/rightView"
+                android:layout_toRightOf="@+id/leftView"
+                android:gravity="center"
+                custom:ddAnimatedIndicator="dachshund"
+                custom:ddIndicatorColor="@android:color/white"
+                custom:ddIndicatorHeight="3dp"
+                custom:tabMode="fixed" />
+
+
+            <RelativeLayout
+                android:id="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@mipmap/activity_static_emoji_edite_shoucnag"
+                    android:id="@+id/imageView" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@mipmap/activity_static_emoji_edite_guanzhu"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@mipmap/activity_static_emoji_edite_fenxiang" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

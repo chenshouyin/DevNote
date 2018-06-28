@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/tab_nor_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:id="@+id/viewFrameLayout"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/ivImage"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:background="@drawable/activity_splish_01" />
+
+
+            <TextView
+                android:id="@+id/tvText"
+                style="@style/styleTextS"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom|center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="我抢到多无多的点点滴滴我得到的"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/viewFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivShareWeChat"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_share_wechat_click" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    style="@style/styleTextL"
+                    android:gravity="center"
+                    android:text="@string/share_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivShareQQ"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_share_qq_click" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    style="@style/styleTextL"
+                    android:gravity="center"
+                    android:text="@string/share_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivShareCollection"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_share_collection_click" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    style="@style/styleTextL"
+                    android:gravity="center"
+                    android:text="@string/share_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivShareMore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_share_more_click" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    style="@style/styleTextL"
+                    android:gravity="center"
+                    android:text="@string/share_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

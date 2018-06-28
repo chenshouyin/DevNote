@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.emojicat"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled  true
+    }
+
+    //配置keystore签名
+    signingConfigs {
+
+        debug {
+//            storeFile file('debug.keystore')
+//            storePassword "android"
+//            keyAlias "androiddebugkey"
+//            keyPassword "android"
+
+            storeFile file('EmojiCat.jks')
+            storePassword "zlpcsy313"
+            keyAlias "EmojiCat"
+            keyPassword "EmojiCathappyyin"
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 混淆文件的位置
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+
+            // 混淆文件的位置
+            signingConfig signingConfigs.debug
+        }
+
+    }
+
+    //LeanCloud为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/rxjava.properties'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.android.support:design:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:25.0.3'
+    // LeanCloud 基础包
+    compile 'cn.leancloud.android:avoscloud-sdk:v3.+'
+    // 推送与实时聊天需要的包
+    compile('cn.leancloud.android:avoscloud-push:v3.+@aar') { transitive = true }
+    // LeanCloud 统计包
+    compile 'cn.leancloud.android:avoscloud-statistics:v3.+'
+    // LeanCloud 用户反馈包
+    compile 'cn.leancloud.android:avoscloud-feedback:v3.+@aar'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //RxAndroid是RxJava的扩展,可方便用于主线程和子线程切换
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    //卡片布局
+    compile 'com.android.support:cardview-v7:25.2.0'
+    // 内存泄露检测
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //takephoto
+    compile 'com.soundcloud.android.crop:lib_crop:1.0.0'
+    compile 'com.darsh.multipleimageselect:multipleimageselect:1.0.4'
+    compile 'me.shaohui.advancedluban:library:1.3.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //gif视图
+    compile 'com.github.Cutta:GifView:1.1'
+    compile files('libs/open_sdk_r5781.jar')
+    compile files('libs/SocialSDK_QQ_Full.jar')
+    compile files('libs/SocialSDK_WeiXin_Full.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    //分包
+    compile project(':DevCsyTool')
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DachshundTabLayout">
+        <attr name="ddIndicatorHeight" format="dimension" />
+        <attr name="ddIndicatorColor" format="color" />
+        <attr name="ddAnimatedIndicator" format="enum">
+            <enum name="dachshund" value="0" />
+            <enum name="pointMove" value="1" />
+            <enum name="lineMove" value="2" />
+            <enum name="pointFade" value="3" />
+            <enum name="lineFade" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--轮播图 -->
+    <declare-styleable name="Banner">
+        <attr name="default_image" format="reference" />
+        <attr name="delay_time" format="dimension" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+
+
+</resources>

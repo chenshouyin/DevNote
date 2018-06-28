@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#1832c2</color>
+    <color name="colorPrimaryDark">#1830ca</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="index_bg">#1d86f1</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- app主题颜色 -->
+    <color name="main_color1">#ffd102</color>
+    <color name="main_color2">#1b1b1b</color>
+    <color name="main_color3">#fafafa</color>
+
+    <color name="main_sel_color">#fee834</color>
+
+    <!-- tab文字颜色 -->
+    <color name="tab_nor_color">#888</color>
+    <color name="tab_sel_color">#1e86f1</color>
+    <color name="vip_name_color">#ff7800</color>
+    <color name="color_touming"> #00000000</color>
+    <color name="main_green_nor_color">#00bf8f</color>
+    <color name="main_green_sel_color">#5cd2b4</color>
+    <!-- 线条颜色-->
+    <color name="line_color">#c8c7cc</color>
+    <!--主体背景色-->
+    <color name="background_color">#f9f9f9</color>
+
+    <color name="hard_color">#48495f</color>
+    <color name="item_bg">#FFFFFF</color>
+
+
+
+
+
+
+
+    <color name="lean1">#1e86f1</color>
+    <color name="lean2">#fca103</color>
+    <color name="lean3">#ff6565</color>
+    <color name="lean4">#13b68d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="light_blue">#6593cb</color>
+
+
+    <color name="white_dynamic">#FFFFFF</color>
+    <color name="black_dynamic">#000000</color>
+    <color name="gray_dynamic">#eeeeee</color>
+    <color name="light_blue_dynamic">#6593cb</color>
+
+    <color name="colorVipHint">#333333</color>
+    <color name="clickspan_color">#00ddb6</color>
+
+
+    <!-- swipeRefreshLayout 进度条颜色 -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_white_light">#ffffffff</color>
+    <!-- swipeRefreshLayout 进度条颜色 -->
+</resources>

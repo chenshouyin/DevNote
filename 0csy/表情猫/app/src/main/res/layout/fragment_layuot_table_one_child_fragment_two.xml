@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textViewFourth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="我是第二个fragment里面的第二个fragment"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>

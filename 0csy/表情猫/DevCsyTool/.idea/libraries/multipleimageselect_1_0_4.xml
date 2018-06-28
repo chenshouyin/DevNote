@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="multipleimageselect-1.0.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/42f305572093f0525f893c507fb2b62b93188b69/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/42f305572093f0525f893c507fb2b62b93188b69/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.darsh.multipleimageselect/multipleimageselect/1.0.4/624c0871c9c3e84234e187aa7e9781f4e5418259/multipleimageselect-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

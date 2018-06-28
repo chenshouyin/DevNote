@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Java-WebSocket-1.3.2-leancloud">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.leancloud.android/Java-WebSocket/1.3.2-leancloud/169fd461930335df8099bcbac99c0f206912ced1/Java-WebSocket-1.3.2-leancloud.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.leancloud.android/Java-WebSocket/1.3.2-leancloud/65111bd13646ea2082e16a95cee22c8dee95dce3/Java-WebSocket-1.3.2-leancloud-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

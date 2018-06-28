@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SocialSDK_QQ_Full">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../app/libs/SocialSDK_QQ_Full.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

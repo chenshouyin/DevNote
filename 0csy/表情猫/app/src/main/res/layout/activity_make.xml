@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layoutTitle"
+            layout="@layout/view_main_base_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/main_color1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/leftView"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="left">
+
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/nav_back_normal" />
+
+                <TextView
+                    style="@style/styleTextL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/ivBack"
+                    android:layout_toEndOf="@+id/ivBack"
+                    android:text="@string/back" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/styleTextXL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/rightView"
+                android:layout_toRightOf="@+id/leftView"
+
+                android:gravity="center"
+                android:text="@string/make" />
+
+
+            <RelativeLayout
+                android:id="@+id/rightView"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true">
+
+
+                <TextView
+                    android:id="@+id/tvSend"
+                    style="@style/styleTextL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/send" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/ivEmoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_linear"
+                android:layout_below="@+id/common_top_bar"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+
+        <com.emojicat.ui.widget.indicator.DachshundTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            custom:ddAnimatedIndicator="pointFade"
+            custom:ddIndicatorColor="@android:color/white"
+            custom:ddIndicatorHeight="3dp"
+            custom:tabMode="fixed" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutTitle"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
