@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.csy.demo.devtool.R;
+import com.csy.demo.devtool.netlib.net.retrofit.demo.UserRequestParams;
 import com.csy.demo.devtool.netlib.net.retrofit.demo.UserResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.LoginResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.MeiZi;
@@ -80,12 +81,14 @@ public class MainNetActivity extends BaseActivity {
 //                LoginRequest loginRequest = new LoginRequest(this);
 //                loginRequest.setUserId("123456");
 //                loginRequest.setPassword("123123");
+                UserRequestParams userRequestParams = new UserRequestParams();
+                userRequestParams.v = "11";
                 RetrofitHelper.getApiService()
                         //指定参数
                         //.getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean",new UserRequestParams())
-                        .getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean")
+                        .getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean",1)
                         .subscribeOn(Schedulers.io())
-                        //.compose(this.<LoginResponse>bindToLifecycle())
+                        .compose(MainNetActivity.this.<UserResponse>bindToLifecycle())
                         //.compose(ProgressUtils.<LoginResponse>applyProgressBar(this))
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new DefaultObserver<UserResponse>() {
@@ -117,7 +120,7 @@ public class MainNetActivity extends BaseActivity {
                         //.getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean",new UserRequestParams())
                         .getUserInfoByPost()
                         .subscribeOn(Schedulers.io())
-                        //.compose(this.<LoginResponse>bindToLifecycle())
+                        .compose(MainNetActivity.this.<UserResponse>bindToLifecycle())
                         .compose(ProgressUtils.<UserResponse>applyProgressBar(MainNetActivity.this))
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new DefaultObserver<UserResponse>() {
@@ -130,6 +133,12 @@ public class MainNetActivity extends BaseActivity {
                             public void onFail(String message) {
                                 super.onFail(message);
                                 ToastUtils.show("获取信息失败2"+message);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+                                super.onError(e);
+                                ToastUtils.show("获取信息onError3"+e);
 
                             }
                         });
@@ -154,6 +163,7 @@ public class MainNetActivity extends BaseActivity {
                     @Override
                     public void onSuccess(LoginResponse response) {
                         ToastUtils.show("登录成功");
+                        LogUtils.d(response.getAccessToken());
                     }
                 });
     }
