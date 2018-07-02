@@ -6,6 +6,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 
+import com.csy.demo.devtool.netlib.net.retrofit.activity.MainNetActivity;
 import com.csy.demo.devtool.ui.dialog.ProgressDialogActivity;
 import com.csy.demo.devtool.ui.dialog.SweetAlertDialogActivity;
 import com.csy.demo.devtool.ui.statusbar.StatusBarActivity;
@@ -16,7 +17,6 @@ import com.tool.csy.devcsytool.utils.log.klog.KLog;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import com.csy.demo.devtool.R;
 
 public class MainActivity extends BaseActivity {
 
@@ -29,6 +29,9 @@ public class MainActivity extends BaseActivity {
     Button btSweetAlertDialogActivity;
     @BindView(R.id.btCountDownTimerActivity)
     Button btCountDownTimerActivity;
+    @BindView(R.id.btNetDemo)
+    Button btNetDemo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +93,8 @@ public class MainActivity extends BaseActivity {
         super.goActivity(context, cls);
     }
 
-    @OnClick({R.id.btStatusBarActivity, R.id.btProgressDialogActivity, R.id.btSweetAlertDialogActivity, R.id.btCountDownTimerActivity})
+    @OnClick({R.id.btStatusBarActivity, R.id.btProgressDialogActivity, R.id.btSweetAlertDialogActivity
+            , R.id.btCountDownTimerActivity,R.id.btNetDemo})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btStatusBarActivity:
@@ -105,6 +109,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btCountDownTimerActivity:
                 goActivity(MainActivity.this, CountDownTimerActivity.class);
+                break;
+
+            case R.id.btNetDemo:
+                goActivity(MainActivity.this, MainNetActivity.class);
                 break;
 
 

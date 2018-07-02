@@ -1,9 +1,9 @@
 package com.csy.demo.devtool.netlib.net.retrofit.net;
 
+import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.LoginResponse;
+import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.MeiZi;
+import com.csy.demo.devtool.netlib.net.retrofit.module.request.LoginRequest;
 import com.csy.net.net.common.BasicResponse;
-import com.net.retrofit.module.reponse.LoginResponse;
-import com.net.retrofit.module.reponse.MeiZi;
-import com.net.retrofit.module.request.LoginRequest;
 
 import java.util.List;
 import java.util.Map;

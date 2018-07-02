@@ -11,6 +11,11 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.csy.demo.devtool.R;
+import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.LoginResponse;
+import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.MeiZi;
+import com.csy.demo.devtool.netlib.net.retrofit.module.request.LoginRequest;
+import com.csy.demo.devtool.netlib.net.retrofit.net.RetrofitHelper;
 import com.csy.net.net.common.BasicResponse;
 import com.csy.net.net.common.Constants;
 import com.csy.net.net.common.DefaultObserver;
@@ -20,11 +25,6 @@ import com.csy.net.net.download.DownloadUtils;
 import com.csy.net.utils.FileUtils;
 import com.csy.net.utils.LogUtils;
 import com.csy.net.utils.ToastUtils;
-import com.net.retrofit.R;
-import com.net.retrofit.module.reponse.LoginResponse;
-import com.net.retrofit.module.reponse.MeiZi;
-import com.net.retrofit.module.request.LoginRequest;
-import com.net.retrofit.net.RetrofitHelper;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -41,7 +41,13 @@ import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 
 
-public class MainActivity extends BaseActivity {
+public class MainNetActivity extends BaseActivity {
+//    @BindView(R.id.myGet)
+//    Button myGet;
+//    @BindView(R.id.myPost)
+//    Button myPost;
+
+
     private Button btn;
     ProgressBar progressBar;
     TextView mTvPercent;
@@ -49,7 +55,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.activity_main_net;
     }
 
     @Override
@@ -62,6 +68,23 @@ public class MainActivity extends BaseActivity {
         mTvPercent = (TextView) findViewById(R.id.tv_percent);
         btn = (Button) findViewById(R.id.btn_download);
         downloadUtils = new DownloadUtils();
+
+        Button myGet = (Button) findViewById(R.id.myGet);
+        Button myPost = (Button) findViewById(R.id.myPost);
+
+        myGet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        myPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     /**
