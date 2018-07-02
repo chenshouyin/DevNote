@@ -1,1 +1,1 @@
-include ':devdemo', ':devcommlib', ':devnetlib'
+include ':devdemo', ':devcommlib', ':devnetlib', ':netLib'

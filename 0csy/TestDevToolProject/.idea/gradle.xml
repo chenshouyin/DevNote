@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/devcommlib" />
             <option value="$PROJECT_DIR$/devdemo" />
             <option value="$PROJECT_DIR$/devnetlib" />
+            <option value="$PROJECT_DIR$/netLib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

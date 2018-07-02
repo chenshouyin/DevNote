@@ -1,12 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+
     defaultConfig {
         applicationId "com.csy.demo.devtool"
-        minSdkVersion 14
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,9 +31,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-
-    compile project(':devcommlib')//引用lib库
-
-    compile 'com.jakewharton:butterknife:8.5.1'//2.butterknife
+    compile project(':devcommlib')
+    //引用lib库
+    compile 'com.jakewharton:butterknife:8.5.1'
+    //2.butterknife
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile project(':netLib')
 }
