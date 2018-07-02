@@ -1,5 +1,6 @@
 package com.csy.demo.devtool.netlib.net.retrofit.net;
 
+import com.csy.demo.devtool.netlib.net.retrofit.demo.UserResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.LoginResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.MeiZi;
 import com.csy.demo.devtool.netlib.net.retrofit.module.request.LoginRequest;
@@ -24,12 +25,30 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
 import retrofit2.http.Query;
+import retrofit2.http.Url;
 
 /**
  * Created by dell on 2017/4/1.
  */
 
 public interface RetrofitApiService {
+
+    /**
+     * 指定具体链接
+     * @param url
+     * @param
+     * @return
+     */
+//    @GET
+//    Observable<UserResponse> getUserInfoByGet(@Url String url,@Body UserRequestParams request);
+    @GET
+    Observable<UserResponse> getUserInfoByGet(@Url String url);
+
+
+
+
+    @POST("/userInfo/getUserInfoBean")
+    Observable<UserResponse> getUserInfoByPost();
 
     /**
      * 添加head也可以是map

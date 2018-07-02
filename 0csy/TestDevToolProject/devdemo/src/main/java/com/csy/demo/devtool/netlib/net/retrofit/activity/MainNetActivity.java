@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.csy.demo.devtool.R;
+import com.csy.demo.devtool.netlib.net.retrofit.demo.UserResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.LoginResponse;
 import com.csy.demo.devtool.netlib.net.retrofit.module.reponse.MeiZi;
 import com.csy.demo.devtool.netlib.net.retrofit.module.request.LoginRequest;
@@ -75,6 +76,31 @@ public class MainNetActivity extends BaseActivity {
         myGet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //http://www.it399.com/userInfo/getUserInfoBean
+//                LoginRequest loginRequest = new LoginRequest(this);
+//                loginRequest.setUserId("123456");
+//                loginRequest.setPassword("123123");
+                RetrofitHelper.getApiService()
+                        //指定参数
+                        //.getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean",new UserRequestParams())
+                        .getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean")
+                        .subscribeOn(Schedulers.io())
+                        //.compose(this.<LoginResponse>bindToLifecycle())
+                        //.compose(ProgressUtils.<LoginResponse>applyProgressBar(this))
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(new DefaultObserver<UserResponse>() {
+                            @Override
+                            public void onSuccess(UserResponse response) {
+                                ToastUtils.show("获取信息成功"+response);
+                            }
+
+                            @Override
+                            public void onFail(String message) {
+                                super.onFail(message);
+                                ToastUtils.show("获取信息失败"+message);
+
+                            }
+                        });
 
             }
         });
@@ -82,7 +108,31 @@ public class MainNetActivity extends BaseActivity {
         myPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //http://www.it399.com/userInfo/getUserInfoBean
+//                LoginRequest loginRequest = new LoginRequest(this);
+//                loginRequest.setUserId("123456");
+//                loginRequest.setPassword("123123");
+                RetrofitHelper.getApiService2()
+                        //指定参数
+                        //.getUserInfoByGet("http://www.it399.com/userInfo/getUserInfoBean",new UserRequestParams())
+                        .getUserInfoByPost()
+                        .subscribeOn(Schedulers.io())
+                        //.compose(this.<LoginResponse>bindToLifecycle())
+                        .compose(ProgressUtils.<UserResponse>applyProgressBar(MainNetActivity.this))
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(new DefaultObserver<UserResponse>() {
+                            @Override
+                            public void onSuccess(UserResponse response) {
+                                ToastUtils.show("获取信息成功2"+response);
+                            }
 
+                            @Override
+                            public void onFail(String message) {
+                                super.onFail(message);
+                                ToastUtils.show("获取信息失败2"+message);
+
+                            }
+                        });
             }
         });
     }

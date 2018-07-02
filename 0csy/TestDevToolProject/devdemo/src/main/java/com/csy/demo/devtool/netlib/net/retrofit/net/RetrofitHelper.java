@@ -13,4 +13,11 @@ public class RetrofitHelper {
     static {
        mIdeaApiService= RetrofitApi.getApiService(RetrofitApiService.class, Constants.API_SERVER_URL);
     }
+
+    public static RetrofitApiService getApiService2(){
+        return mIdeaApiService;
+    }
+    static {
+        mIdeaApiService= RetrofitApi.getApiService(RetrofitApiService.class, Constants.API_SERVER_URL2);
+    }
 }
