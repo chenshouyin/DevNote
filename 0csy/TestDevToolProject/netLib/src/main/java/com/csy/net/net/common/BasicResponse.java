@@ -8,7 +8,6 @@ public class BasicResponse<T> {
     private int code;
     private String message;
     private T results;
-    private boolean error;
 
     public T getResults() {
         return results;
@@ -16,14 +15,6 @@ public class BasicResponse<T> {
 
     public void setResults(T results) {
         this.results = results;
-    }
-
-    public boolean isError() {
-        return error;
-    }
-
-    public void setError(boolean error) {
-        this.error = error;
     }
 
     public int getCode() {

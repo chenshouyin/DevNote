@@ -6,7 +6,7 @@ package com.csy.demo.devtool.netlib.net.retrofit.demo;
  * 我的Github:https://github.com/chenshouyin
  */
 
-public class UserResponse extends CBaseResbonse{
+public class UserResponse{
     public String userName;
 
     public String getUserName() {

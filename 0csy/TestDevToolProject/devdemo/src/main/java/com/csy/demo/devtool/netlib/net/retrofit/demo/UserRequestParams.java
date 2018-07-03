@@ -8,4 +8,13 @@ package com.csy.demo.devtool.netlib.net.retrofit.demo;
 
 public class UserRequestParams extends CBaseRequestParams{
 
+    public String getV() {
+        return v;
+    }
+
+    public void setV(String v) {
+        this.v = v;
+    }
+
+    public String v ;
 }

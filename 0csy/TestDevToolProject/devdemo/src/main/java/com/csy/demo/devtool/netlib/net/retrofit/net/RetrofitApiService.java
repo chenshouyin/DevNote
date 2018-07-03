@@ -39,10 +39,11 @@ public interface RetrofitApiService {
      * @param
      * @return
      */
-//    @GET
-//    Observable<UserResponse> getUserInfoByGet(@Url String url,@Body UserRequestParams request);
     @GET
-    Observable<UserResponse> getUserInfoByGet(@Url String url);
+//    Observable<UserResponse> getUserInfoByGet(@Url String url,@Body UserRequestParams request);
+//    @GET
+//    Observable<UserResponse> getUserInfoByGet(@Url String url);
+    Observable<UserResponse> getUserInfoByGet(@Url String url,@Query("page") int page);
 
 
 

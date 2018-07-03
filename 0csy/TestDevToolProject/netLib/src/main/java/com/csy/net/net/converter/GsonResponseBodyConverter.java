@@ -16,10 +16,9 @@
 
 package com.csy.net.net.converter;
 
-import com.google.gson.TypeAdapter;
 import com.csy.net.net.common.BasicResponse;
-import com.csy.net.net.exception.NoDataExceptionException;
 import com.csy.net.net.exception.ServerResponseException;
+import com.google.gson.TypeAdapter;
 
 import java.io.IOException;
 
@@ -38,17 +37,14 @@ final class GsonResponseBodyConverter<T> implements Converter<ResponseBody, Obje
     public Object convert(ResponseBody value) throws IOException {
         try {
             BasicResponse response = (BasicResponse) adapter.fromJson(value.charStream());
-            if (response.isError()) {
+            if (response.getCode()==0) {
+                return response.getResults();
+            } else {
                 // 特定 API 的错误，在相应的 DefaultObserver 的 onError 的方法中进行处理
                 throw new ServerResponseException(response.getCode(), response.getMessage());
-            } else if (!response.isError()) {
-                if(response.getResults()!=null)
-                return response.getResults();
-                else throw new NoDataExceptionException();
             }
         } finally {
             value.close();
         }
-        return null;
     }
 }

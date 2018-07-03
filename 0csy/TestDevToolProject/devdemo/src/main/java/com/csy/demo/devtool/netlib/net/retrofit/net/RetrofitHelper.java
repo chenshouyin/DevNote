@@ -6,6 +6,7 @@ import com.csy.net.net.common.RetrofitApi;
 
 public class RetrofitHelper {
     private static RetrofitApiService mIdeaApiService;
+    private static RetrofitApiService mIdeaApiService2;
 
     public static RetrofitApiService getApiService(){
         return mIdeaApiService;
@@ -15,9 +16,9 @@ public class RetrofitHelper {
     }
 
     public static RetrofitApiService getApiService2(){
-        return mIdeaApiService;
+        return mIdeaApiService2;
     }
     static {
-        mIdeaApiService= RetrofitApi.getApiService(RetrofitApiService.class, Constants.API_SERVER_URL2);
+        mIdeaApiService2= RetrofitApi.getApiService(RetrofitApiService.class, Constants.API_SERVER_URL2);
     }
 }
