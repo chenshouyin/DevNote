@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/TestDevToolProject.iml" filepath="$PROJECT_DIR$/TestDevToolProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/devcommlib/devcommlib.iml" filepath="$PROJECT_DIR$/devcommlib/devcommlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/devdemo/devdemo.iml" filepath="$PROJECT_DIR$/devdemo/devdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/devnetlib/devnetlib.iml" filepath="$PROJECT_DIR$/devnetlib/devnetlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/netLib/netLib.iml" filepath="$PROJECT_DIR$/netLib/netLib.iml" />
     </modules>
   </component>

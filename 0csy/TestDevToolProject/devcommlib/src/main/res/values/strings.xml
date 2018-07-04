@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DevCsyTool</string>
 
-    <!--com.tool.csy.devcsytool.ui.dialog.sweetalert-->
+    <!--commondialog.sweetalert-->
     <string name="dialog_default_title">Here\'s a message!</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>

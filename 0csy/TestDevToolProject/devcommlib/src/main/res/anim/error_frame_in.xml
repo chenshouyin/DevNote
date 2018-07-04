@@ -10,7 +10,7 @@
         android:toAlpha="1"
         android:duration="400"/>
 
-    <sweet:com.tool.csy.devcsytool.ui.dialog.sweetalert.Rotate3dAnimation
+    <sweet:com.csy.devcsytool.ui.dialog.sweetalert.Rotate3dAnimation
         sweet:rollType="x"
         sweet:fromDeg="100"
         sweet:toDeg="0"

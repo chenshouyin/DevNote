@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--com.tool.csy.devcsytool.ui.dialog.sweetalert-->
+    <!--commondialog.sweetalert-->
     <declare-styleable name="Rotate3dAnimation">
         <attr name="rollType" format="enum">
             <enum name="x" value="0"/>
@@ -16,7 +16,7 @@
 
 
 
-    <!--com.tool.csy.devcsytool.ui.dialog.materialishprogress-->
+    <!--commondialog.materialishprogress-->
     <declare-styleable name="ProgressWheel">
         <attr name="matProg_progressIndeterminate" format="boolean" />
         <attr name="matProg_barColor" format="color" />

@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
 
 
-            <com.tool.csy.devcsytool.ui.dialog.materialishprogress.ProgressWheel
+            <com.csy.common.ui.dialog.materialishprogress.ProgressWheel
                 android:layout_gravity="center"
                 android:id="@+id/progressWithLogo"
                 android:layout_width="80dp"
@@ -100,7 +100,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.tool.csy.devcsytool.ui.dialog.materialishprogress.ProgressWheel
+        <com.csy.common.ui.dialog.materialishprogress.ProgressWheel
             android:id="@+id/progress_wheel"
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -149,7 +149,7 @@
                         android:layout_marginTop="16dp"
                         android:text="@string/interpolated" />
 
-                    <com.tool.csy.devcsytool.ui.dialog.materialishprogress.ProgressWheel
+                    <com.csy.common.ui.dialog.materialishprogress.ProgressWheel
                         android:id="@+id/interpolated"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
@@ -179,7 +179,7 @@
                         android:layout_marginTop="16dp"
                         android:text="@string/linear" />
 
-                    <com.tool.csy.devcsytool.ui.dialog.materialishprogress.ProgressWheel
+                    <com.csy.common.ui.dialog.materialishprogress.ProgressWheel
                         android:id="@+id/linear"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
