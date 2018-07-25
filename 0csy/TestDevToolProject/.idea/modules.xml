@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TestDevToolProject.iml" filepath="$PROJECT_DIR$/TestDevToolProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/devcommlib/devcommlib.iml" filepath="$PROJECT_DIR$/devcommlib/devcommlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/devdemo/devdemo.iml" filepath="$PROJECT_DIR$/devdemo/devdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonLib/commonLib.iml" filepath="$PROJECT_DIR$/commonLib/commonLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/netLib/netLib.iml" filepath="$PROJECT_DIR$/netLib/netLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uiLib/uiLib.iml" filepath="$PROJECT_DIR$/uiLib/uiLib.iml" />
     </modules>
   </component>
 </project>

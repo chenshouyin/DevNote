@@ -8,10 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/devcommlib" />
-            <option value="$PROJECT_DIR$/devdemo" />
-            <option value="$PROJECT_DIR$/devnetlib" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commonLib" />
             <option value="$PROJECT_DIR$/netLib" />
+            <option value="$PROJECT_DIR$/uiLib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
